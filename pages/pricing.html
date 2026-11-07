@@ -123,12 +123,12 @@
         <div class="col-lg-6">
           <div class="position-relative">
             <img src="../assets/images/about/about-experience.jpg" alt="Power Distribution Infrastructure" class="img-fluid rounded-4 shadow-lg w-100" style="max-height: 440px; object-fit: cover;">
-            <div class="position-absolute bottom-0 start-0 m-4 p-4 rounded-3 shadow-lg bg-white border" style="max-width: 340px;">
+            <div class="pricing-certification-card position-absolute bottom-0 start-0 m-3 m-sm-4 p-3 p-sm-4 rounded-3 shadow-lg bg-white border d-none d-sm-block">
               <div class="d-flex align-items-center gap-3">
-                <div class="rounded-circle bg-warning p-3 text-dark">
+                <div class="pricing-certification-icon rounded-circle bg-warning text-dark">
                   <i class="bi bi-check2-circle fs-3"></i>
                 </div>
-                <div>
+                <div class="pricing-certification-copy">
                   <h5 class="fw-bold mb-0">100% Load-Banked</h5>
                   <p class="small text-muted mb-0">Every generator is certified under full resistive load prior to dispatch.</p>
                 </div>
@@ -480,162 +480,163 @@
         </p>
       </div>
 
-      <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
-        <div class="d-md-none px-3 pt-3 pb-1">
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden fleet-comparison-card">
+        <div class="d-none d-md-flex d-xl-none px-3 pt-3 pb-1 align-items-center justify-content-between">
           <span class="table-scroll-hint"><i class="bi bi-arrow-left-right me-1"></i>Scroll horizontally to compare all features</span>
+          <span class="badge bg-secondary-subtle text-secondary small">Swipe for Actions &rarr;</span>
         </div>
-        <div class="table-responsive pricing-table-wrapper">
+        <div class="table-responsive fleet-comparison-wrapper pricing-table-wrapper" tabindex="0" role="region" aria-label="Fleet Rental Pricing Comparison Matrix">
           <table class="table table-hover align-middle mb-0 pricing-table text-nowrap">
             <thead>
               <tr>
-                <th>Generator Model</th>
-                <th>Capacity</th>
-                <th>Fuel Compatibility</th>
-                <th>Daily Rate</th>
-                <th>Weekly Rate</th>
-                <th>Monthly Rate</th>
-                <th>Security Deposit</th>
-                <th>Delivery Fee</th>
-                <th>Action</th>
+                <th scope="col" class="col-model text-start">Generator Model</th>
+                <th scope="col" class="col-capacity text-center">Capacity</th>
+                <th scope="col" class="col-fuel text-start">Fuel Compatibility</th>
+                <th scope="col" class="col-daily text-end">Daily Rate</th>
+                <th scope="col" class="col-weekly text-end">Weekly Rate</th>
+                <th scope="col" class="col-monthly text-end">Monthly Rate</th>
+                <th scope="col" class="col-deposit text-end">Security Deposit</th>
+                <th scope="col" class="col-delivery text-end">Delivery Fee</th>
+                <th scope="col" class="col-action text-center">Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>VoltMaster 10kVA Inverter</strong></td>
-                <td><span class="badge bg-secondary">10 kVA</span></td>
-                <td>Ultra-Clean Diesel</td>
-                <td><strong class="text-navy">$65</strong> / day</td>
-                <td>$390 / wk</td>
-                <td>$1,450 / mo</td>
-                <td>$300</td>
-                <td>$45</td>
-                <td><a href="booking.html?id=gen-10kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>VoltMaster 10kVA Inverter</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-secondary">10 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Ultra-Clean Diesel</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$65</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$390 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$1,450 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$300</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$45</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-10kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>EcoPower 18kVA Canopy</strong></td>
-                <td><span class="badge bg-secondary">18 kVA</span></td>
-                <td>Diesel / HVO</td>
-                <td><strong class="text-navy">$95</strong> / day</td>
-                <td>$570 / wk</td>
-                <td>$2,100 / mo</td>
-                <td>$400</td>
-                <td>$55</td>
-                <td><a href="booking.html?id=gen-18kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>EcoPower 18kVA Canopy</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-secondary">18 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Diesel / HVO</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$95</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$570 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$2,100 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$400</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$55</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-18kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>TitanPower 35kVA Commercial</strong></td>
-                <td><span class="badge bg-warning text-dark">35 kVA</span></td>
-                <td>Ultra-Low Sulfur</td>
-                <td><strong class="text-navy">$140</strong> / day</td>
-                <td>$840 / wk</td>
-                <td>$2,950 / mo</td>
-                <td>$600</td>
-                <td>$75</td>
-                <td><a href="booking.html?id=gen-35kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>TitanPower 35kVA Commercial</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-warning text-dark">35 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Ultra-Low Sulfur</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$140</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$840 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$2,950 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$600</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$75</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-35kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>Perkins 45kVA Heavy Standby</strong></td>
-                <td><span class="badge bg-warning text-dark">45 kVA</span></td>
-                <td>Industrial Diesel</td>
-                <td><strong class="text-navy">$175</strong> / day</td>
-                <td>$1,050 / wk</td>
-                <td>$3,500 / mo</td>
-                <td>$750</td>
-                <td>$85</td>
-                <td><a href="booking.html?id=gen-45kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>Perkins 45kVA Heavy Standby</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-warning text-dark">45 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Industrial Diesel</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$175</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$1,050 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$3,500 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$750</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$85</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-45kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>Cummins 80kVA Industrial Power</strong></td>
-                <td><span class="badge bg-info text-dark">80 kVA</span></td>
-                <td>Diesel / Bio-Blend</td>
-                <td><strong class="text-navy">$240</strong> / day</td>
-                <td>$1,440 / wk</td>
-                <td>$4,800 / mo</td>
-                <td>$1,000</td>
-                <td>$110</td>
-                <td><a href="booking.html?id=gen-80kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>Cummins 80kVA Industrial Power</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-info text-dark">80 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Diesel / Bio-Blend</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$240</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$1,440 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$4,800 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$1,000</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$110</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-80kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>Volvo Penta 100kVA Ultra-Quiet</strong></td>
-                <td><span class="badge bg-info text-dark">100 kVA</span></td>
-                <td>Ultra-Low Sulfur</td>
-                <td><strong class="text-navy">$290</strong> / day</td>
-                <td>$1,740 / wk</td>
-                <td>$5,600 / mo</td>
-                <td>$1,200</td>
-                <td>$125</td>
-                <td><a href="booking.html?id=gen-100kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>Volvo Penta 100kVA Ultra-Quiet</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-info text-dark">100 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Ultra-Low Sulfur</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$290</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$1,740 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$5,600 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$1,200</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$125</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-100kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>CAT 150kVA Heavy Duty Diesel</strong></td>
-                <td><span class="badge bg-primary">150 kVA</span></td>
-                <td>Diesel / HVO</td>
-                <td><strong class="text-navy">$380</strong> / day</td>
-                <td>$2,280 / wk</td>
-                <td>$7,200 / mo</td>
-                <td>$1,600</td>
-                <td>$160</td>
-                <td><a href="booking.html?id=gen-150kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>CAT 150kVA Heavy Duty Diesel</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-primary">150 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Diesel / HVO</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$380</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$2,280 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$7,200 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$1,600</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$160</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-150kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>Cummins 250kVA Powerhouse</strong></td>
-                <td><span class="badge bg-primary">250 kVA</span></td>
-                <td>Industrial Diesel</td>
-                <td><strong class="text-navy">$520</strong> / day</td>
-                <td>$3,120 / wk</td>
-                <td>$9,800 / mo</td>
-                <td>$2,200</td>
-                <td>$200</td>
-                <td><a href="booking.html?id=gen-250kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>Cummins 250kVA Powerhouse</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-primary">250 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Industrial Diesel</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$520</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$3,120 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$9,800 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$2,200</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$200</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-250kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>Kohler 350kVA Synchronized</strong></td>
-                <td><span class="badge bg-dark">350 kVA</span></td>
-                <td>Ultra-Clean Diesel</td>
-                <td><strong class="text-navy">$720</strong> / day</td>
-                <td>$4,320 / wk</td>
-                <td>$13,500 / mo</td>
-                <td>$3,000</td>
-                <td>$280</td>
-                <td><a href="booking.html?id=gen-350kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>Kohler 350kVA Synchronized</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-dark">350 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Ultra-Clean Diesel</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$720</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$4,320 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$13,500 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$3,000</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$280</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-350kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>CAT 500kVA Heavy Container</strong></td>
-                <td><span class="badge bg-dark">500 kVA</span></td>
-                <td>Heavy Diesel</td>
-                <td><strong class="text-navy">$950</strong> / day</td>
-                <td>$5,700 / wk</td>
-                <td>$17,800 / mo</td>
-                <td>$4,000</td>
-                <td>$350</td>
-                <td><a href="booking.html?id=gen-500kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>CAT 500kVA Heavy Container</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-dark">500 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Heavy Diesel</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$950</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$5,700 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$17,800 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$4,000</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$350</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-500kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>MTU 750kVA MegaStation</strong></td>
-                <td><span class="badge bg-danger">750 kVA</span></td>
-                <td>Ultra-Clean / HVO</td>
-                <td><strong class="text-navy">$1,350</strong> / day</td>
-                <td>$8,100 / wk</td>
-                <td>$24,500 / mo</td>
-                <td>$5,500</td>
-                <td>$500</td>
-                <td><a href="booking.html?id=gen-750kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>MTU 750kVA MegaStation</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-danger">750 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Ultra-Clean / HVO</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$1,350</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$8,100 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$24,500 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$5,500</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$500</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-750kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
               <tr>
-                <td><strong>Cummins 1250kVA Container Unit</strong></td>
-                <td><span class="badge bg-danger">1,250 kVA</span></td>
-                <td>Heavy Duty Diesel</td>
-                <td><strong class="text-navy">$1,950</strong> / day</td>
-                <td>$11,700 / wk</td>
-                <td>$34,500 / mo</td>
-                <td>$8,000</td>
-                <td>$750</td>
-                <td><a href="booking.html?id=gen-1250kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+                <td class="col-model text-start" data-label="Generator Model"><strong>Cummins 1250kVA Container Unit</strong></td>
+                <td class="col-capacity text-center" data-label="Capacity"><span class="badge bg-danger">1,250 kVA</span></td>
+                <td class="col-fuel text-start" data-label="Fuel Compatibility">Heavy Duty Diesel</td>
+                <td class="col-daily text-end" data-label="Daily Rate"><strong class="text-navy">$1,950</strong> / day</td>
+                <td class="col-weekly text-end" data-label="Weekly Rate">$11,700 / wk</td>
+                <td class="col-monthly text-end" data-label="Monthly Rate">$34,500 / mo</td>
+                <td class="col-deposit text-end" data-label="Security Deposit">$8,000</td>
+                <td class="col-delivery text-end" data-label="Delivery Fee">$750</td>
+                <td class="col-action text-center" data-label="Action"><a href="booking.html?id=gen-1250kva" class="btn btn-sm btn-pr-primary"><i class="bi bi-calendar-check me-1"></i>Book Now</a></td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+      </div></div>
     </div>
   </section>
 

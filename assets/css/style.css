@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 /* ===================================================================
    POWERRENT - GENERATOR RENTAL SERVICE
    MAIN STYLESHEET (style.css)
@@ -106,6 +108,67 @@ html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus {
   color: var(--pr-bg);
 }
 
+.why-choose-section .why-choose-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 360px);
+  gap: 12px;
+}
+
+.why-choose-section .why-choose-actions .btn {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  white-space: normal;
+}
+
+.why-choose-section .why-choose-image {
+  overflow: hidden;
+  border-radius: var(--pr-radius-lg);
+  border: 1px solid var(--pr-border);
+  box-shadow: var(--pr-shadow-lg);
+}
+
+.why-choose-section .why-choose-image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.why-choose-section .why-choose-certification {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  max-width: 340px;
+  padding: 16px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  background: rgba(16, 28, 44, 0.94);
+  color: #FFFFFF;
+}
+
+.why-choose-section .why-choose-certification > i {
+  flex: 0 0 auto;
+  font-size: 2rem !important;
+}
+
+.why-choose-section .why-choose-certification .fw-bold {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.why-choose-section .why-choose-certification .small {
+  color: #E2E8F0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--pr-primary);
   font-weight: 700;
@@ -167,16 +230,30 @@ img {
 .section-tag {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   color: var(--pr-accent);
   background: var(--pr-accent-light);
-  padding: 6px 14px;
-  border-radius: 30px;
+  padding: 6px 16px;
+  border-radius: 50px;
   margin-bottom: 14px;
+  max-width: 100%;
+  text-align: center;
+  line-height: 1.35;
+  box-sizing: border-box;
+}
+
+.section-tag i {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05em;
+  margin-top: -1px;
 }
 
 .section-title {
@@ -565,6 +642,15 @@ img {
   padding: 100px 0 80px 0;
 }
 
+.hero-home-two {
+  min-height: 90vh;
+}
+
+.hero-home-content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -581,20 +667,104 @@ img {
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: clamp(1.85rem, 4vw + 0.5rem, 3.5rem);
   font-weight: 900;
   color: #FFFFFF;
-  line-height: 1.15;
-  letter-spacing: -1px;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
   margin-bottom: 1.25rem;
+  hyphens: none;
+  -webkit-hyphens: none;
+  overflow-wrap: break-word;
+  word-break: normal;
+  text-wrap: balance;
 }
 
 .hero-desc {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   color: #CBD5E1;
-  max-width: 620px;
+  max-width: 44rem;
   margin-bottom: 2rem;
-  line-height: 1.7;
+  line-height: 1.65;
+}
+
+.hero-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px 24px;
+}
+
+.hero-benefit {
+  display: inline-flex;
+  min-width: 0;
+  align-items: flex-start;
+  gap: 7px;
+  line-height: 1.5;
+}
+
+.hero-benefit i {
+  flex: 0 0 auto;
+  margin-top: 0.18em;
+}
+
+.hero-benefit span {
+  min-width: 0;
+}
+
+.reserve-generator-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 50px;
+  padding: 11px 14px;
+  font-size: clamp(0.82rem, 2.5vw, 0.98rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 8px;
+  border: 2px solid var(--pr-accent);
+  background-color: var(--pr-accent);
+  color: #101C2C;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transition: var(--pr-transition);
+  cursor: pointer;
+}
+
+.reserve-generator-btn:hover,
+.reserve-generator-btn:focus {
+  background-color: var(--pr-accent-hover);
+  border-color: var(--pr-accent-hover);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.45);
+}
+
+.reserve-generator-btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
+}
+
+.reserve-generator-btn i {
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.reserve-generator-btn span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.quick-sizer-card {
+  text-align: left;
 }
 
 .hero-stats-badge {
@@ -652,6 +822,132 @@ img {
 .page-banner-content {
   position: relative;
   z-index: 2;
+}
+
+.pricing-certification-card {
+  right: auto !important;
+  bottom: 16px !important;
+  left: 16px !important;
+  width: min(400px, calc(100% - 32px));
+  max-width: 400px;
+  margin: 0 !important;
+  padding: 16px 20px !important;
+}
+
+.pricing-certification-icon {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  flex: 0 0 76px;
+  place-items: center;
+  padding: 0 !important;
+}
+
+.pricing-certification-icon i {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.pricing-certification-copy {
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+.pricing-certification-copy h5 {
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.pricing-certification-copy p {
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.services-page-banner .services-banner-eyebrow .badge {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: flex-start;
+  white-space: normal;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.services-page-banner .services-banner-eyebrow .badge i {
+  flex: 0 0 auto;
+  margin-top: 0.15em;
+}
+
+.about-page-banner .about-banner-eyebrow .badge {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: flex-start;
+  white-space: normal;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.about-page-banner .about-banner-eyebrow .badge i {
+  flex: 0 0 auto;
+  margin-top: 0.15em;
+}
+
+.about-page-banner h1 {
+  max-width: 22ch;
+  font-size: clamp(1.85rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.about-page-banner p {
+  max-width: 44rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+}
+
+.about-banner-actions {
+  display: grid;
+  width: min(100%, 500px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.about-banner-actions .btn {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  text-align: center;
+}
+
+.about-banner-actions .btn i {
+  margin-right: 0 !important;
+}
+
+.about-metric-card {
+  display: flex;
+  height: 100%;
+  min-height: 170px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-metric-card .display-5 {
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.about-metric-card > span {
+  max-width: 18ch;
+  line-height: 1.45;
 }
 
 .breadcrumb {
@@ -814,6 +1110,111 @@ img {
   margin-top: 14px;
 }
 
+.capacity-tier-section .capacity-tier-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 24px !important;
+}
+
+.capacity-tier-section .capacity-tier-meta {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px 12px;
+  min-width: 0;
+}
+
+.capacity-tier-section .capacity-tier-meta .badge {
+  flex: 0 0 auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.capacity-tier-section .capacity-tier-meta > span:last-child {
+  flex: 1 1 0;
+  min-width: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.capacity-tier-section .capacity-tier-card h4 {
+  min-height: 2.6em;
+  margin-bottom: 8px !important;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.capacity-tier-section .capacity-tier-card > p {
+  flex-grow: 1;
+  line-height: 1.55;
+}
+
+.capacity-tier-section .capacity-tier-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px !important;
+  padding: 0;
+}
+
+.capacity-tier-section .capacity-tier-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.capacity-tier-section .capacity-tier-features li i {
+  flex: 0 0 auto;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.capacity-tier-section .capacity-tier-card > .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  margin-top: auto;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.industries-section .industry-card {
+  display: flex;
+  min-height: 176px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.industries-section .industry-card > i {
+  display: flex !important;
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 3rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 8px !important;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.industries-section .industry-card h6 {
+  max-width: 100%;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
 /* ===================================================================
    SERVICES CARDS
    =================================================================== */
@@ -837,7 +1238,7 @@ img {
 
 .service-img-wrap {
   height: 200px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -845,6 +1246,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
   transition: transform 0.5s ease;
 }
 
@@ -855,6 +1257,7 @@ img {
 .service-icon-box {
   width: 52px;
   height: 52px;
+  padding: 0;
   border-radius: 10px;
   background: var(--pr-accent);
   color: #101C2C;
@@ -862,11 +1265,19 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  line-height: 1;
   position: absolute;
   bottom: -22px;
   left: 22px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 2;
+}
+
+.service-icon-box i {
+  display: block;
+  color: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .service-card-body {
@@ -928,7 +1339,7 @@ img {
 }
 
 .ancillary-charge-card p {
-  min-height: 3.2em;
+  min-height: 5em;
 }
 
 .pricing-ribbon {
@@ -997,25 +1408,196 @@ img {
   color: #EF4444;
 }
 
-/* Pricing Comparison Table */
-.pricing-table {
-  background: var(--pr-card-bg);
+/* ===================================================================
+   PRICING COMPARISON TABLE - COMPREHENSIVE ALIGNMENT & DESIGN
+   =================================================================== */
+.pricing-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: var(--pr-radius);
-  overflow: hidden;
-  border: 1px solid var(--pr-border);
+  margin-top: 0;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(245, 158, 11, 0.45) rgba(16, 28, 44, 0.05);
 }
 
-.pricing-table th {
+.pricing-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.pricing-table-wrapper::-webkit-scrollbar-track {
+  background: rgba(16, 28, 44, 0.05);
+  border-radius: 4px;
+}
+.pricing-table-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.45);
+  border-radius: 4px;
+}
+.pricing-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--pr-accent);
+}
+
+.table-scroll-hint {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #64748B;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.08);
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--pr-card-bg);
+  margin-bottom: 0;
+}
+
+/* Desktop and Large Screens (>= 1200px): Proportional Fixed Layout that Fits Cleanly Without Scrolling */
+@media (min-width: 1200px) {
+  .pricing-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .pricing-table .col-model { width: 24% !important; min-width: 0 !important; }
+  .pricing-table .col-capacity { width: 7.5% !important; min-width: 0 !important; }
+  .pricing-table .col-fuel { width: 12.5% !important; min-width: 0 !important; }
+  .pricing-table .col-daily { width: 8% !important; min-width: 0 !important; }
+  .pricing-table .col-weekly { width: 8.5% !important; min-width: 0 !important; }
+  .pricing-table .col-monthly { width: 9% !important; min-width: 0 !important; }
+  .pricing-table .col-deposit { width: 11% !important; min-width: 0 !important; }
+  .pricing-table .col-delivery { width: 9.5% !important; min-width: 0 !important; }
+  .pricing-table .col-action { width: 10% !important; min-width: 0 !important; }
+}
+
+/* Tablet & Smaller Laptops (768px - 1199.98px): Smooth Scroll with Preserved Columns */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .pricing-table {
+    min-width: 1060px !important;
+    width: 100%;
+  }
+}
+
+.pricing-table thead th {
   background: var(--pr-primary);
   color: #FFFFFF;
-  padding: 16px;
+  padding: 15px 8px;
   font-weight: 700;
+  font-size: 0.86rem;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-top: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.12);
 }
 
-.pricing-table td {
-  padding: 14px 16px;
+.pricing-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: rgba(245, 158, 11, 0.04);
+}
+
+.pricing-table tbody td {
+  padding: 12px 8px;
   vertical-align: middle;
-  border-color: var(--pr-border);
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--pr-border);
+  white-space: nowrap;
+}
+
+/* Explicit Column Alignment & Proportional Widths */
+.pricing-table .col-model {
+  min-width: 210px;
+  text-align: left;
+  padding-left: 16px !important;
+  padding-right: 12px !important;
+  font-weight: 600;
+}
+.pricing-table .col-capacity {
+  min-width: 80px;
+  text-align: center;
+}
+.pricing-table .col-fuel {
+  min-width: 125px;
+  text-align: left;
+  color: var(--pr-text-muted);
+}
+.pricing-table .col-daily {
+  min-width: 85px;
+  text-align: right;
+  padding-right: 10px !important;
+  font-variant-numeric: tabular-nums;
+}
+.pricing-table .col-weekly {
+  min-width: 90px;
+  text-align: right;
+  padding-right: 10px !important;
+  font-variant-numeric: tabular-nums;
+}
+.pricing-table .col-monthly {
+  min-width: 95px;
+  text-align: right;
+  padding-right: 10px !important;
+  font-variant-numeric: tabular-nums;
+}
+.pricing-table .col-deposit {
+  min-width: 105px;
+  text-align: right;
+  padding-right: 14px !important;
+  font-variant-numeric: tabular-nums;
+}
+.pricing-table .col-delivery {
+  min-width: 95px;
+  text-align: right;
+  padding-right: 14px !important;
+  font-variant-numeric: tabular-nums;
+}
+.pricing-table .col-action {
+  min-width: 110px;
+  text-align: center;
+  padding-right: 16px !important;
+}
+
+/* Capacity Badge Centering */
+.pricing-table .col-capacity .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+}
+
+/* Action Button: Consistent Dimensions, Center Text/Icon, Never Clipped */
+.pricing-table .btn-pr-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 90px;
+  max-width: 100%;
+  height: 35px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 7px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.pricing-table .btn-pr-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
 }
 
 /* ===================================================================
@@ -1081,50 +1663,90 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .testimonial-card:hover {
+  transform: translateY(-4px);
   box-shadow: var(--pr-shadow);
   border-color: var(--pr-accent);
 }
 
 .stars-rating {
   color: #F59E0B;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 2px;
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .testimonial-text {
   font-style: italic;
-  font-size: 0.98rem;
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--pr-text);
   margin-bottom: 20px;
   flex-grow: 1;
+  overflow-wrap: break-word;
 }
 
 .testimonial-author {
   display: flex;
   align-items: center;
   gap: 14px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--pr-border);
+  min-width: 0;
 }
 
 .author-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--pr-accent);
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+  min-height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  flex: 0 0 52px !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border: 2px solid var(--pr-accent) !important;
+  display: block !important;
+}
+
+.testimonial-author-copy,
+.testimonial-author > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .author-name {
   font-size: 1.05rem;
   font-weight: 700;
+  line-height: 1.25;
   color: var(--pr-primary);
   margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .author-role {
+  display: block;
   font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
   color: var(--pr-text-muted);
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 /* Team Card */
@@ -1440,6 +2062,34 @@ img {
   font-size: 1rem;
   line-height: 1.25;
   white-space: nowrap;
+}
+
+.home2-contact-cta {
+  background: transparent;
+}
+
+.home2-contact-cta h2 {
+  color: var(--pr-text);
+}
+
+.home2-contact-cta > .container > p {
+  color: var(--pr-text-muted);
+}
+
+.home2-contact-cta .btn-pr-outline {
+  border-color: var(--pr-primary);
+  color: var(--pr-primary);
+}
+
+.home2-contact-cta .btn-pr-outline:hover,
+.home2-contact-cta .btn-pr-outline:focus {
+  background-color: var(--pr-primary);
+  border-color: var(--pr-primary);
+  color: #FFFFFF;
+}
+
+.home2-contact-cta .btn-light {
+  border: 1px solid var(--pr-border);
 }
 
 /* ===================================================================
@@ -1797,4 +2447,75 @@ html[data-theme] .powerrent-footer .text-muted {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* Polish: Button System Enhancements */
+.btn-pr-primary:active,
+.btn-pr-outline:active,
+.btn-pr-dark:active,
+.btn-pr-secondary:active {
+  transform: translateY(0) scale(0.98) !important;
+}
+
+.btn:focus-visible,
+button:focus-visible,
+a.btn:focus-visible {
+  outline: 3px solid var(--pr-accent) !important;
+  outline-offset: 2px !important;
+}
+
+.btn:disabled,
+.btn.disabled,
+button:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn-lg {
+  min-height: 52px;
+  padding: 12px 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btn-sm {
+  min-height: 38px;
+  padding: 6px 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+
+/* Spotlight & Service Feature Image Containers */
+.spotlight-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--pr-radius-lg, 1rem);
+  width: 100%;
+  max-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d1724;
+}
+
+.spotlight-img {
+  width: 100%;
+  height: 100%;
+  max-height: 440px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.spotlight-image-wrapper:hover .spotlight-img {
+  transform: scale(1.025);
 }

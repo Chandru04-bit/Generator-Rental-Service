@@ -1,0 +1,7032 @@
+[
+  {
+    "page": "index.html",
+    "bp": 320,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 296,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 360,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 336,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 375,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 351,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 390,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 366,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 414,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 390,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 320,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "Commercial & Industrial Power",
+        "width": 296,
+        "height": 56,
+        "isMultiLine": true
+      },
+      {
+        "text": "Ready For Immediate Dispatch",
+        "width": 296,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 360,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "Commercial & Industrial Power",
+        "width": 336,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/about.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 320,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "Silent Entertainment Power",
+        "width": 296,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/service-details.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "All Capacities",
+        "width": 118,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "5–20 kVA",
+        "width": 75,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "25–50 kVA",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "60–100 kVA",
+        "width": 90,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "125–250 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "300–500 kVA",
+        "width": 98,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Above 500 kVA",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/generator-details.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 320,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "Predictable Power Economics",
+        "width": 296,
+        "height": 56,
+        "isMultiLine": true
+      },
+      {
+        "text": "Comprehensive Fleet Matrix",
+        "width": 296,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 320,
+    "type": "WRAPPED_SECTION_TAGS",
+    "tags": [
+      {
+        "text": "Transparency & Compliance",
+        "width": 296,
+        "height": 56,
+        "isMultiLine": true
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/booking-confirmation.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 246,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 286,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 301,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 316,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 340,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 406,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 646,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Contact Hotline",
+        "width": 230,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Contact Hotline",
+        "width": 290,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Contact Hotline",
+        "width": 350,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/blog-details.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Contact Hotline",
+        "width": 403,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/contact.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/faq.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/team.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "pages/404.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Dashboard",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Login",
+        "width": 0,
+        "height": 0,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 283,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "New Generator Booking",
+        "width": 128,
+        "height": 83,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "width": 121,
+        "height": 60,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download Invoices",
+        "width": 97,
+        "height": 81,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Request Fuel Dispatch",
+        "width": 88,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "width": 82,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 62,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 59,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Delivery Schedule",
+        "width": 60,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 18,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 327,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "New Generator Booking",
+        "width": 128,
+        "height": 83,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "width": 121,
+        "height": 60,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download Invoices",
+        "width": 97,
+        "height": 81,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Request Fuel Dispatch",
+        "width": 88,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "width": 82,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 62,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 59,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Delivery Schedule",
+        "width": 60,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 18,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 342,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "New Generator Booking",
+        "width": 128,
+        "height": 83,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "width": 121,
+        "height": 60,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download Invoices",
+        "width": 97,
+        "height": 81,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Request Fuel Dispatch",
+        "width": 88,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "width": 82,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 62,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 59,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Delivery Schedule",
+        "width": 60,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 18,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 357,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "New Generator Booking",
+        "width": 128,
+        "height": 83,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "width": 121,
+        "height": 60,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download Invoices",
+        "width": 97,
+        "height": 81,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Request Fuel Dispatch",
+        "width": 88,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "width": 82,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 62,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 59,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Delivery Schedule",
+        "width": 60,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 18,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 381,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "New Generator Booking",
+        "width": 128,
+        "height": 83,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "width": 121,
+        "height": 60,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download Invoices",
+        "width": 97,
+        "height": 81,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Request Fuel Dispatch",
+        "width": 88,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "width": 82,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 62,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 59,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Delivery Schedule",
+        "width": 60,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 18,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 447,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "New Generator Booking",
+        "width": 128,
+        "height": 83,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "width": 121,
+        "height": 60,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download Invoices",
+        "width": 97,
+        "height": 81,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Request Fuel Dispatch",
+        "width": 88,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "width": 82,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 62,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 59,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Delivery Schedule",
+        "width": 60,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 18,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 735,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "New Generator Booking",
+        "width": 128,
+        "height": 83,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "width": 121,
+        "height": 60,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download Invoices",
+        "width": 97,
+        "height": 81,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Request Fuel Dispatch",
+        "width": 88,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "width": 82,
+        "height": 102,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 62,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 85,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Invoice",
+        "width": 62,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 59,
+        "height": 65,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Manage Delivery Schedule",
+        "width": 60,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 18,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 518,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 128,
+        "height": 23,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 132,
+        "height": 23,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 315,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Invoice",
+        "width": 80,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 315,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Invoice",
+        "width": 80,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 128,
+        "height": 23,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 283,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 132,
+        "height": 23,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 395,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Invoice",
+        "width": 80,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 395,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Invoice",
+        "width": 80,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 128,
+        "height": 23,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 336,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Manage Telemetry →",
+        "width": 132,
+        "height": 23,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 635,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Invoice",
+        "width": 80,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "width": 635,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Invoice",
+        "width": 80,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "View All Bookings →",
+        "width": 128,
+        "height": 23,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Review Booking Invoice",
+        "width": 496,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 274,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 327,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 342,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 357,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 381,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 447,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 735,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 862,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Book Generator",
+        "width": 158,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "All Bookings",
+        "width": 75,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In to Account",
+        "width": 140,
+        "height": 91,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Bookings",
+        "width": 95,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Bookings",
+        "width": 95,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "All Bookings",
+        "width": 95,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Active",
+        "width": 56,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Confirmed",
+        "width": 83,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Completed",
+        "width": 86,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 268,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 327,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 342,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 357,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 381,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 447,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 735,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 260,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 327,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 342,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 357,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 381,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 447,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 735,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 675,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Rent Equipment",
+        "width": 163,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 242,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 281,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 328,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 356,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 381,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 447,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 735,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 882,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 742,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 427,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 240,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 243,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 68,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 285,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 68,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 328,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 68,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 357,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 68,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 381,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 68,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 447,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 68,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 735,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 68,
+        "height": 73,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 882,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Print Invoice",
+        "width": 70,
+        "height": 52,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Download PDF",
+        "width": 153,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Sign In",
+        "width": 121,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 700,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 339,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 135,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Print Invoice",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Back to Invoices",
+        "width": 135,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Print Invoice",
+        "width": 112,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 320,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 245,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 360,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 284,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 375,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 330,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 390,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 357,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 414,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 381,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 480,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 447,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 768,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 735,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 1024,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 862,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      },
+      {
+        "text": "Sign In",
+        "width": 115,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Create Account",
+        "width": 140,
+        "height": 70,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Save Changes",
+        "width": 144,
+        "height": 76,
+        "tooSmall": false,
+        "overflowing": true
+      },
+      {
+        "text": "Reset",
+        "width": 64,
+        "height": 38,
+        "tooSmall": false,
+        "overflowing": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 1280,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 682,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 1440,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 337,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "bp": 1920,
+    "type": "BUTTON_ISSUES",
+    "btns": [
+      {
+        "text": "Return to Website",
+        "width": 237,
+        "height": 31,
+        "tooSmall": true,
+        "overflowing": false
+      }
+    ]
+  }
+]

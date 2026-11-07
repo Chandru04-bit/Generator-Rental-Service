@@ -57,31 +57,31 @@
   </nav>
 
   <!-- SECTION 1: HERO SECTION -->
-  <header class="hero-section" style="background-image: url('assets/images/hero/hero-home-2.jpg'); min-height: 90vh;">
+  <header class="hero-section hero-home-two" style="background-image: url('assets/images/hero/hero-home-2.jpg');">
     <div class="hero-overlay" style="background: linear-gradient(105deg, rgba(16, 28, 44, 0.96) 0%, rgba(16, 28, 44, 0.88) 50%, rgba(16, 28, 44, 0.75) 100%);"></div>
-    <div class="container hero-content py-5">
+    <div class="container hero-content hero-home-content">
       <div class="row align-items-center g-5">
         <div class="col-lg-7">
           <span class="section-tag"><i class="bi bi-broadcast"></i> Commercial & Industrial Power</span>
-          <h1 class="hero-title" style="font-size: 3.4rem;">Next-Gen Fleet Power For Mission-Critical Operations</h1>
+          <h1 class="hero-title">Next-Gen Fleet Power For Mission-Critical Operations</h1>
           <p class="hero-desc">
             Explore commercial, industrial, and silent event generators equipped with cloud telemetry and automatic transfer switching. Instant availability across major metropolitan hubs.
           </p>
-          <div class="d-flex flex-wrap gap-3 mb-4">
+          <div class="d-flex flex-wrap gap-3 mb-4 hero-buttons">
             <a href="pages/services.html" class="btn btn-pr-primary btn-lg"><i class="bi bi-grid-fill me-1"></i>Explore Services</a>
             <a href="pages/pricing.html" class="btn btn-pr-outline btn-lg"><i class="bi bi-tags-fill me-1"></i>View Rental Rates</a>
             <a href="pages/booking.html" class="btn btn-warning btn-lg fw-bold text-dark"><i class="bi bi-calendar-check me-1"></i>Book Online</a>
           </div>
-          <div class="d-flex align-items-center gap-4 text-white-50 small">
-            <div><i class="bi bi-check-circle-fill text-warning me-1"></i> Same-Day Delivery</div>
-            <div><i class="bi bi-check-circle-fill text-warning me-1"></i> 100% Load-Bank Tested</div>
-            <div><i class="bi bi-check-circle-fill text-warning me-1"></i> Zero Hidden Fees</div>
+          <div class="hero-benefits text-white-50 small">
+            <div class="hero-benefit"><i class="bi bi-check-circle-fill text-warning"></i><span>Same-Day Delivery</span></div>
+            <div class="hero-benefit"><i class="bi bi-check-circle-fill text-warning"></i><span>100% Load-Bank Tested</span></div>
+            <div class="hero-benefit"><i class="bi bi-check-circle-fill text-warning"></i><span>Zero Hidden Fees</span></div>
           </div>
         </div>
 
         <!-- Quick Generator Sizer Card -->
         <div class="col-lg-5">
-          <div class="p-4 bg-white text-dark rounded-4 shadow-lg border">
+          <div class="quick-sizer-card p-3 p-sm-4 bg-white text-dark rounded-4 shadow-lg border">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h4 class="fw-bold mb-0 text-navy"><i class="bi bi-lightning-charge-fill text-warning me-1"></i>Quick Sizer</h4>
               <span class="badge bg-warning text-dark">Instant Match</span>
@@ -129,8 +129,9 @@
                 </select>
               </div>
 
-              <button type="submit" class="btn btn-pr-primary w-100 fw-bold">
-                <i class="bi bi-arrow-right-circle me-1"></i>Proceed to Reserve Generator
+              <button type="submit" class="btn btn-pr-primary w-100 fw-bold reserve-generator-btn">
+                <i class="bi bi-arrow-right-circle" aria-hidden="true"></i>
+                <span>Proceed to Reserve Generator</span>
               </button>
             </form>
           </div>
@@ -361,7 +362,9 @@
         </div>
 
         <div class="col-lg-6">
-          <img src="assets/images/about/about-experience.jpg" alt="Industrial Power Distribution Substation" class="img-fluid rounded-4 shadow-lg border">
+          <div class="spotlight-image-wrapper shadow-lg border">
+            <img src="assets/images/about/about-experience.jpg" alt="Industrial Power Distribution Substation" class="img-fluid spotlight-img">
+          </div>
         </div>
       </div>
     </div>
@@ -423,48 +426,48 @@
 
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
-          <div class="p-4 bg-light-grey rounded-4 border h-100 d-flex flex-column shadow-sm">
-            <div class="mb-2 text-warning">
+          <div class="testimonial-card">
+            <div class="stars-rating">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
-            <p class="fst-italic text-dark small flex-grow-1">"When our primary hospital transformer failed during summer storms, PowerRent had two 500 kVA generators synchronized within 90 minutes. Lifesaving service."</p>
-            <div class="d-flex align-items-center gap-3 pt-3 border-top">
-              <img src="assets/images/team/team-2.jpg" alt="Dr. Alistair Finch" class="rounded-circle" width="45" height="45" style="object-fit: cover;">
-              <div>
-                <h6 class="fw-bold mb-0 text-navy">Dr. Alistair Finch</h6>
-                <span class="small text-muted">Facilities Director, Metro Health</span>
+            <p class="testimonial-text fst-italic text-dark small">"When our primary hospital transformer failed during summer storms, PowerRent had two 500 kVA generators synchronized within 90 minutes. Lifesaving service."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/team/team-2.jpg" alt="Dr. Alistair Finch" class="author-avatar">
+              <div class="testimonial-author-copy">
+                <h6 class="author-name mb-0 text-navy">Dr. Alistair Finch</h6>
+                <span class="author-role small text-muted">Facilities Director, Metro Health</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <div class="p-4 bg-light-grey rounded-4 border h-100 d-flex flex-column shadow-sm">
-            <div class="mb-2 text-warning">
+          <div class="testimonial-card">
+            <div class="stars-rating">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
-            <p class="fst-italic text-dark small flex-grow-1">"The Volvo Penta ultra-quiet sets ran flawlessly for 4 straight days across our festival stages. Zero ripple, zero noise complaints from neighboring residents."</p>
-            <div class="d-flex align-items-center gap-3 pt-3 border-top">
-              <img src="assets/images/team/team-3.jpg" alt="Claire Beauchamp" class="rounded-circle" width="45" height="45" style="object-fit: cover;">
-              <div>
-                <h6 class="fw-bold mb-0 text-navy">Claire Beauchamp</h6>
-                <span class="small text-muted">Head of Production, SoundWave Festivals</span>
+            <p class="testimonial-text fst-italic text-dark small">"The Volvo Penta ultra-quiet sets ran flawlessly for 4 straight days across our festival stages. Zero ripple, zero noise complaints from neighboring residents."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/team/team-3.jpg" alt="Claire Beauchamp" class="author-avatar">
+              <div class="testimonial-author-copy">
+                <h6 class="author-name mb-0 text-navy">Claire Beauchamp</h6>
+                <span class="author-role small text-muted">Head of Production, SoundWave Festivals</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <div class="p-4 bg-light-grey rounded-4 border h-100 d-flex flex-column shadow-sm">
-            <div class="mb-2 text-warning">
+          <div class="testimonial-card">
+            <div class="stars-rating">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
-            <p class="fst-italic text-dark small flex-grow-1">"PowerRent is our single call for temporary power across all our Midwest bridge construction packages. Equipment is always clean, load-bank verified, and delivered on the hour."</p>
-            <div class="d-flex align-items-center gap-3 pt-3 border-top">
-              <img src="assets/images/team/team-1.jpg" alt="Marcus Vance" class="rounded-circle" width="45" height="45" style="object-fit: cover;">
-              <div>
-                <h6 class="fw-bold mb-0 text-navy">Marcus Vance</h6>
-                <span class="small text-muted">VP Operations, Midwest Civil</span>
+            <p class="testimonial-text fst-italic text-dark small">"PowerRent is our single call for temporary power across all our Midwest bridge construction packages. Equipment is always clean, load-bank verified, and delivered on the hour."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/team/team-1.jpg" alt="Marcus Vance" class="author-avatar">
+              <div class="testimonial-author-copy">
+                <h6 class="author-name mb-0 text-navy">Marcus Vance</h6>
+                <span class="author-role small text-muted">VP Operations, Midwest Civil</span>
               </div>
             </div>
           </div>
@@ -474,11 +477,11 @@
   </section>
 
   <!-- SECTION 8: CONTACT CTA -->
-  <section class="section-padding text-center position-relative" style="background: linear-gradient(135deg, #101c2c 0%, #1a2f4c 100%);">
+  <section class="section-padding text-center position-relative home2-contact-cta">
     <div class="container py-4 position-relative z-1">
       <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase mb-3"><i class="bi bi-lightning-charge-fill me-1"></i> Rapid 24/7 Mobilization</span>
-      <h2 class="display-5 fw-bold text-white mb-3">Ready to Power Your Next Site?</h2>
-      <p class="lead text-white-50 max-w-700 mx-auto mb-4">
+      <h2 class="display-5 fw-bold mb-3">Ready to Power Your Next Site?</h2>
+      <p class="lead max-w-700 mx-auto mb-4">
         Our electrical power specialists are available 24/7 to size, deliver, and commission the exact generator package you need.
       </p>
       <div class="cta-btn-group d-flex flex-wrap justify-content-center gap-3">

@@ -8,6 +8,11 @@
   background-color: var(--pr-bg);
 }
 
+body.dashboard-page {
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
 /* Sidebar */
 .dashboard-sidebar {
   width: 270px;

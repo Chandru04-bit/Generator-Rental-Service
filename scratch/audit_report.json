@@ -1,0 +1,4258 @@
+[
+  {
+    "page": "index.html",
+    "breakpoint": 320,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 296,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "breakpoint": 360,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 336,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "breakpoint": 375,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 351,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "breakpoint": 390,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 366,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "index.html",
+    "breakpoint": 414,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "24/7 Prime & Emergency Power Services",
+        "width": 390,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "breakpoint": 320,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "Commercial & Industrial Power",
+        "width": 296,
+        "height": 56,
+        "lineCount": 3
+      },
+      {
+        "text": "Ready For Immediate Dispatch",
+        "width": 296,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "home-2.html",
+    "breakpoint": 360,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "Commercial & Industrial Power",
+        "width": 336,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "pages/services.html",
+    "breakpoint": 320,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "Silent Entertainment Power",
+        "width": 296,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "pages/fleet.html",
+    "issues": [
+      "Broken images: file:///C:/Users/satha/OneDrive/Desktop/Generator%20Rental%20Service/assets/images/generators/gen-125-250-1.jpg, file:///C:/Users/satha/OneDrive/Desktop/Generator%20Rental%20Service/assets/images/generators/gen-125-250-2.jpg, file:///C:/Users/satha/OneDrive/Desktop/Generator%20Rental%20Service/assets/images/generators/gen-300-500-1.jpg, file:///C:/Users/satha/OneDrive/Desktop/Generator%20Rental%20Service/assets/images/generators/gen-300-500-2.jpg, file:///C:/Users/satha/OneDrive/Desktop/Generator%20Rental%20Service/assets/images/generators/gen-above-500-1.jpg"
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 320,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "Predictable Power Economics",
+        "width": 296,
+        "height": 56,
+        "lineCount": 3
+      },
+      {
+        "text": "Comprehensive Fleet Matrix",
+        "width": 296,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 1024,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reserve",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/pricing.html",
+    "breakpoint": 1280,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Now",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "pages/booking.html",
+    "breakpoint": 320,
+    "type": "SECTION_TAG_WRAPPING",
+    "tags": [
+      {
+        "text": "Transparency & Compliance",
+        "width": 296,
+        "height": 56,
+        "lineCount": 3
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "New Generator Bookin",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Request Fuel Dispatc",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View All Bookings →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Delivery Sche",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Review Booking Invoi",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "New Generator Bookin",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Request Fuel Dispatc",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View All Bookings →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Delivery Sche",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Review Booking Invoi",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "New Generator Bookin",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Request Fuel Dispatc",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View All Bookings →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Delivery Sche",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Review Booking Invoi",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "New Generator Bookin",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Request Fuel Dispatc",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View All Bookings →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Delivery Sche",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Review Booking Invoi",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "New Generator Bookin",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Request Fuel Dispatc",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View All Bookings →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Delivery Sche",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Review Booking Invoi",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "New Generator Bookin",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Request Fuel Dispatc",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View All Bookings →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Delivery Sche",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Review Booking Invoi",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "New Generator Bookin",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View Live Telemetry",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Request Fuel Dispatc",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Browse Fleet Catalog",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Telemetry →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Telemetry Dashboard",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "View All Bookings →",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Manage Delivery Sche",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Review Booking Invoi",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/dashboard.html",
+    "breakpoint": 1024,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "All Bookings",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Active",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In to Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "All Bookings",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Active",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In to Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "All Bookings",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Active",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In to Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "All Bookings",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Active",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In to Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "All Bookings",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Active",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In to Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "All Bookings",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Active",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In to Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "All Bookings",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Active",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In to Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/my-bookings.html",
+    "breakpoint": 1024,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Book Generator",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Confirmed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Completed",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/active-rentals.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/rental-history.html",
+    "breakpoint": 1024,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Rent Equipment",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoices.html",
+    "breakpoint": 1024,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Back to Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Back to Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Back to Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Back to Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Back to Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Back to Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Back to Invoices",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/invoice-details.html",
+    "breakpoint": 1024,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "Print Invoice",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Download PDF",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 320,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reset",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 360,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reset",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 375,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reset",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 390,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reset",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 414,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reset",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 480,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reset",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 768,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Sign In",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Reset",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  },
+  {
+    "page": "customer/profile.html",
+    "breakpoint": 1024,
+    "type": "PROBLEM_BUTTONS",
+    "buttons": [
+      {
+        "text": "RTL",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Create Account",
+        "w": null,
+        "h": null,
+        "overflows": true
+      },
+      {
+        "text": "Save Changes",
+        "w": null,
+        "h": null,
+        "overflows": true
+      }
+    ]
+  }
+]

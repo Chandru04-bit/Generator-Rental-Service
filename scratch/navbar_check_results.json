@@ -1,0 +1,1280 @@
+[
+  {
+    "page": "index.html",
+    "width": 320,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 106,
+      "brandHeight": 22,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 320,
+      "windowWidth": 320,
+      "themeBtn": {
+        "w": 34,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 251,
+        "h": 32
+      },
+      "dashBtn": {
+        "w": 143,
+        "h": 32
+      },
+      "authBtn": {
+        "w": 143,
+        "h": 32
+      }
+    }
+  },
+  {
+    "page": "index.html",
+    "width": 375,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 120,
+      "brandHeight": 25,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 375,
+      "windowWidth": 375,
+      "themeBtn": {
+        "w": 34,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 337,
+        "h": 32
+      },
+      "dashBtn": {
+        "w": 166,
+        "h": 32
+      },
+      "authBtn": {
+        "w": 166,
+        "h": 32
+      }
+    }
+  },
+  {
+    "page": "index.html",
+    "width": 414,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 130,
+      "brandHeight": 27,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 414,
+      "windowWidth": 414,
+      "themeBtn": {
+        "w": 41,
+        "h": 35
+      },
+      "dirBtn": {
+        "w": 376,
+        "h": 35
+      },
+      "dashBtn": {
+        "w": 376,
+        "h": 35
+      },
+      "authBtn": {
+        "w": 376,
+        "h": 35
+      }
+    }
+  },
+  {
+    "page": "index.html",
+    "width": 768,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 768,
+      "windowWidth": 768,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 62,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 125,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "index.html",
+    "width": 1024,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1009,
+      "windowWidth": 1024,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "index.html",
+    "width": 1440,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": false,
+      "brandWidth": 202,
+      "brandHeight": 42,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1425,
+      "windowWidth": 1440,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/booking.html",
+    "width": 320,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 106,
+      "brandHeight": 22,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 320,
+      "windowWidth": 320,
+      "themeBtn": {
+        "w": 34,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 251,
+        "h": 32
+      },
+      "dashBtn": {
+        "w": 143,
+        "h": 32
+      },
+      "authBtn": {
+        "w": 143,
+        "h": 32
+      }
+    }
+  },
+  {
+    "page": "pages/booking.html",
+    "width": 375,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 120,
+      "brandHeight": 25,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 375,
+      "windowWidth": 375,
+      "themeBtn": {
+        "w": 38,
+        "h": 34
+      },
+      "dirBtn": {
+        "w": 293,
+        "h": 34
+      },
+      "dashBtn": {
+        "w": 166,
+        "h": 34
+      },
+      "authBtn": {
+        "w": 166,
+        "h": 34
+      }
+    }
+  },
+  {
+    "page": "pages/booking.html",
+    "width": 414,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 130,
+      "brandHeight": 27,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 414,
+      "windowWidth": 414,
+      "themeBtn": {
+        "w": 44,
+        "h": 36
+      },
+      "dirBtn": {
+        "w": 324,
+        "h": 36
+      },
+      "dashBtn": {
+        "w": 184,
+        "h": 36
+      },
+      "authBtn": {
+        "w": 184,
+        "h": 36
+      }
+    }
+  },
+  {
+    "page": "pages/booking.html",
+    "width": 768,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 768,
+      "windowWidth": 768,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/booking.html",
+    "width": 1024,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1009,
+      "windowWidth": 1024,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/booking.html",
+    "width": 1440,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": false,
+      "brandWidth": 202,
+      "brandHeight": 42,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1425,
+      "windowWidth": 1440,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/fleet.html",
+    "width": 320,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 106,
+      "brandHeight": 22,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 320,
+      "windowWidth": 320,
+      "themeBtn": {
+        "w": 34,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 251,
+        "h": 32
+      },
+      "dashBtn": {
+        "w": 143,
+        "h": 32
+      },
+      "authBtn": {
+        "w": 143,
+        "h": 32
+      }
+    }
+  },
+  {
+    "page": "pages/fleet.html",
+    "width": 375,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 120,
+      "brandHeight": 25,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 375,
+      "windowWidth": 375,
+      "themeBtn": {
+        "w": 38,
+        "h": 34
+      },
+      "dirBtn": {
+        "w": 293,
+        "h": 34
+      },
+      "dashBtn": {
+        "w": 166,
+        "h": 34
+      },
+      "authBtn": {
+        "w": 166,
+        "h": 34
+      }
+    }
+  },
+  {
+    "page": "pages/fleet.html",
+    "width": 414,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 130,
+      "brandHeight": 27,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 414,
+      "windowWidth": 414,
+      "themeBtn": {
+        "w": 44,
+        "h": 36
+      },
+      "dirBtn": {
+        "w": 324,
+        "h": 36
+      },
+      "dashBtn": {
+        "w": 184,
+        "h": 36
+      },
+      "authBtn": {
+        "w": 184,
+        "h": 36
+      }
+    }
+  },
+  {
+    "page": "pages/fleet.html",
+    "width": 768,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 768,
+      "windowWidth": 768,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/fleet.html",
+    "width": 1024,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1009,
+      "windowWidth": 1024,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/fleet.html",
+    "width": 1440,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": false,
+      "brandWidth": 202,
+      "brandHeight": 42,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1425,
+      "windowWidth": 1440,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/pricing.html",
+    "width": 320,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 106,
+      "brandHeight": 22,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 320,
+      "windowWidth": 320,
+      "themeBtn": {
+        "w": 34,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 251,
+        "h": 32
+      },
+      "dashBtn": {
+        "w": 143,
+        "h": 32
+      },
+      "authBtn": {
+        "w": 143,
+        "h": 32
+      }
+    }
+  },
+  {
+    "page": "pages/pricing.html",
+    "width": 375,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 120,
+      "brandHeight": 25,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 375,
+      "windowWidth": 375,
+      "themeBtn": {
+        "w": 38,
+        "h": 34
+      },
+      "dirBtn": {
+        "w": 293,
+        "h": 34
+      },
+      "dashBtn": {
+        "w": 166,
+        "h": 34
+      },
+      "authBtn": {
+        "w": 166,
+        "h": 34
+      }
+    }
+  },
+  {
+    "page": "pages/pricing.html",
+    "width": 414,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 130,
+      "brandHeight": 27,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 414,
+      "windowWidth": 414,
+      "themeBtn": {
+        "w": 44,
+        "h": 36
+      },
+      "dirBtn": {
+        "w": 324,
+        "h": 36
+      },
+      "dashBtn": {
+        "w": 184,
+        "h": 36
+      },
+      "authBtn": {
+        "w": 184,
+        "h": 36
+      }
+    }
+  },
+  {
+    "page": "pages/pricing.html",
+    "width": 768,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 768,
+      "windowWidth": 768,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/pricing.html",
+    "width": 1024,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1009,
+      "windowWidth": 1024,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/pricing.html",
+    "width": 1440,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": false,
+      "brandWidth": 202,
+      "brandHeight": 42,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1425,
+      "windowWidth": 1440,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/contact.html",
+    "width": 320,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 106,
+      "brandHeight": 22,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 320,
+      "windowWidth": 320,
+      "themeBtn": {
+        "w": 34,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 251,
+        "h": 32
+      },
+      "dashBtn": {
+        "w": 143,
+        "h": 32
+      },
+      "authBtn": {
+        "w": 143,
+        "h": 32
+      }
+    }
+  },
+  {
+    "page": "pages/contact.html",
+    "width": 375,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 120,
+      "brandHeight": 25,
+      "togglerClicked": true
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 375,
+      "windowWidth": 375,
+      "themeBtn": {
+        "w": 38,
+        "h": 34
+      },
+      "dirBtn": {
+        "w": 293,
+        "h": 34
+      },
+      "dashBtn": {
+        "w": 166,
+        "h": 34
+      },
+      "authBtn": {
+        "w": 166,
+        "h": 34
+      }
+    }
+  },
+  {
+    "page": "pages/contact.html",
+    "width": 414,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 130,
+      "brandHeight": 27,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 414,
+      "windowWidth": 414,
+      "themeBtn": {
+        "w": 44,
+        "h": 36
+      },
+      "dirBtn": {
+        "w": 376,
+        "h": 36
+      },
+      "dashBtn": {
+        "w": 376,
+        "h": 36
+      },
+      "authBtn": {
+        "w": 376,
+        "h": 36
+      }
+    }
+  },
+  {
+    "page": "pages/contact.html",
+    "width": 768,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 768,
+      "windowWidth": 768,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/contact.html",
+    "width": 1024,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": true,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1009,
+      "windowWidth": 1024,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "pages/contact.html",
+    "width": 1440,
+    "navState": {
+      "hasToggler": true,
+      "togglerVisible": false,
+      "brandWidth": 202,
+      "brandHeight": 42,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": true,
+      "bodyHScroll": false,
+      "scrollWidth": 1425,
+      "windowWidth": 1440,
+      "themeBtn": {
+        "w": 38,
+        "h": 38
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 38
+      },
+      "dashBtn": {
+        "w": 123,
+        "h": 38
+      },
+      "authBtn": {
+        "w": 89,
+        "h": 38
+      }
+    }
+  },
+  {
+    "page": "auth/login.html",
+    "width": 320,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": 106,
+      "brandHeight": 22,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 320,
+      "windowWidth": 320,
+      "themeBtn": {
+        "w": 32,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 30,
+        "h": 32
+      },
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "auth/login.html",
+    "width": 375,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": 120,
+      "brandHeight": 25,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 375,
+      "windowWidth": 375,
+      "themeBtn": {
+        "w": 32,
+        "h": 32
+      },
+      "dirBtn": {
+        "w": 32,
+        "h": 32
+      },
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "auth/login.html",
+    "width": 414,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": 130,
+      "brandHeight": 27,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 414,
+      "windowWidth": 414,
+      "themeBtn": {
+        "w": 34,
+        "h": 34
+      },
+      "dirBtn": {
+        "w": 55,
+        "h": 34
+      },
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "auth/login.html",
+    "width": 768,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 768,
+      "windowWidth": 768,
+      "themeBtn": {
+        "w": 36,
+        "h": 36
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 36
+      },
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "auth/login.html",
+    "width": 1024,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": 154,
+      "brandHeight": 32,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 1024,
+      "windowWidth": 1024,
+      "themeBtn": {
+        "w": 36,
+        "h": 36
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 36
+      },
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "auth/login.html",
+    "width": 1440,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": 170,
+      "brandHeight": 36,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 1440,
+      "windowWidth": 1440,
+      "themeBtn": {
+        "w": 36,
+        "h": 36
+      },
+      "dirBtn": {
+        "w": 61,
+        "h": 36
+      },
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "customer/dashboard.html",
+    "width": 320,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": null,
+      "brandHeight": null,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 320,
+      "windowWidth": 320,
+      "themeBtn": null,
+      "dirBtn": null,
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "customer/dashboard.html",
+    "width": 375,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": null,
+      "brandHeight": null,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 375,
+      "windowWidth": 375,
+      "themeBtn": null,
+      "dirBtn": null,
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "customer/dashboard.html",
+    "width": 414,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": null,
+      "brandHeight": null,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 414,
+      "windowWidth": 414,
+      "themeBtn": null,
+      "dirBtn": null,
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "customer/dashboard.html",
+    "width": 768,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": null,
+      "brandHeight": null,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 768,
+      "windowWidth": 768,
+      "themeBtn": null,
+      "dirBtn": null,
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "customer/dashboard.html",
+    "width": 1024,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": null,
+      "brandHeight": null,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 1009,
+      "windowWidth": 1024,
+      "themeBtn": null,
+      "dirBtn": null,
+      "dashBtn": null,
+      "authBtn": null
+    }
+  },
+  {
+    "page": "customer/dashboard.html",
+    "width": 1440,
+    "navState": {
+      "hasToggler": false,
+      "togglerVisible": false,
+      "brandWidth": null,
+      "brandHeight": null,
+      "togglerClicked": false
+    },
+    "openCheck": {
+      "isOpen": false,
+      "bodyHScroll": false,
+      "scrollWidth": 1425,
+      "windowWidth": 1440,
+      "themeBtn": null,
+      "dirBtn": null,
+      "dashBtn": null,
+      "authBtn": null
+    }
+  }
+]
