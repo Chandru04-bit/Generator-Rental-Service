@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generator Rental Pricing & Rates – Daily, Weekly, Monthly | PowerRent</title>
+  <meta name="description" content="Transparent generator hire rates: daily, weekly, and monthly rental tiers with deposit schedules and delivery fees.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: PRICING HERO -->
+  <header class="page-banner" style="background-image: url('../assets/images/hero/hero-pricing.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 fw-bold text-white mb-2">Transparent Generator Rental Rates</h1>
+      <p class="lead text-white-50 max-w-700">Competitive daily, weekly, and monthly rates. Zero hidden charges with routine maintenance, cellular telemetry, and 24/7 technical support included.</p>
+    </div>
+  </header>
+
+  <!-- SECTION 2: RENTAL PLANS OVERVIEW -->
+  <section class="section-padding bg-white border-bottom">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-tag"><i class="bi bi-shield-check"></i> Predictable Power Economics</span>
+          <h2 class="section-title">Flexible Rental Plans Built for Project Uptime</h2>
+          <p class="lead text-muted mb-4">
+            Whether securing rapid emergency power for an unscheduled plant outage or contracting baseload synchronization across a 12-month infrastructure project, PowerRent provides transparent, volume-discounted rate schedules.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light-grey border">
+                <i class="bi bi-currency-dollar fs-3 text-warning"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Zero Hidden Fees</h6>
+                  <p class="small text-muted mb-0">Transparent quotes detailing fuel, delivery, and cable hire upfront.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light-grey border">
+                <i class="bi bi-graph-down-arrow fs-3 text-success"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Volume Discounts</h6>
+                  <p class="small text-muted mb-0">Automatic 10% discount on weekly hires and 20% on monthly contracts.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light-grey border">
+                <i class="bi bi-clock-history fs-3 text-primary"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">24/7 Dispatch SLA</h6>
+                  <p class="small text-muted mb-0">Guaranteed mobilization windows with live technician tracking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light-grey border">
+                <i class="bi bi-tools fs-3 text-info"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Free Routine Service</h6>
+                  <p class="small text-muted mb-0">All 250-hour oil and filter changes included at zero labor charge.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="../assets/images/about/about-experience.jpg" alt="Power Distribution Infrastructure" class="img-fluid rounded-4 shadow-lg w-100" style="max-height: 440px; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 m-4 p-4 rounded-3 shadow-lg bg-white border" style="max-width: 340px;">
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-warning p-3 text-dark">
+                  <i class="bi bi-check2-circle fs-3"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-0">100% Load-Banked</h5>
+                  <p class="small text-muted mb-0">Every generator is certified under full resistive load prior to dispatch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: DAILY RENTAL TIER -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 order-lg-2">
+          <span class="section-tag"><i class="bi bi-sun"></i> Short-Term Flexibility</span>
+          <h2 class="section-title">Daily Generator Rental</h2>
+          <p class="text-muted mb-4">
+            Designed specifically for short-duration projects, single-day events, concrete pour operations, line utility repairs, and immediate emergency disaster recovery.
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+              <span><strong>1 to 6 Days Rental Term:</strong> Pay only for the exact operational days your site requires.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+              <span><strong>Same-Day Rapid Dispatch:</strong> Deployable within 2 to 4 hours across major metro zones.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+              <span><strong>Turnkey Starter Kit:</strong> Includes full diesel tank, 25m heavy-duty power cables, and certified earth rod.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+              <span><strong>Flexible Extension Option:</strong> Seamlessly transition to weekly billing if your job runs long.</span>
+            </li>
+          </ul>
+          <div class="d-flex gap-3">
+            <a href="booking.html" class="btn btn-pr-primary"><i class="bi bi-calendar-check me-2"></i>Book Daily Rental</a>
+            <a href="fleet.html" class="btn btn-pr-secondary">Explore Fleet</a>
+          </div>
+        </div>
+        <div class="col-lg-7 order-lg-1">
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+            <h4 class="fw-bold mb-3"><i class="bi bi-lightning-charge text-warning me-2"></i>Daily Rate Sample Tiers</h4>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Equipment Model</th>
+                    <th>Capacity</th>
+                    <th>Daily Rate</th>
+                    <th>Deposit</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>VoltMaster Inverter</strong></td>
+                    <td><span class="badge bg-secondary">10 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$65</strong> /day</td>
+                    <td>$300</td>
+                    <td><a href="booking.html?id=gen-10kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>TitanPower Commercial</strong></td>
+                    <td><span class="badge bg-warning text-dark">35 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$140</strong> /day</td>
+                    <td>$600</td>
+                    <td><a href="booking.html?id=gen-35kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cummins Industrial</strong></td>
+                    <td><span class="badge bg-info text-dark">80 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$240</strong> /day</td>
+                    <td>$1,000</td>
+                    <td><a href="booking.html?id=gen-80kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CAT Heavy Duty</strong></td>
+                    <td><span class="badge bg-primary">150 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$380</strong> /day</td>
+                    <td>$1,600</td>
+                    <td><a href="booking.html?id=gen-150kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WEEKLY RENTAL TIER -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="section-tag"><i class="bi bi-calendar-week"></i> Mid-Term Value</span>
+          <h2 class="section-title">Weekly Generator Rental</h2>
+          <div class="badge bg-warning text-dark fs-6 px-3 py-2 mb-3"><i class="bi bi-percent me-1"></i>Automatic 10% Discount Applied</div>
+          <p class="text-muted mb-4">
+            The ideal choice for multi-week commercial construction phases, seasonal agricultural drying, scheduled plant turnarounds, and multi-day outdoor exhibitions.
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-success fs-5"></i>
+              <span><strong>7 to 29 Days Term:</strong> Significant cost savings over cumulative day rates.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-success fs-5"></i>
+              <span><strong>Remote Cellular Telemetry:</strong> Real-time fuel level tracking, engine load monitoring, and remote stop/start.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-success fs-5"></i>
+              <span><strong>Mid-Term Site Inspection:</strong> Free technician wellness check conducted at day 14.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-success fs-5"></i>
+              <span><strong>Guaranteed Equipment Swap:</strong> Immediate replacement in the unlikely event of an engine fault.</span>
+            </li>
+          </ul>
+          <div class="d-flex gap-3">
+            <a href="booking.html" class="btn btn-pr-primary"><i class="bi bi-calendar-check me-2"></i>Book Weekly Rental</a>
+            <a href="contact.html" class="btn btn-pr-secondary">Request Custom Quote</a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-light-grey">
+            <h4 class="fw-bold mb-3"><i class="bi bi-graph-up-arrow text-success me-2"></i>Weekly Rate Sample Tiers</h4>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0 bg-white rounded-3">
+                <thead class="table-light">
+                  <tr>
+                    <th>Equipment Model</th>
+                    <th>Capacity</th>
+                    <th>Weekly Rate</th>
+                    <th>Effective Daily</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>EcoPower Canopy</strong></td>
+                    <td><span class="badge bg-secondary">18 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$570</strong> /wk</td>
+                    <td><span class="text-success fw-bold">$81.42</span></td>
+                    <td><a href="booking.html?id=gen-18kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Perkins Heavy Standby</strong></td>
+                    <td><span class="badge bg-warning text-dark">45 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$1,050</strong> /wk</td>
+                    <td><span class="text-success fw-bold">$150.00</span></td>
+                    <td><a href="booking.html?id=gen-45kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Volvo Penta Ultra-Quiet</strong></td>
+                    <td><span class="badge bg-info text-dark">100 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$1,740</strong> /wk</td>
+                    <td><span class="text-success fw-bold">$248.57</span></td>
+                    <td><a href="booking.html?id=gen-100kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cummins Powerhouse</strong></td>
+                    <td><span class="badge bg-primary">250 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$3,120</strong> /wk</td>
+                    <td><span class="text-success fw-bold">$445.71</span></td>
+                    <td><a href="booking.html?id=gen-250kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: MONTHLY RENTAL TIER -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 order-lg-2">
+          <span class="section-tag"><i class="bi bi-building"></i> Long-Term Baseload</span>
+          <h2 class="section-title">Monthly Generator Rental</h2>
+          <div class="badge bg-success text-white fs-6 px-3 py-2 mb-3"><i class="bi bi-stars me-1"></i>Automatic 20% Discount Applied</div>
+          <p class="text-muted mb-4">
+            Engineered for long-duration infrastructure projects, seasonal manufacturing runs, mining camps, and permanent microgrid bridging solutions.
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span><strong>30+ Days Term:</strong> Maximum long-term economy with consolidated monthly invoicing.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span><strong>Full Maintenance Inclusions:</strong> All routine 250-hour oil, air, and fuel filter service packages covered at no cost.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span><strong>Dedicated Key Account Engineer:</strong> Single point of contact for dispatch, fuel logistics, and technical modifications.</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span><strong>Auxiliary Bulk Fuel Integration:</strong> Seamless pairing with 1,000L to 10,000L external double-walled fuel bowsers.</span>
+            </li>
+          </ul>
+          <div class="d-flex gap-3">
+            <a href="booking.html" class="btn btn-pr-primary"><i class="bi bi-calendar-check me-2"></i>Book Monthly Rental</a>
+            <a href="contact.html" class="btn btn-pr-secondary">Consult an Engineer</a>
+          </div>
+        </div>
+        <div class="col-lg-7 order-lg-1">
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+            <h4 class="fw-bold mb-3"><i class="bi bi-shield-lock text-primary me-2"></i>Monthly Rate Sample Tiers</h4>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Equipment Model</th>
+                    <th>Capacity</th>
+                    <th>Monthly Rate</th>
+                    <th>Effective Daily</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Kohler Synchronized</strong></td>
+                    <td><span class="badge bg-dark">350 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$13,500</strong> /mo</td>
+                    <td><span class="text-success fw-bold">$450.00</span></td>
+                    <td><a href="booking.html?id=gen-350kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CAT Heavy Container</strong></td>
+                    <td><span class="badge bg-dark">500 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$17,800</strong> /mo</td>
+                    <td><span class="text-success fw-bold">$593.33</span></td>
+                    <td><a href="booking.html?id=gen-500kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>MTU MegaStation</strong></td>
+                    <td><span class="badge bg-danger">750 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$24,500</strong> /mo</td>
+                    <td><span class="text-success fw-bold">$816.66</span></td>
+                    <td><a href="booking.html?id=gen-750kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cummins Container Unit</strong></td>
+                    <td><span class="badge bg-danger">1,250 kVA</span></td>
+                    <td><strong class="text-navy fs-5">$34,500</strong> /mo</td>
+                    <td><span class="text-success fw-bold">$1,150.00</span></td>
+                    <td><a href="booking.html?id=gen-1250kva" class="btn btn-sm btn-pr-primary">Reserve</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: ADDITIONAL CHARGES & VALUE-ADDED SERVICES -->
+  <section class="section-padding bg-white border-bottom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-receipt"></i> Complete Transparency</span>
+        <h2 class="section-title">Additional Services & Ancillary Charges</h2>
+        <p class="section-subtitle">
+          We believe in 100% upfront pricing. Here is our standardized fee schedule for logistical dispatch, certified cabling, fuel management, and on-site engineering.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 border p-4 rounded-4 shadow-sm">
+            <div class="rounded-3 bg-light p-3 text-warning mb-3 d-inline-block" style="width: fit-content;">
+              <i class="bi bi-truck fs-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Delivery & Offloading</h5>
+            <p class="text-muted small mb-3">Hiab crane truck mobilization and precise on-site positioning.</p>
+            <div class="fs-4 fw-bold text-navy mb-1">$45 – $750</div>
+            <span class="text-muted small">Based on equipment weight and site radius</span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 border p-4 rounded-4 shadow-sm">
+            <div class="rounded-3 bg-light p-3 text-primary mb-3 d-inline-block" style="width: fit-content;">
+              <i class="bi bi-fuel-pump fs-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Automated Fuel Refills</h5>
+            <p class="text-muted small mb-3">Scheduled bulk diesel or low-emission HVO bio-fuel delivery.</p>
+            <div class="fs-4 fw-bold text-navy mb-1">Index + $0.25/gal</div>
+            <span class="text-muted small">Real-time telemetry triggered replenishment</span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 border p-4 rounded-4 shadow-sm">
+            <div class="rounded-3 bg-light p-3 text-success mb-3 d-inline-block" style="width: fit-content;">
+              <i class="bi bi-hdd-network fs-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Distribution Panels & Cables</h5>
+            <p class="text-muted small mb-3">Cam-Lok power cables, rubber distribution boards, and ramp protectors.</p>
+            <div class="fs-4 fw-bold text-navy mb-1">$15 – $85 /day</div>
+            <span class="text-muted small">Custom multi-tap configurations available</span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 border p-4 rounded-4 shadow-sm">
+            <div class="rounded-3 bg-light p-3 text-info mb-3 d-inline-block" style="width: fit-content;">
+              <i class="bi bi-person-gear fs-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Certified Electrical Tie-In</h5>
+            <p class="text-muted small mb-3">Licensed electrical engineer connection to main switchgear or ATS.</p>
+            <div class="fs-4 fw-bold text-navy mb-1">$120 /hour</div>
+            <span class="text-muted small">Includes formal electrical compliance sign-off</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: PRICING COMPARISON TABLE -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-table"></i> Comprehensive Fleet Matrix</span>
+        <h2 class="section-title">Fleet Rental Pricing Comparison</h2>
+        <p class="section-subtitle">
+          Transparent rates across all 6 capacity brackets, fuel compatibility, refundable security deposits, and standard delivery fees.
+        </p>
+      </div>
+
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0 pricing-table text-nowrap">
+            <thead>
+              <tr>
+                <th>Generator Model</th>
+                <th>Capacity</th>
+                <th>Fuel Compatibility</th>
+                <th>Daily Rate</th>
+                <th>Weekly Rate</th>
+                <th>Monthly Rate</th>
+                <th>Security Deposit</th>
+                <th>Delivery Fee</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>VoltMaster 10kVA Inverter</strong></td>
+                <td><span class="badge bg-secondary">10 kVA</span></td>
+                <td>Ultra-Clean Diesel</td>
+                <td><strong class="text-navy">$65</strong> / day</td>
+                <td>$390 / wk</td>
+                <td>$1,450 / mo</td>
+                <td>$300</td>
+                <td>$45</td>
+                <td><a href="booking.html?id=gen-10kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>EcoPower 18kVA Canopy</strong></td>
+                <td><span class="badge bg-secondary">18 kVA</span></td>
+                <td>Diesel / HVO</td>
+                <td><strong class="text-navy">$95</strong> / day</td>
+                <td>$570 / wk</td>
+                <td>$2,100 / mo</td>
+                <td>$400</td>
+                <td>$55</td>
+                <td><a href="booking.html?id=gen-18kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>TitanPower 35kVA Commercial</strong></td>
+                <td><span class="badge bg-warning text-dark">35 kVA</span></td>
+                <td>Ultra-Low Sulfur</td>
+                <td><strong class="text-navy">$140</strong> / day</td>
+                <td>$840 / wk</td>
+                <td>$2,950 / mo</td>
+                <td>$600</td>
+                <td>$75</td>
+                <td><a href="booking.html?id=gen-35kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>Perkins 45kVA Heavy Standby</strong></td>
+                <td><span class="badge bg-warning text-dark">45 kVA</span></td>
+                <td>Industrial Diesel</td>
+                <td><strong class="text-navy">$175</strong> / day</td>
+                <td>$1,050 / wk</td>
+                <td>$3,500 / mo</td>
+                <td>$750</td>
+                <td>$85</td>
+                <td><a href="booking.html?id=gen-45kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>Cummins 80kVA Industrial Power</strong></td>
+                <td><span class="badge bg-info text-dark">80 kVA</span></td>
+                <td>Diesel / Bio-Blend</td>
+                <td><strong class="text-navy">$240</strong> / day</td>
+                <td>$1,440 / wk</td>
+                <td>$4,800 / mo</td>
+                <td>$1,000</td>
+                <td>$110</td>
+                <td><a href="booking.html?id=gen-80kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>Volvo Penta 100kVA Ultra-Quiet</strong></td>
+                <td><span class="badge bg-info text-dark">100 kVA</span></td>
+                <td>Ultra-Low Sulfur</td>
+                <td><strong class="text-navy">$290</strong> / day</td>
+                <td>$1,740 / wk</td>
+                <td>$5,600 / mo</td>
+                <td>$1,200</td>
+                <td>$125</td>
+                <td><a href="booking.html?id=gen-100kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>CAT 150kVA Heavy Duty Diesel</strong></td>
+                <td><span class="badge bg-primary">150 kVA</span></td>
+                <td>Diesel / HVO</td>
+                <td><strong class="text-navy">$380</strong> / day</td>
+                <td>$2,280 / wk</td>
+                <td>$7,200 / mo</td>
+                <td>$1,600</td>
+                <td>$160</td>
+                <td><a href="booking.html?id=gen-150kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>Cummins 250kVA Powerhouse</strong></td>
+                <td><span class="badge bg-primary">250 kVA</span></td>
+                <td>Industrial Diesel</td>
+                <td><strong class="text-navy">$520</strong> / day</td>
+                <td>$3,120 / wk</td>
+                <td>$9,800 / mo</td>
+                <td>$2,200</td>
+                <td>$200</td>
+                <td><a href="booking.html?id=gen-250kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>Kohler 350kVA Synchronized</strong></td>
+                <td><span class="badge bg-dark">350 kVA</span></td>
+                <td>Ultra-Clean Diesel</td>
+                <td><strong class="text-navy">$720</strong> / day</td>
+                <td>$4,320 / wk</td>
+                <td>$13,500 / mo</td>
+                <td>$3,000</td>
+                <td>$280</td>
+                <td><a href="booking.html?id=gen-350kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>CAT 500kVA Heavy Container</strong></td>
+                <td><span class="badge bg-dark">500 kVA</span></td>
+                <td>Heavy Diesel</td>
+                <td><strong class="text-navy">$950</strong> / day</td>
+                <td>$5,700 / wk</td>
+                <td>$17,800 / mo</td>
+                <td>$4,000</td>
+                <td>$350</td>
+                <td><a href="booking.html?id=gen-500kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>MTU 750kVA MegaStation</strong></td>
+                <td><span class="badge bg-danger">750 kVA</span></td>
+                <td>Ultra-Clean / HVO</td>
+                <td><strong class="text-navy">$1,350</strong> / day</td>
+                <td>$8,100 / wk</td>
+                <td>$24,500 / mo</td>
+                <td>$5,500</td>
+                <td>$500</td>
+                <td><a href="booking.html?id=gen-750kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+              <tr>
+                <td><strong>Cummins 1250kVA Container Unit</strong></td>
+                <td><span class="badge bg-danger">1,250 kVA</span></td>
+                <td>Heavy Duty Diesel</td>
+                <td><strong class="text-navy">$1,950</strong> / day</td>
+                <td>$11,700 / wk</td>
+                <td>$34,500 / mo</td>
+                <td>$8,000</td>
+                <td>$750</td>
+                <td><a href="booking.html?id=gen-1250kva" class="btn btn-sm btn-pr-primary">Book Now</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: PRICING FAQS -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-question-circle"></i> Clear Answers</span>
+        <h2 class="section-title">Frequently Asked Pricing Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about billing cycles, deposit refunds, fuel policies, and contract extensions.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion custom-accordion" id="pricingFaqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq1">
+                  How does the security deposit work, and when is it refunded?
+                </button>
+              </h2>
+              <div id="pfaq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaqAccordion">
+                <div class="accordion-body">
+                  A refundable security deposit is authorized on your payment card or corporate purchase order at the time of reservation. Once our logistics team conducts the post-rental inspection (confirming no physical damage, fuel level check, and cable returns), the deposit hold is released in full within 48 business hours.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq2">
+                  What is included in the base generator rental rate?
+                </button>
+              </h2>
+              <div id="pfaq2" class="accordion-collapse collapse" data-bs-parent="#pricingFaqAccordion">
+                <div class="accordion-body">
+                  All base rates include the certified generator set, sound-attenuated acoustic canopy, integral double-walled fuel tank, basic cable set (25m), cellular telemetry monitoring, and all scheduled routine maintenance (such as 250-hour oil/filter changes). Delivery, fuel consumption, and specialized electrical tie-ins are itemized separately for complete transparency.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq3">
+                  How does the fuel billing policy work?
+                </button>
+              </h2>
+              <div id="pfaq3" class="accordion-collapse collapse" data-bs-parent="#pricingFaqAccordion">
+                <div class="accordion-body">
+                  All generators are dispatched with a 100% full fuel tank. You may refill the generator on-site prior to collection using clean, certified diesel or HVO fuel. Alternatively, PowerRent's fuel dispatch trucks can refuel the generator on site at standard local fuel index rates plus a nominal pumping fee.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq4">
+                  Can I extend my rental term after the equipment has been delivered?
+                </button>
+              </h2>
+              <div id="pfaq4" class="accordion-collapse collapse" data-bs-parent="#pricingFaqAccordion">
+                <div class="accordion-body">
+                  Yes. Simply notify your dedicated account manager or submit an extension request directly through the customer dashboard at least 24 hours prior to scheduled collection. If your extension moves your rental into weekly or monthly thresholds, retroactive discounts are automatically applied to your account.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq5">
+                  Are there runtime hour restrictions or overtime penalties?
+                </button>
+              </h2>
+              <div id="pfaq5" class="accordion-collapse collapse" data-bs-parent="#pricingFaqAccordion">
+                <div class="accordion-body">
+                  Our standard daily and weekly rates cover up to 12 running hours per calendar day (84 hours/week). Continuous 24/7 baseload operation packages are available with custom maintenance intervals at nominal hourly surplus rates, clearly specified on your formal quote.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: BOOKING CTA BANNER -->
+  <section class="section-padding text-center position-relative" style="background: linear-gradient(135deg, #101c2c 0%, #1a2f4c 100%);">
+    <div class="container py-4 position-relative z-1">
+      <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase mb-3"><i class="bi bi-lightning-charge-fill me-1"></i> Instant Online Reservations</span>
+      <h2 class="display-5 fw-bold text-white mb-3">Ready to Reserve Equipment with Transparent Rates?</h2>
+      <p class="lead text-white-50 max-w-700 mx-auto mb-4">
+        Calculate exact rental pricing online with zero obligation, or speak directly with our senior power engineers for multi-megawatt project quotes.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="booking.html" class="btn btn-pr-primary btn-lg px-4"><i class="bi bi-calendar-check me-2"></i>Book a Generator Online</a>
+        <a href="fleet.html" class="btn btn-pr-outline btn-lg px-4"><i class="bi bi-grid me-2"></i>Explore Generator Fleet</a>
+        <a href="contact.html" class="btn btn-light btn-lg px-4 text-dark fw-bold"><i class="bi bi-telephone-outbound me-2"></i>Speak to Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="d-inline-block mb-3">
+            <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="fleet.html"><i class="bi bi-chevron-right"></i>Generator Fleet</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="fleet.html?category=5-20"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="fleet.html?category=25-50"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="fleet.html?category=60-100"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="fleet.html?category=125-250"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="fleet.html?category=300-500"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="fleet.html?category=above-500"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

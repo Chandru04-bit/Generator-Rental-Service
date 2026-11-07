@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generator Fleet – 5 kVA to 1,250 kVA Equipment Rental | PowerRent</title>
+  <meta name="description" content="Explore PowerRent's comprehensive fleet of silenced diesel generators from 5 kVA to 1,250 kVA. Filter by capacity, fuel type, and price for construction, industrial, and event power.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================================================================
+       1. FLEET HERO SECTION
+       =================================================================== -->
+  <header class="page-banner" style="background-image: url('../assets/images/hero/hero-fleet.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-3">
+          <li class="breadcrumb-item"><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item active text-accent" aria-current="page">Generator Fleet</li>
+        </ol>
+      </nav>
+      <div class="mb-3">
+        <span class="badge bg-accent text-dark px-3 py-2 fw-bold text-uppercase letter-spacing-1">
+          <i class="bi bi-lightning-charge-fill me-1"></i> 350+ Silenced Units &bull; 5 kVA to 1,250 kVA
+        </span>
+      </div>
+      <h1 class="display-4 fw-bold text-white mb-3">Industrial Generator Rental Fleet</h1>
+      <p class="lead text-white-50 max-w-700 mb-0">
+        Engineered for prime, standby, and continuous operations in demanding environments. Every generator set is Tier 4 Final compliant, acoustic canopy enclosed, and 100% full load-bank tested.
+      </p>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       2. GENERATOR CATEGORIES & FILTER PILLS
+       =================================================================== -->
+  <section class="py-4 bg-white border-bottom shadow-sm">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div class="d-flex flex-wrap gap-2" id="fleet-category-pills">
+          <button class="btn btn-sm btn-outline-dark category-btn active" data-category="all">
+            <i class="bi bi-grid me-1"></i>All Capacities
+          </button>
+          <button class="btn btn-sm btn-outline-dark category-btn" data-category="5-20">
+            5–20 kVA
+          </button>
+          <button class="btn btn-sm btn-outline-dark category-btn" data-category="25-50">
+            25–50 kVA
+          </button>
+          <button class="btn btn-sm btn-outline-dark category-btn" data-category="60-100">
+            60–100 kVA
+          </button>
+          <button class="btn btn-sm btn-outline-dark category-btn" data-category="125-250">
+            125–250 kVA
+          </button>
+          <button class="btn btn-sm btn-outline-dark category-btn" data-category="300-500">
+            300–500 kVA
+          </button>
+          <button class="btn btn-sm btn-outline-dark category-btn" data-category="above-500">
+            Above 500 kVA
+          </button>
+        </div>
+        <div class="text-muted small fw-semibold" id="fleet-result-count">
+          Showing all generator models
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3. FEATURED GENERATORS FLEET GRID (LIVE SEARCH & FILTER ENGINE)
+       =================================================================== -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <!-- Search, Select & Sort Filter Card -->
+      <div class="filter-card p-4 rounded-4 bg-white border shadow-sm mb-5">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-4 col-md-6">
+            <label class="form-label small text-muted mb-1" for="fleet-search-input">Search Generator Model or Brand</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control" id="fleet-search-input" placeholder="e.g. Cummins, Perkins, CAT, 100kVA...">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <label class="form-label small text-muted mb-1" for="fleet-category-select">Capacity Tier</label>
+            <select class="form-select" id="fleet-category-select">
+              <option value="all">All Capacity Tiers</option>
+              <option value="5-20">5–20 kVA Portable</option>
+              <option value="25-50">25–50 kVA Commercial</option>
+              <option value="60-100">60–100 kVA Industrial</option>
+              <option value="125-250">125–250 kVA Heavy Duty</option>
+              <option value="300-500">300–500 kVA Containerized</option>
+              <option value="above-500">Above 500 kVA MegaStation</option>
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <label class="form-label small text-muted mb-1" for="fleet-sort-select">Sort By Price</label>
+            <select class="form-select" id="fleet-sort-select">
+              <option value="capacity-asc">Capacity: Low to High</option>
+              <option value="capacity-desc">Capacity: High to Low</option>
+              <option value="price-asc">Daily Rate: Low to High</option>
+              <option value="price-desc">Daily Rate: High to Low</option>
+            </select>
+          </div>
+          <div class="col-lg-2 col-md-6 pt-lg-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="fleet-available-only">
+              <label class="form-check-label small fw-bold" for="fleet-available-only">Available Now</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Fleet Grid -->
+      <div class="row g-4" id="generator-fleet-grid">
+        <!-- Dynamically rendered by assets/js/filters.js from GENERATOR_FLEET -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. GENERATOR CAPACITY OVERVIEW
+       =================================================================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-speedometer2"></i> Power Matching Guide</span>
+        <h2 class="section-title">Generator Capacity Overview & Sizing</h2>
+        <p class="section-subtitle">Selecting the exact kVA output ensures optimal fuel efficiency, lower emissions, and zero voltage dips.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 5-20 kVA -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey h-100 transition-hover">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-accent text-dark fw-bold px-3 py-1">5–20 kVA</span>
+              <span class="text-muted small">Single & 3-Phase</span>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Portable & Event Power</h5>
+            <p class="small text-muted mb-3">Compact, wheel-mounted silent diesel inverters designed for minimal footprint and noise-critical environments.</p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li><i class="bi bi-check2 text-accent me-2"></i>Outdoor weddings & festival sound stages</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Broadcast trucks & film production</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Residential home emergency backup</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 25-50 kVA -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey h-100 transition-hover">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-accent text-dark fw-bold px-3 py-1">25–50 kVA</span>
+              <span class="text-muted small">3-Phase 400V</span>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Commercial Standby</h5>
+            <p class="small text-muted mb-3">Heavy canopy units featuring electronic speed governors for delicate electrical loads and automated switchgear.</p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li><i class="bi bi-check2 text-accent me-2"></i>Supermarkets & cold storage continuity</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Medical laboratories & outpatient clinics</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Light commercial fabrication workshops</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 60-100 kVA -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey h-100 transition-hover">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-accent text-dark fw-bold px-3 py-1">60–100 kVA</span>
+              <span class="text-muted small">Industrial Canopy</span>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Construction Prime Power</h5>
+            <p class="small text-muted mb-3">Rugged construction site generators capable of handling high motor inrush currents from pumps and compressors.</p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li><i class="bi bi-check2 text-accent me-2"></i>Tower cranes & concrete batching equipment</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Site compound offices & drying heaters</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Continuous drainage dewatering pumps</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 125-250 kVA -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey h-100 transition-hover">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-accent text-dark fw-bold px-3 py-1">125–250 kVA</span>
+              <span class="text-muted small">Heavy Duty</span>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Industrial Manufacturing</h5>
+            <p class="small text-muted mb-3">High-capacity units equipped with extended-run internal fuel cells for continuous 24/7/365 baseload duty.</p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li><i class="bi bi-check2 text-accent me-2"></i>Manufacturing plant maintenance shutdowns</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Large asphalt & aggregate quarry plants</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Commercial data center backup</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 300-500 kVA -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey h-100 transition-hover">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-accent text-dark fw-bold px-3 py-1">300–500 kVA</span>
+              <span class="text-muted small">Containerized</span>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">High-Demand Infrastructure</h5>
+            <p class="small text-muted mb-3">Acoustic ISO containerized generators with sync capabilities for multi-unit parallel load-sharing arrays.</p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li><i class="bi bi-check2 text-accent me-2"></i>Hospital facility emergency grid support</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Municipal water & wastewater pump stations</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Tunnel boring & heavy civil excavations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Above 500 kVA -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey h-100 transition-hover">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-accent text-dark fw-bold px-3 py-1">Above 500 kVA</span>
+              <span class="text-muted small">Multi-Megawatt</span>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Megawatt Grid Scale</h5>
+            <p class="small text-muted mb-3">Heavy 20ft maritime container generators (up to 1,250 kVA per unit) deployed for utility-scale island microgrids.</p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li><i class="bi bi-check2 text-accent me-2"></i>Electrical utility substation maintenance</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Multi-megawatt disaster recovery relief</li>
+              <li><i class="bi bi-check2 text-accent me-2"></i>Semiconductor fabrication backup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. GENERATOR SPECIFICATIONS COMPARISON TABLE
+       =================================================================== -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-table"></i> Technical Comparison</span>
+        <h2 class="section-title">Fleet Technical Specifications Matrix</h2>
+        <p class="section-subtitle">Key engineering specifications across our most requested generator rental models.</p>
+      </div>
+
+      <div class="table-responsive rounded-4 shadow-sm bg-white border">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th scope="col" class="py-3 px-4">Model & Capacity</th>
+              <th scope="col" class="py-3">Engine Manufacturer</th>
+              <th scope="col" class="py-3">Fuel Rate (75% Load)</th>
+              <th scope="col" class="py-3">Noise Level @ 7m</th>
+              <th scope="col" class="py-3">Tank Autonomy</th>
+              <th scope="col" class="py-3">ATS Ready</th>
+              <th scope="col" class="py-3 px-4 text-end">Daily Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-3 px-4">
+                <strong>VoltMaster 10kVA</strong>
+                <span class="badge bg-light text-dark border ms-2">5–20 kVA</span>
+              </td>
+              <td>Yanmar 2TNV70 Liquid-Cooled</td>
+              <td>2.1 L / hr</td>
+              <td><span class="badge bg-success-subtle text-success">58 dB(A)</span></td>
+              <td>21 Hours</td>
+              <td><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+              <td class="px-4 text-end fw-bold text-navy">$65</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4">
+                <strong>TitanPower 35kVA</strong>
+                <span class="badge bg-light text-dark border ms-2">25–50 kVA</span>
+              </td>
+              <td>Perkins 1103A-33G</td>
+              <td>5.8 L / hr</td>
+              <td><span class="badge bg-success-subtle text-success">64 dB(A)</span></td>
+              <td>22 Hours</td>
+              <td><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+              <td class="px-4 text-end fw-bold text-navy">$130</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4">
+                <strong>Cummins 80kVA Industrial</strong>
+                <span class="badge bg-light text-dark border ms-2">60–100 kVA</span>
+              </td>
+              <td>Cummins 4BTA3.9-G2</td>
+              <td>12.4 L / hr</td>
+              <td><span class="badge bg-success-subtle text-success">68 dB(A)</span></td>
+              <td>16 Hours</td>
+              <td><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+              <td class="px-4 text-end fw-bold text-navy">$220</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4">
+                <strong>Cummins 250kVA Powerhouse</strong>
+                <span class="badge bg-light text-dark border ms-2">125–250 kVA</span>
+              </td>
+              <td>Cummins 6LTAA8.9-G2</td>
+              <td>38.5 L / hr</td>
+              <td><span class="badge bg-success-subtle text-success">70 dB(A)</span></td>
+              <td>14 Hours</td>
+              <td><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+              <td class="px-4 text-end fw-bold text-navy">$450</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4">
+                <strong>CAT 500kVA Heavy Container</strong>
+                <span class="badge bg-light text-dark border ms-2">300–500 kVA</span>
+              </td>
+              <td>Caterpillar C15 ACERT</td>
+              <td>76.2 L / hr</td>
+              <td><span class="badge bg-success-subtle text-success">72 dB(A)</span></td>
+              <td>13 Hours</td>
+              <td><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+              <td class="px-4 text-end fw-bold text-navy">$850</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4">
+                <strong>Megawatt 1250kVA Plant</strong>
+                <span class="badge bg-light text-dark border ms-2">Above 500 kVA</span>
+              </td>
+              <td>Cummins QSK50-G4 V16</td>
+              <td>192.0 L / hr</td>
+              <td><span class="badge bg-success-subtle text-success">75 dB(A)</span></td>
+              <td>10 Hours</td>
+              <td><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+              <td class="px-4 text-end fw-bold text-navy">$1,850</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6. RENTAL BENEFITS SECTION
+       =================================================================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-shield-check"></i> Standard On Every Rental</span>
+        <h2 class="section-title">The PowerRent Equipment Standard</h2>
+        <p class="section-subtitle">Every generator in our fleet is backed by comprehensive engineering services.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 rounded-3 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-clipboard2-pulse-fill"></i></div>
+            <h5 class="fw-bold text-navy mb-2">100% Load-Bank Certified</h5>
+            <p class="small text-muted mb-0">Every unit undergoes full resistive load-bank testing before leaving our depot to verify zero voltage drop.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 rounded-3 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-broadcast"></i></div>
+            <h5 class="fw-bold text-navy mb-2">24/7 Cellular Telemetry</h5>
+            <p class="small text-muted mb-0">Real-time remote telemetry streams kW load, oil pressure, and fuel levels to prevent unexpected outages.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 rounded-3 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-fuel-pump-fill"></i></div>
+            <h5 class="fw-bold text-navy mb-2">Automated Refueling</h5>
+            <p class="small text-muted mb-0">Scheduled on-site mobile diesel and HVO delivery routes ensure your tanks remain topped up around the clock.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 rounded-3 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-truck-front-fill"></i></div>
+            <h5 class="fw-bold text-navy mb-2">Turnkey Logistics</h5>
+            <p class="small text-muted mb-0">Heavy flatbed transport, crane rigging, electrical cable distribution, and on-site commissioning included.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7. BOOKING CTA SECTION (CLEAN BACKGROUND)
+       =================================================================== -->
+  <section class="section-padding text-center position-relative">
+    <div class="container py-2">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <span class="badge bg-accent text-dark px-3 py-2 fw-bold text-uppercase mb-3">
+            <i class="bi bi-lightning-charge-fill me-1"></i> Rapid Online Reservations
+          </span>
+          <h2 class="display-5 text-navy fw-bold mb-3">Ready to Reserve Equipment from Our Fleet?</h2>
+          <p class="lead text-muted mb-4 max-w-700 mx-auto">
+            Book online in seconds with transparent daily, weekly, and monthly rates, or speak with our power engineers for customized multi-megawatt setups.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="booking.html" class="btn btn-pr-primary btn-lg shadow">
+              <i class="bi bi-calendar-check me-2"></i>Book a Generator Online
+            </a>
+            <a href="pricing.html" class="btn btn-pr-dark btn-lg shadow">
+              <i class="bi bi-cash-stack me-2"></i>View Full Pricing Plans
+            </a>
+            <a href="contact.html" class="btn btn-pr-secondary btn-lg shadow">
+              <i class="bi bi-headset me-2"></i>Contact Power Engineers
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="d-inline-block mb-3">
+            <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="fleet.html"><i class="bi bi-chevron-right"></i>Generator Fleet</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="fleet.html?category=5-20"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="fleet.html?category=25-50"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="fleet.html?category=60-100"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="fleet.html?category=125-250"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="fleet.html?category=300-500"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="fleet.html?category=above-500"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/filters.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

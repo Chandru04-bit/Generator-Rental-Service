@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Article & Power Guide | PowerRent Blog</title>
+  <meta name="description" content="In-depth technical analysis on generator sizing, acoustic noise dampening, preventative maintenance, and fuel optimization.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <header class="page-banner" style="background-image: url('../assets/images/hero/hero-blog.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+          <li class="breadcrumb-item active" id="breadcrumb-post-title">Article Details</li>
+        </ol>
+      </nav>
+      <span class="badge bg-warning text-dark mb-2 px-3 py-1" id="post-badge-cat">Engineering Sizing</span>
+      <h1 class="display-5 fw-bold text-white mb-2" id="post-title">How to Size the Right Generator for Heavy Construction Sites</h1>
+      <div class="d-flex align-items-center gap-3 text-white-50 small mt-2">
+        <span><i class="bi bi-person-fill text-warning me-1"></i>By <strong class="text-white" id="post-author">David Chen</strong></span>
+        <span>&bull;</span>
+        <span><i class="bi bi-calendar3 me-1"></i><span id="post-date">Nov 02, 2026</span></span>
+        <span>&bull;</span>
+        <span><i class="bi bi-clock me-1"></i><span id="post-readtime">6 min read</span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ARTICLE CONTENT -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Main Article Column -->
+        <div class="col-lg-8">
+          <article class="card p-4 p-md-5 border-0 shadow-sm rounded-4 bg-white mb-4">
+            <!-- Featured Image -->
+            <img src="../assets/images/blog/blog-1.jpg" alt="Article Image" id="post-featured-img" class="img-fluid rounded-4 mb-4" style="max-height: 420px; width: 100%; object-fit: cover;">
+
+            <div id="post-body-content" class="text-muted leading-relaxed">
+              <!-- Dynamically populated -->
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Author Bio Box -->
+            <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3">
+              <img src="../assets/images/team/team-3.jpg" alt="Author" class="author-avatar" style="width: 60px; height: 60px;">
+              <div>
+                <h6 class="fw-bold text-navy mb-1" id="post-author-bio-name">David Chen</h6>
+                <p class="small text-muted mb-0">Master Fleet Technician & Sizing Specialist at PowerRent. Over 18 years testing Cummins and CAT industrial prime power units across heavy infrastructure projects.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Back to Blog Navigation -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <a href="blog.html" class="btn btn-pr-secondary"><i class="bi bi-arrow-left me-1"></i>Back to All Articles</a>
+            <a href="services.html" class="btn btn-pr-primary"><i class="bi bi-grid-fill me-1"></i>Browse Rental Services</a>
+          </div>
+        </div>
+
+        <!-- Right Column Sidebar -->
+        <div class="col-lg-4">
+          <!-- Quick Search & Categories -->
+          <div class="card p-4 border rounded-4 bg-white shadow-sm mb-4">
+            <h5 class="fw-bold text-navy mb-3">Popular Categories</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom d-flex justify-content-between"><a href="blog.html" class="text-decoration-none text-navy">Engineering Sizing</a> <span class="badge bg-light text-dark">4</span></li>
+              <li class="py-2 border-bottom d-flex justify-content-between"><a href="blog.html" class="text-decoration-none text-navy">Disaster Recovery</a> <span class="badge bg-light text-dark">6</span></li>
+              <li class="py-2 border-bottom d-flex justify-content-between"><a href="blog.html" class="text-decoration-none text-navy">Acoustic Standards</a> <span class="badge bg-light text-dark">3</span></li>
+              <li class="py-2 border-bottom d-flex justify-content-between"><a href="blog.html" class="text-decoration-none text-navy">Maintenance & Fuels</a> <span class="badge bg-light text-dark">5</span></li>
+              <li class="py-2 d-flex justify-content-between"><a href="blog.html" class="text-decoration-none text-navy">Project Logistics</a> <span class="badge bg-light text-dark">7</span></li>
+            </ul>
+          </div>
+
+          <!-- Need Equipment CTA -->
+          <div class="card p-4 border rounded-4 bg-primary-navy text-white shadow-sm mb-4">
+            <span class="badge bg-warning text-dark mb-2 px-2 py-1 align-self-start fw-bold">Need Sizing Help?</span>
+            <h4 class="text-white fw-bold mb-2">Speak With a Certified Power Engineer</h4>
+            <p class="small text-white-50 mb-3">Avoid sizing mistakes that cause voltage trips. Our engineering team provides free load schedule reviews.</p>
+            <a href="booking.html" class="btn btn-pr-primary w-100 mb-2">Book a Generator</a>
+            <a href="contact.html" class="btn btn-outline-light w-100 btn-sm">Contact Hotline</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="d-inline-block mb-3">
+            <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Post Data Script -->
+  <script>
+    const BLOG_POSTS = {
+      "blog-1": {
+        title: "How to Size the Right Generator for Heavy Construction Sites",
+        category: "Engineering Sizing",
+        author: "David Chen",
+        date: "Nov 02, 2026",
+        readTime: "6 min read",
+        image: "../assets/images/blog/blog-1.jpg",
+        content: `
+          <p class="fs-5 text-dark fw-semibold">Selecting a generator for an active construction site is markedly different from calculating standard commercial resistive loads.</p>
+          <p>On construction sites, large electric motors—including tower cranes, concrete batching plants, submersible dewatering pumps, and heavy air compressors—exhibit massive inductive starting surges that can momentarily pull three to four times their nominal running current.</p>
+          
+          <h4 class="fw-bold text-navy mt-4 mb-3">1. Understanding Starting kVA vs Running kW</h4>
+          <p>Running power is expressed in kilowatts (kW), representing the actual mechanical work performed. However, generators are sized in kilovolt-amperes (kVA), reflecting the total apparent power that accounts for the inductive power factor (typically 0.8 lagging for industrial diesel engines). If you calculate your generator requirement solely on running watts, the instant a tower crane hoist engages under maximum load, the voltage dip will trigger an under-voltage fault and shut down the generator.</p>
+
+          <div class="alert alert-warning my-4">
+            <strong>Key Rule of Thumb:</strong> For direct-on-line (DOL) electric motors, multiply full-load running amps by 3.0 to determine required starting kVA. For soft-starter or Variable Frequency Drive (VFD) motors, a 1.5 multiplier is typically sufficient.
+          </div>
+
+          <h4 class="fw-bold text-navy mt-4 mb-3">2. Factoring in Altitude and Ambient Temperature</h4>
+          <p>Standard generator nameplate ratings are calibrated at sea level and 25°C ambient temperature. For summer operations where temperatures reach 40°C, generators suffer thermal derating unless equipped with high-ambient tropical radiators. PowerRent specifies 50°C tropical cooling packages on all fleet units from 35kVA up to 1,250kVA, ensuring full continuous block-loading regardless of weather.</p>
+
+          <h4 class="fw-bold text-navy mt-4 mb-3">3. Managing Minimum Load (Wet Stacking Prevention)</h4>
+          <p>Over-sizing a generator is just as dangerous as under-sizing. When large diesel generators run below 30% of their rated capacity for prolonged periods, unburnt fuel accumulates in the exhaust manifold—a phenomenon known as "wet stacking." Always size your generator so that normal operations keep the load between 50% and 80% of prime capacity.</p>
+        `
+      },
+      "blog-2": {
+        title: "Emergency Power Preparedness: Critical Steps for Healthcare & Data Centers",
+        category: "Disaster Recovery",
+        author: "Elena Rostova",
+        date: "Oct 24, 2026",
+        readTime: "8 min read",
+        image: "../assets/images/blog/blog-2.jpg",
+        content: `
+          <p class="fs-5 text-dark fw-semibold">For hospitals, surgical centers, and Tier-3/4 data centers, emergency backup power is not a contingency—it is a life-safety mandate.</p>
+          <p>In accordance with NFPA 110 (Standard for Emergency and Standby Power Systems), emergency generators serving healthcare occupancies must restore emergency electrical branch circuits within 10 seconds of normal power interruption.</p>
+          
+          <h4 class="fw-bold text-navy mt-4 mb-3">Automated Transfer Switch (ATS) Coordination</h4>
+          <p>An ATS continuously senses incoming utility voltage. When utility voltage drops below 85% on any phase, the ATS signals the generator to crank. Once the alternator reaches rated frequency and voltage, the motorized mechanical interlock transitions the building emergency panel to generator power.</p>
+
+          <h4 class="fw-bold text-navy mt-4 mb-3">Fuel Autonomy & Standby Contracts</h4>
+          <p>During catastrophic regional disasters, local service stations lose electricity and cannot pump fuel. Mission-critical facilities must maintain contracts with guaranteed fuel logistics providers. PowerRent deploys cellular telemetry sensors that continuously log fuel levels, automatically dispatching dedicated fuel tankers before tanks drop below critical thresholds.</p>
+        `
+      },
+      "blog-3": {
+        title: "Diesel vs Hybrid Generators: Fuel Efficiency and Emission Analysis",
+        category: "Sustainability",
+        author: "Marcus Vance",
+        date: "Oct 15, 2026",
+        readTime: "5 min read",
+        image: "../assets/images/blog/blog-3.jpg",
+        content: `
+          <p class="fs-5 text-dark fw-semibold">With increasing urban emission standards and carbon reduction targets, the temporary power industry is evolving rapidly.</p>
+          <p>Modern Stage V diesel engines running 100% Hydrotreated Vegetable Oil (HVO) cut net greenhouse gas emissions by up to 90% without requiring any engine modifications. Meanwhile, battery-hybrid generators paired with smaller diesel engines allow the engine to switch off entirely during light night loads, eliminating noise and fuel consumption.</p>
+        `
+      },
+      "blog-4": {
+        title: "5 Crucial Pre-Rental Checks Every Project Manager Must Know",
+        category: "Project Management",
+        author: "Sarah Jenkins",
+        date: "Sep 28, 2026",
+        readTime: "7 min read",
+        image: "../assets/images/blog/blog-4.jpg",
+        content: `
+          <p class="fs-5 text-dark fw-semibold">Ensure a smooth generator delivery by verifying these 5 critical site requirements before the transport truck arrives.</p>
+          <ol class="mt-3">
+            <li><strong>Crane Access Clearance:</strong> Ensure an overhead clearance of at least 5 meters free of low-hanging utility wires.</li>
+            <li><strong>Ground Bearing Capacity:</strong> Ensure the drop zone is solid compacted ground capable of supporting 5 to 12 tons.</li>
+            <li><strong>Cabling Distance:</strong> Measure the direct cable run to the switchboard, adding 20% slack for corners and safety ramps.</li>
+            <li><strong>Exhaust Ventilation:</strong> Never position a generator near building fresh-air HVAC intakes or open windows.</li>
+            <li><strong>Earthing & Grounding Pit:</strong> Verify an accessible location to drive a copper grounding rod into the soil.</li>
+          </ol>
+        `
+      },
+      "blog-5": {
+        title: "Managing Acoustic Limits: Soundproof Canopies for Urban Events",
+        category: "Acoustic Standards",
+        author: "David Chen",
+        date: "Sep 12, 2026",
+        readTime: "4 min read",
+        image: "../assets/images/blog/blog-5.jpg",
+        content: `
+          <p class="fs-5 text-dark fw-semibold">Urban municipal noise codes strictly penalize noise levels exceeding 65 dB(A) at property boundaries after 10:00 PM.</p>
+          <p>PowerRent's silent event canopy series features double-walled acoustic baffles and residential-grade internal exhaust silencers that reduce sound to 58–63 dB(A) at 7 meters—equivalent to normal conversational volume.</p>
+        `
+      },
+      "blog-6": {
+        title: "Preventative Generator Maintenance Checklist During Long Rentals",
+        category: "Maintenance Tips",
+        author: "David Chen",
+        date: "Aug 30, 2026",
+        readTime: "6 min read",
+        image: "../assets/images/blog/blog-6.jpg",
+        content: `
+          <p class="fs-5 text-dark fw-semibold">Continuous prime power generation places heavy mechanical stress on diesel engines running hundreds of hours per month.</p>
+          <p>Follow our daily walk-around checklist: check engine oil dipstick levels prior to startup, inspect coolant sight-glasses, drain water traps on primary fuel filters, and log runtime hours to schedule PowerRent's 250-hour free servicing.</p>
+        `
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const postId = urlParams.get('id') || 'blog-1';
+      const post = BLOG_POSTS[postId] || BLOG_POSTS['blog-1'];
+
+      document.title = `${post.title} – PowerRent Blog`;
+      document.getElementById('breadcrumb-post-title').textContent = post.title;
+      document.getElementById('post-title').textContent = post.title;
+      document.getElementById('post-badge-cat').textContent = post.category;
+      document.getElementById('post-author').textContent = post.author;
+      document.getElementById('post-author-bio-name').textContent = post.author;
+      document.getElementById('post-date').textContent = post.date;
+      document.getElementById('post-readtime').textContent = post.readTime;
+      document.getElementById('post-featured-img').src = post.image;
+      document.getElementById('post-body-content').innerHTML = post.content;
+    });
+  </script>
+</body>
+</html>

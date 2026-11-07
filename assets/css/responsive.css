@@ -1,0 +1,243 @@
+/* ===================================================================
+   POWERRENT - RESPONSIVE & DIRECTION (responsive.css)
+   =================================================================== */
+
+/* Breakpoint: Desktop large (1600px+) */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1480px;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+/* Breakpoint: Laptop / Standard Desktop (1024px - 1440px) */
+@media (max-width: 1440px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .section-title {
+    font-size: 2.1rem;
+  }
+}
+
+/* Breakpoint: Tablet (768px - 991.98px) */
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+    padding: 70px 0;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .hero-stats-badge {
+    justify-content: center;
+  }
+  
+  .navbar-collapse {
+    background-color: #101C2C;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .nav-controls {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+  }
+  
+  .pricing-card.featured {
+    transform: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+  .dashboard-sidebar {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+  }
+}
+
+/* Breakpoint: Mobile (320px - 767.98px) */
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .section-padding {
+    padding: 55px 0;
+  }
+  .gen-card-actions {
+    grid-template-columns: 1fr;
+  }
+  .gen-card-specs {
+    grid-template-columns: 1fr;
+  }
+  .cta-banner {
+    padding: 35px 20px;
+    text-align: center;
+  }
+  .cta-banner h2 {
+    font-size: 1.7rem;
+  }
+  .cta-banner-actions {
+    justify-content: center;
+  }
+  .pricing-price {
+    font-size: 2rem;
+  }
+  .form-card {
+    padding: 20px 16px;
+  }
+  .hero-stats-badge {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .btn-pr-primary, .btn-pr-outline, .btn-pr-dark {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .navbar-brand img {
+    height: 36px;
+  }
+}
+
+/* ===================================================================
+   RTL (RIGHT-TO-LEFT) SUPPORT
+   When html[dir="rtl"] is applied
+   =================================================================== */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] body {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+html[dir="rtl"] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+html[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+html[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+html[dir="rtl"] .gen-card-badge {
+  left: auto;
+  right: 14px;
+}
+
+html[dir="rtl"] .gen-card-status {
+  right: auto;
+  left: 14px;
+}
+
+html[dir="rtl"] .step-number {
+  right: auto;
+  left: 18px;
+}
+
+html[dir="rtl"] .service-icon-box {
+  left: auto;
+  right: 22px;
+}
+
+html[dir="rtl"] .blog-category-badge {
+  left: auto;
+  right: 14px;
+  border-left: none;
+  border-right: 3px solid var(--pr-accent);
+}
+
+html[dir="rtl"] .footer-widget-title::after {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-4px);
+}
+
+html[dir="rtl"] .powerrent-toast {
+  right: auto;
+  left: 24px;
+  border-left: none;
+  border-right: 4px solid var(--pr-accent);
+}
+
+html[dir="rtl"] .powerrent-toast.success {
+  border-right-color: #10B981;
+}
+
+html[dir="rtl"] .powerrent-toast.error {
+  border-right-color: #EF4444;
+}
+
+html[dir="rtl"] .pricing-features {
+  text-align: right;
+}
+
+/* RTL Dashboard Sidebar */
+html[dir="rtl"] .dashboard-sidebar {
+  border-right: none;
+  border-left: 1px solid var(--pr-border);
+}
+
+html[dir="rtl"] .dash-nav-link {
+  text-align: right;
+}
+
+html[dir="rtl"] .dash-nav-link i {
+  margin-right: 0;
+  margin-left: 12px;
+}

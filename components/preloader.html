@@ -1,0 +1,17 @@
+<!-- POWERRENT PRELOADER COMPONENT -->
+<div id="preloader" style="position: fixed; inset: 0; background: #101C2C; z-index: 99999; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: opacity 0.4s ease;">
+  <div style="position: relative; width: 64px; height: 64px; margin-bottom: 20px;">
+    <div style="position: absolute; inset: 0; border: 4px solid rgba(245, 158, 11, 0.2); border-top-color: #F59E0B; border-radius: 50%; animation: spin 0.9s linear infinite;"></div>
+    <div style="position: absolute; inset: 16px; display: flex; align-items: center; justify-content: center;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#F59E0B">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+      </svg>
+    </div>
+  </div>
+  <div style="font-family: system-ui, sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 2px; color: #FFFFFF; text-transform: uppercase;">
+    Power<span style="color: #F59E0B;">Rent</span>
+  </div>
+  <style>
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  </style>
+</div>

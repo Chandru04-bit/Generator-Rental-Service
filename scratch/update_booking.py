@@ -1,0 +1,579 @@
+import os
+
+booking_html = """<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Generator – Real-Time Rental Reservation | PowerRent</title>
+  <meta name="description" content="Reserve your generator online. Real-time duration calculation, transparent delivery fees, security deposits, and instant booking reference generation.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Generators</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold text-accent" href="fleet.html"><i class="bi bi-grid-fill me-2"></i>All Generator Fleet</a></li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li><a class="dropdown-item" href="fleet.html?category=5-20"><i class="bi bi-lightning-charge me-2"></i>5–20 kVA Portable</a></li>
+              <li><a class="dropdown-item" href="fleet.html?category=25-50"><i class="bi bi-lightning-charge me-2"></i>25–50 kVA Commercial</a></li>
+              <li><a class="dropdown-item" href="fleet.html?category=60-100"><i class="bi bi-lightning-charge me-2"></i>60–100 kVA Industrial</a></li>
+              <li><a class="dropdown-item" href="fleet.html?category=125-250"><i class="bi bi-lightning-charge me-2"></i>125–250 kVA Heavy Duty</a></li>
+              <li><a class="dropdown-item" href="fleet.html?category=300-500"><i class="bi bi-lightning-charge me-2"></i>300–500 kVA Containerized</a></li>
+              <li><a class="dropdown-item" href="fleet.html?category=above-500"><i class="bi bi-lightning-charge me-2"></i>Above 500 kVA Megawatt</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold text-accent" href="services.html"><i class="bi bi-gear-wide-connected me-2"></i>All Power Services</a></li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li><a class="dropdown-item" href="service-details.html?service=industrial"><i class="bi bi-tools me-2"></i>Industrial Power Solutions</a></li>
+              <li><a class="dropdown-item" href="service-details.html?service=commercial"><i class="bi bi-building-check me-2"></i>Commercial Standby Power</a></li>
+              <li><a class="dropdown-item" href="service-details.html?service=construction"><i class="bi bi-cone-striped me-2"></i>Construction Site Power</a></li>
+              <li><a class="dropdown-item" href="service-details.html?service=events"><i class="bi bi-music-note-beamed me-2"></i>Event Power Solutions</a></li>
+              <li><a class="dropdown-item" href="service-details.html?service=emergency"><i class="bi bi-lightning-fill me-2"></i>Emergency Power Backup</a></li>
+              <li><a class="dropdown-item" href="service-details.html?service=maintenance"><i class="bi bi-wrench-adjustable me-2"></i>Generator Maintenance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: BOOKING HERO -->
+  <header class="page-banner" style="background-image: url('../assets/images/hero/hero-home-1.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Generator Booking</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 fw-bold text-white mb-2">Reserve Your Generator Online</h1>
+      <p class="lead text-white-50 max-w-700">Real-time pricing calculation, automatic duration discount sizing, and instant booking reference issuance with 24/7 dispatch confirmation.</p>
+    </div>
+  </header>
+
+  <!-- FORM WRAPPER FOR SECTIONS 2 TO 6 -->
+  <form id="generator-booking-form" novalidate>
+
+    <!-- SECTION 2: GENERATOR SELECTION -->
+    <section class="section-padding bg-white border-bottom">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-tag"><i class="bi bi-cpu"></i> Step 1 of 4</span>
+            <h2 class="section-title">Select Generator Equipment</h2>
+            <p class="text-muted mb-4">
+              Choose the exact capacity matched to your electrical load requirements. All generators include acoustic sound-attenuated weather enclosures, integrated diesel tanks, and full load-bank certification.
+            </p>
+            <div class="alert alert-light border d-flex align-items-start gap-3 p-3 rounded-3 mb-0">
+              <i class="bi bi-lightbulb-fill text-warning fs-3"></i>
+              <div>
+                <strong class="d-block mb-1">Not sure what capacity you need?</strong>
+                <p class="small text-muted mb-2">Calculate continuous vs starting motor loads, or call our certified sizing engineers anytime.</p>
+                <a href="contact.html" class="small fw-bold text-decoration-none"><i class="bi bi-telephone me-1"></i>Talk to an Engineer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-light-grey">
+              <label class="form-label fw-bold fs-5 mb-3" for="booking-generator-select">
+                <i class="bi bi-lightning-charge text-warning me-2"></i>Choose Generator Model & Capacity *
+              </label>
+              <select class="form-select form-select-lg shadow-sm border-2 mb-3" id="booking-generator-select" required>
+                <!-- Dynamically populated from generator.js -->
+              </select>
+              <div class="invalid-feedback">Please select a generator from our fleet.</div>
+
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="badge bg-secondary">5–20 kVA Portable</span>
+                <span class="badge bg-warning text-dark">25–50 kVA Commercial</span>
+                <span class="badge bg-info text-dark">60–100 kVA Industrial</span>
+                <span class="badge bg-primary">125–250 kVA Heavy Duty</span>
+                <span class="badge bg-dark">300–500 kVA Containerized</span>
+                <span class="badge bg-danger">Above 500 kVA Megawatt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: RENTAL DURATION -->
+    <section class="section-padding bg-light-grey border-bottom">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 order-lg-2">
+            <span class="section-tag"><i class="bi bi-calendar3"></i> Step 2 of 4</span>
+            <h2 class="section-title">Rental Duration & Schedule</h2>
+            <p class="text-muted mb-4">
+              Select your required deployment start date and collection date. Our intelligent rate calculator automatically factors in duration thresholds to apply 10% weekly or 20% monthly rate reductions.
+            </p>
+            <div class="p-3 bg-white rounded-3 border">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small fw-bold">1–6 Days:</span>
+                <span class="badge bg-secondary">Standard Daily Rate</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small fw-bold">7–29 Days:</span>
+                <span class="badge bg-warning text-dark">10% Weekly Discount</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="small fw-bold">30+ Days:</span>
+                <span class="badge bg-success">20% Monthly Discount</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 order-lg-1">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+              <h4 class="fw-bold text-navy mb-4"><i class="bi bi-clock-history text-accent me-2"></i>Configure Rental Period</h4>
+              <div class="row g-3">
+                <div class="col-md-5">
+                  <label class="form-label fw-bold" for="booking-start-date">Rental Start Date *</label>
+                  <input type="date" class="form-control form-control-lg" id="booking-start-date" required>
+                  <div class="invalid-feedback">Start date is required.</div>
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label fw-bold" for="booking-end-date">Rental End Date *</label>
+                  <input type="date" class="form-control form-control-lg" id="booking-end-date" required>
+                  <div class="invalid-feedback">End date must be on or after start date.</div>
+                </div>
+                <div class="col-md-2">
+                  <label class="form-label fw-bold">Duration</label>
+                  <input type="text" class="form-control form-control-lg bg-light text-center fw-bold text-navy" id="booking-duration-days" readonly value="3 Days">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CUSTOMER INFORMATION -->
+    <section class="section-padding bg-white border-bottom">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-tag"><i class="bi bi-person-badge"></i> Step 3 of 4</span>
+            <h2 class="section-title">Customer & Enterprise Details</h2>
+            <p class="text-muted mb-4">
+              Enter the primary point of contact for equipment delivery confirmation, automated telemetry access, and billing statements.
+            </p>
+            <div class="d-flex align-items-center gap-3 p-3 bg-light-grey rounded-3 border">
+              <i class="bi bi-shield-lock-fill fs-2 text-success"></i>
+              <div class="small">
+                <strong>Enterprise Data Security:</strong> All contact details and billing credentials are encrypted under 256-bit TLS protocols.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-light-grey">
+              <h4 class="fw-bold text-navy mb-4"><i class="bi bi-person-lines-fill text-accent me-2"></i>Contact Information</h4>
+              <div class="row g-3">
+                <div class="col-md-12">
+                  <label class="form-label fw-bold" for="booking-full-name">Full Name or Company Representative *</label>
+                  <input type="text" class="form-control form-control-lg" id="booking-full-name" placeholder="e.g. John Doe / Apex Construction LLC" required value="John Doe">
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" for="booking-email">Work Email Address *</label>
+                  <input type="email" class="form-control form-control-lg" id="booking-email" placeholder="john.doe@enterprise.com" required value="john.doe@enterprise.com">
+                  <div class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold" for="booking-phone">Phone Number *</label>
+                  <input type="tel" class="form-control form-control-lg" id="booking-phone" placeholder="+1 (555) 234-5678" required value="+1 (555) 234-5678">
+                  <div class="invalid-feedback">Please provide a direct phone number.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DELIVERY INFORMATION & ADD-ONS -->
+    <section class="section-padding bg-light-grey border-bottom">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 order-lg-2">
+            <span class="section-tag"><i class="bi bi-geo-alt"></i> Step 4 of 4</span>
+            <h2 class="section-title">Delivery Site Logistics & Add-Ons</h2>
+            <p class="text-muted mb-4">
+              Specify your job site address for crane truck routing, and select optional turnkey engineering accessories such as automatic transfer switches or extended heavy cabling.
+            </p>
+            <div class="p-3 bg-white rounded-3 border">
+              <h6 class="fw-bold mb-2"><i class="bi bi-truck text-warning me-2"></i>Crane Rigging Included</h6>
+              <p class="small text-muted mb-0">Our heavy-duty Hiab delivery trucks include precision offloading and ground positioning at no extra crane rental charge.</p>
+            </div>
+          </div>
+          <div class="col-lg-7 order-lg-1">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+              <h4 class="fw-bold text-navy mb-4"><i class="bi bi-pin-map text-accent me-2"></i>Site Address & Power Add-Ons</h4>
+              
+              <div class="row g-3 mb-4">
+                <div class="col-md-8">
+                  <label class="form-label fw-bold" for="booking-address">Job Site / Facility Street Address *</label>
+                  <input type="text" class="form-control form-control-lg" id="booking-address" placeholder="e.g. 100 Power Industrial Park, Gate 4" required value="100 Power Industrial Park">
+                  <div class="invalid-feedback">Please enter the delivery site address.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label fw-bold" for="booking-city">City / State *</label>
+                  <input type="text" class="form-control form-control-lg" id="booking-city" placeholder="Chicago, IL" required value="Chicago, IL">
+                  <div class="invalid-feedback">City is required.</div>
+                </div>
+              </div>
+
+              <h5 class="fw-bold text-navy mb-3 border-bottom pb-2">Select Optional Add-On Power Services</h5>
+              <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                  <div class="form-check p-2 border rounded">
+                    <input class="form-check-input booking-addon-service ms-1 me-2" type="checkbox" id="addon-ats" data-cost="25" data-fixed="100">
+                    <label class="form-check-label small" for="addon-ats">
+                      <strong>Automatic Transfer Switch (ATS)</strong>
+                      <span class="d-block text-muted">+$25/day + $100 setup</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check p-2 border rounded">
+                    <input class="form-check-input booking-addon-service ms-1 me-2" type="checkbox" id="addon-cables" data-cost="15" data-fixed="50">
+                    <label class="form-check-label small" for="addon-cables">
+                      <strong>Extended 50m Heavy Cable Kit</strong>
+                      <span class="d-block text-muted">+$15/day + $50 setup</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check p-2 border rounded">
+                    <input class="form-check-input booking-addon-service ms-1 me-2" type="checkbox" id="addon-fuel" data-cost="0" data-fixed="250">
+                    <label class="form-check-label small" for="addon-fuel">
+                      <strong>Automated Fuel Refill Standby</strong>
+                      <span class="d-block text-muted">+$250 dispatch deposit</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check p-2 border rounded">
+                    <input class="form-check-input booking-addon-service ms-1 me-2" type="checkbox" id="addon-operator" data-cost="120" data-fixed="0">
+                    <label class="form-check-label small" for="addon-operator">
+                      <strong>On-Site Certified Generator Operator</strong>
+                      <span class="d-block text-muted">+$120/day</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label class="form-label fw-bold" for="booking-notes">Special Instructions or Site Access Constraints</label>
+                <textarea class="form-control" id="booking-notes" rows="2" placeholder="e.g. Requires hard-hat site induction, delivery restricted between 7am and 10am..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: BOOKING SUMMARY -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag"><i class="bi bi-receipt-cutoff"></i> Final Review</span>
+          <h2 class="section-title">Itemized Booking Summary</h2>
+          <p class="section-subtitle">
+            Review your live itemized cost estimate. No charges will be processed until dispatch confirmation.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="booking-summary-card shadow-lg p-4 p-md-5 rounded-4">
+              <h4 class="booking-summary-title mb-4"><i class="bi bi-receipt me-2"></i>Live Rental Cost Calculation</h4>
+
+              <div class="summary-row">
+                <span class="text-white-50">Selected Equipment:</span>
+                <strong id="summary-gen-name" class="text-end">Loading...</strong>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Capacity Rating:</span>
+                <strong id="summary-gen-capacity">--</strong>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Rental Schedule:</span>
+                <span id="summary-dates" class="text-end small">--</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Duration Days:</span>
+                <strong id="summary-days">--</strong>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Daily Rental Base Rate:</span>
+                <span id="summary-daily-rate">$0</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Equipment Hire Subtotal:</span>
+                <span id="summary-base-cost" class="fw-bold">$0</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Delivery & Crane Rigging:</span>
+                <span id="summary-delivery-fee">$0</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Refundable Security Deposit:</span>
+                <span id="summary-deposit">$0</span>
+              </div>
+
+              <div class="summary-row">
+                <span class="text-white-50">Add-On Services Total:</span>
+                <span id="summary-addons">$0</span>
+              </div>
+
+              <div class="summary-row total pt-3 border-top border-secondary">
+                <span class="fs-4 fw-bold">Total Estimated Cost:</span>
+                <span id="summary-total" class="fs-3 fw-bold text-warning">$0</span>
+              </div>
+
+              <div class="mt-4 p-3 bg-white bg-opacity-10 rounded small text-white-50">
+                <i class="bi bi-info-circle me-1 text-warning"></i>
+                Security deposits are 100% refunded upon equipment collection inspection. Rates include all routine 250hr servicing and 24/7 hotline coverage.
+              </div>
+
+              <div class="mt-4">
+                <button type="submit" class="btn btn-pr-primary btn-lg w-100 py-3 fw-bold fs-5 shadow">
+                  <i class="bi bi-check-circle-fill me-2"></i>Confirm & Submit Rental Booking
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </form>
+
+  <!-- SECTION 7: TERMS & CONDITIONS -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-file-earmark-ruled"></i> Transparency & Compliance</span>
+        <h2 class="section-title">Rental Terms & Conditions</h2>
+        <p class="section-subtitle">
+          Key terms governing insurance, operational safety, routine servicing, and security deposit returns.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion custom-accordion" id="bookingTermsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bterm1">
+                  1. Equipment Delivery, Inspection & Handover Protocols
+                </button>
+              </h2>
+              <div id="bterm1" class="accordion-collapse collapse show" data-bs-parent="#bookingTermsAccordion">
+                <div class="accordion-body">
+                  PowerRent provides delivery and crane offloading to ground level at the designated site coordinates. Prior to operator sign-off, a joint physical inspection and 15-minute operational test run are conducted. An electronic Handover Certificate with initial hour meter readings and 100% fuel level verification is signed by the client representative.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bterm2">
+                  2. Fuel Management & Tank Replenishment
+                </button>
+              </h2>
+              <div id="bterm2" class="accordion-collapse collapse" data-bs-parent="#bookingTermsAccordion">
+                <div class="accordion-body">
+                  Generators must be operated exclusively with certified EN590 ultra-low sulfur diesel or approved paraffinic HVO biofuel. Equipment returned with less than a full tank will be refilled by PowerRent at prevailing depot rates plus a refueling handling charge as detailed in your schedule.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bterm3">
+                  3. Damage Waiver & Insurance Coverage
+                </button>
+              </h2>
+              <div id="bterm3" class="accordion-collapse collapse" data-bs-parent="#bookingTermsAccordion">
+                <div class="accordion-body">
+                  The client is responsible for securing reasonable job site physical protection against vandalism, theft, or external physical collision. An optional Equipment Protection Waiver can be selected to limit contractor liability in the event of accidental equipment damage.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bterm4">
+                  4. Routine Maintenance & 24/7 Service Support
+                </button>
+              </h2>
+              <div id="bterm4" class="accordion-collapse collapse" data-bs-parent="#bookingTermsAccordion">
+                <div class="accordion-body">
+                  Routine preventive service intervals (oil, lube, and filter replacement every 250 operational hours) are performed on-site by PowerRent certified technicians at no charge. In the event of an unplanned warning code or shut down, our 24/7 telemetry dispatch team mobilizes immediately to restore site power.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="d-inline-block mb-3">
+            <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="fleet.html"><i class="bi bi-chevron-right"></i>Generator Fleet</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="fleet.html?category=5-20"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="fleet.html?category=25-50"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="fleet.html?category=60-100"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="fleet.html?category=125-250"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="fleet.html?category=300-500"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="fleet.html?category=above-500"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/booking.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
+"""
+
+with open('pages/booking.html', 'w', encoding='utf-8') as f:
+    f.write(booking_html)
+
+print("pages/booking.html updated successfully with 7 sections!")

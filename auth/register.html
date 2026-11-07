@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Account – Customer Portal | PowerRent</title>
+  <meta name="description" content="Create a PowerRent enterprise customer account to reserve generators, manage rental agreements, and download invoices.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/about.html">About Us</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="../pages/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- REGISTER CONTENT -->
+  <main class="section-padding my-auto">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="form-card">
+            <div class="text-center mb-4">
+              <div class="stat-icon mx-auto mb-3"><i class="bi bi-person-plus"></i></div>
+              <h3 class="fw-bold text-navy mb-1">Create Customer Account</h3>
+              <p class="text-muted small">Register for online reservations, telemetry access, and billing management</p>
+            </div>
+
+            <div id="register-alert-area"></div>
+
+            <form id="customer-register-form" novalidate>
+              <div class="row g-3 mb-3">
+                <div class="col-12">
+                  <label class="form-label" for="reg-name">Full Name or Company Representative *</label>
+                  <input type="text" class="form-control" id="reg-name" placeholder="John Doe" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="reg-email">Email Address *</label>
+                  <input type="email" class="form-control" id="reg-email" placeholder="john.doe@enterprise.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="reg-phone">Phone Number *</label>
+                  <input type="tel" class="form-control" id="reg-phone" placeholder="+1 (555) 234-5678" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="reg-password">Create Password *</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control" id="reg-password" placeholder="••••••••" required>
+                    <button class="btn btn-outline-secondary password-toggle-btn" type="button"><i class="bi bi-eye"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="reg-confirm-password">Confirm Password *</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control" id="reg-confirm-password" placeholder="••••••••" required>
+                    <button class="btn btn-outline-secondary password-toggle-btn" type="button"><i class="bi bi-eye"></i></button>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check mt-2">
+                    <input class="form-check-input" type="checkbox" id="reg-terms" required>
+                    <label class="form-check-label small" for="reg-terms">
+                      I have read and agree to the PowerRent <a href="../pages/faq.html" class="text-accent">Rental Terms & Conditions</a> and <a href="#" class="text-accent">Privacy Policy</a>.
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-pr-primary btn-lg w-100 fw-bold mb-3 shadow">
+                <i class="bi bi-person-check-fill me-1"></i>Create Customer Account
+              </button>
+
+              <div class="text-center small text-muted">
+                Already have an account? <a href="login.html" class="fw-bold text-accent">Sign in here</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

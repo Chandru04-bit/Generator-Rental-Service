@@ -1,0 +1,77 @@
+<!-- POWERRENT GLOBAL NAVBAR COMPONENT -->
+<nav class="navbar navbar-expand-xl powerrent-navbar">
+  <div class="container">
+    <!-- Brand Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+    </a>
+
+    <!-- Mobile Nav Toggler -->
+    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent" aria-controls="powerrentNavContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-1 text-accent"></i>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="powerrentNavContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+        <!-- Home Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+            <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+          </ul>
+        </li>
+
+        <!-- About Dropdown -->
+        <li class="nav-item"><a class="nav-link" href="pages/about.html">About Us</a></li>
+
+        <!-- Fleet Link -->
+        
+
+        <!-- Services Dropdown -->
+        <li class="nav-item"><a class="nav-link" href="pages/services.html">Services</a></li>
+
+        <!-- Direct Nav Links -->
+        <li class="nav-item">
+          <a class="nav-link" href="pages/pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/contact.html">Contact</a>
+        </li>
+
+        <!-- Customer Dashboard link (dynamically visible when authenticated) -->
+        <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+          <a class="nav-link text-warning fw-bold" href="customer/dashboard.html">
+            <i class="bi bi-speedometer2 me-1"></i>Dashboard
+          </a>
+        </li>
+      </ul>
+
+      <!-- Controls & CTA Buttons -->
+      <div class="nav-controls">
+        <!-- Theme Toggle -->
+        <button class="control-btn theme-toggle-btn" type="button" title="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <!-- LTR/RTL Toggle -->
+        <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Text Direction">
+          <i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span>
+        </button>
+
+        <!-- Dynamic Auth Button (Login / Logout) -->
+        <div id="nav-auth-item">
+          <a href="auth/login.html" class="btn btn-sm btn-pr-outline">
+            <i class="bi bi-box-arrow-in-right me-1"></i>Login
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>

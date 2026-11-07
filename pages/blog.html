@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Insights & Engineering Articles – Blog | PowerRent</title>
+  <meta name="description" content="Technical guides, generator sizing strategies, fuel optimization, and emergency power preparedness articles from PowerRent engineers.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: BLOG HERO -->
+  <header class="page-banner" style="background-image: url('../assets/images/hero/hero-blog.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog & Technical Articles</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 fw-bold text-white mb-2">Power Insights & Industry Analysis</h1>
+      <p class="lead text-white-50 max-w-700">Engineering best practices, generator sizing guides, acoustic compliance strategies, and emergency power preparedness from certified specialists.</p>
+    </div>
+  </header>
+
+  <!-- SECTION 2: FEATURED ARTICLES -->
+  <section class="section-padding bg-white border-bottom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-star-fill text-warning"></i> Spotlight Analysis</span>
+        <h2 class="section-title">Featured Engineering Deep-Dive</h2>
+        <p class="section-subtitle">
+          Essential reading for electrical contractors, plant managers, and civil project directors.
+        </p>
+      </div>
+
+      <div class="card border-0 rounded-4 overflow-hidden shadow-lg bg-light-grey">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6">
+            <img src="../assets/images/blog/blog-1.jpg" alt="Construction Sizing" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 380px;">
+          </div>
+          <div class="col-lg-6 p-4 p-md-5">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge bg-warning text-dark px-3 py-1 fw-bold">Engineering Guide</span>
+              <span class="text-muted small"><i class="bi bi-clock me-1"></i>8 min read</span>
+              <span class="text-muted small"><i class="bi bi-calendar3 ms-2 me-1"></i>Nov 02, 2026</span>
+            </div>
+            <h3 class="display-6 fw-bold text-navy mb-3">
+              <a href="blog-details.html?id=blog-1" class="text-decoration-none text-navy">
+                How to Size the Right Generator for Heavy Construction Sites
+              </a>
+            </h3>
+            <p class="text-muted mb-4">
+              Learn how to calculate starting kVA for high-inertia tower cranes, avoid destructive inductive power factor dips, and implement automatic paralleling to cut fuel consumption by up to 34% on multi-month infrastructure projects.
+            </p>
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+              <div class="d-flex align-items-center gap-3">
+                <img src="../assets/images/team/team-1.jpg" alt="Marcus Vance" class="rounded-circle" width="45" height="45" style="object-fit: cover;">
+                <div>
+                  <h6 class="fw-bold mb-0 text-navy">Marcus Vance</h6>
+                  <span class="small text-muted">Chief Technical Officer</span>
+                </div>
+              </div>
+              <a href="blog-details.html?id=blog-1" class="btn btn-pr-primary">
+                Read Article <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: LATEST ARTICLES -->
+  <section class="section-padding bg-light-grey border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-end justify-content-between mb-5">
+        <div>
+          <span class="section-tag"><i class="bi bi-journal-text"></i> Fresh Publications</span>
+          <h2 class="section-title mb-0">Latest Industry Articles</h2>
+        </div>
+        <p class="text-muted mb-0 max-w-500">
+          Field-tested advice, compliance frameworks, and technological breakthroughs across temporary generation.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Blog Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card h-100 bg-white shadow-sm border rounded-4 overflow-hidden d-flex flex-column">
+            <div class="blog-img-wrap position-relative">
+              <span class="blog-category-badge badge bg-warning text-dark position-absolute top-0 start-0 m-3 px-3 py-1">Disaster Preparedness</span>
+              <img src="../assets/images/blog/blog-2.jpg" alt="Hospital Backup" class="w-100" style="height: 220px; object-fit: cover;">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="blog-meta small text-muted mb-2">
+                <span><i class="bi bi-calendar3 me-1"></i>Oct 24, 2026</span>
+                <span class="ms-3"><i class="bi bi-clock me-1"></i>7 min read</span>
+              </div>
+              <h5 class="fw-bold text-navy mb-2">
+                <a href="blog-details.html?id=blog-2" class="text-decoration-none text-navy">
+                  Emergency Power Preparedness for Hospitals & Data Centers
+                </a>
+              </h5>
+              <p class="small text-muted flex-grow-1 mb-3">
+                A compliance checklist covering NFPA 110 Type 10 standards, dual ATS synchronizing panels, and resilient telemetry monitoring.
+              </p>
+              <a href="blog-details.html?id=blog-2" class="btn btn-sm btn-pr-secondary align-self-start mt-auto">
+                Read Full Article <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card h-100 bg-white shadow-sm border rounded-4 overflow-hidden d-flex flex-column">
+            <div class="blog-img-wrap position-relative">
+              <span class="blog-category-badge badge bg-success text-white position-absolute top-0 start-0 m-3 px-3 py-1">Sustainability</span>
+              <img src="../assets/images/blog/blog-3.jpg" alt="Diesel vs Hybrid" class="w-100" style="height: 220px; object-fit: cover;">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="blog-meta small text-muted mb-2">
+                <span><i class="bi bi-calendar3 me-1"></i>Oct 15, 2026</span>
+                <span class="ms-3"><i class="bi bi-clock me-1"></i>5 min read</span>
+              </div>
+              <h5 class="fw-bold text-navy mb-2">
+                <a href="blog-details.html?id=blog-3" class="text-decoration-none text-navy">
+                  Diesel vs Hybrid Generators: Fuel Efficiency & Emissions
+                </a>
+              </h5>
+              <p class="small text-muted flex-grow-1 mb-3">
+                Comparing modern Stage V diesel units running renewable HVO biofuels against battery energy storage systems (BESS).
+              </p>
+              <a href="blog-details.html?id=blog-3" class="btn btn-sm btn-pr-secondary align-self-start mt-auto">
+                Read Full Article <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card h-100 bg-white shadow-sm border rounded-4 overflow-hidden d-flex flex-column">
+            <div class="blog-img-wrap position-relative">
+              <span class="blog-category-badge badge bg-info text-dark position-absolute top-0 start-0 m-3 px-3 py-1">Operations</span>
+              <img src="../assets/images/blog/blog-4.jpg" alt="Pre-Rental Checks" class="w-100" style="height: 220px; object-fit: cover;">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="blog-meta small text-muted mb-2">
+                <span><i class="bi bi-calendar3 me-1"></i>Sep 28, 2026</span>
+                <span class="ms-3"><i class="bi bi-clock me-1"></i>6 min read</span>
+              </div>
+              <h5 class="fw-bold text-navy mb-2">
+                <a href="blog-details.html?id=blog-4" class="text-decoration-none text-navy">
+                  5 Crucial Pre-Rental Checks Every Project Manager Must Know
+                </a>
+              </h5>
+              <p class="small text-muted flex-grow-1 mb-3">
+                From crane drop clearances to cable path protection and earth rod bonding, ensure seamless site readiness prior to drop-off.
+              </p>
+              <a href="blog-details.html?id=blog-4" class="btn btn-sm btn-pr-secondary align-self-start mt-auto">
+                Read Full Article <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: GENERATOR RENTAL TIPS -->
+  <section class="section-padding bg-white border-bottom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-lightbulb-fill text-warning"></i> Best Practices</span>
+        <h2 class="section-title">Generator Rental Tips & Field Guidelines</h2>
+        <p class="section-subtitle">
+          Proven operational protocols compiled by our fleet technicians to prevent engine wet-stacking, voltage dips, and fuel contamination.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 p-4 border rounded-4 shadow-sm bg-light-grey">
+            <div class="rounded-3 bg-white p-3 text-warning mb-3 d-inline-block shadow-sm" style="width: fit-content;">
+              <i class="bi bi-calculator fs-3"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Account for Inrush Amps</h5>
+            <p class="small text-muted mb-0">Electric motors, pumps, and chillers require 3 to 6 times their running current upon initial start. Always size for peak startup demand.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 p-4 border rounded-4 shadow-sm bg-light-grey">
+            <div class="rounded-3 bg-white p-3 text-primary mb-3 d-inline-block shadow-sm" style="width: fit-content;">
+              <i class="bi bi-thermometer-half fs-3"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Avoid Light Load Wet-Stacking</h5>
+            <p class="small text-muted mb-0">Running a diesel generator below 30% capacity causes unburned fuel buildup. Pair units with a resistive load bank or downsize your set.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 p-4 border rounded-4 shadow-sm bg-light-grey">
+            <div class="rounded-3 bg-white p-3 text-success mb-3 d-inline-block shadow-sm" style="width: fit-content;">
+              <i class="bi bi-soundwave fs-3"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Strategic Sound Placement</h5>
+            <p class="small text-muted mb-0">Direct generator exhaust louvers away from residential boundaries and use acoustic sound barriers to lower noise by an additional 6 to 10 dB(A).</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 p-4 border rounded-4 shadow-sm bg-light-grey">
+            <div class="rounded-3 bg-white p-3 text-danger mb-3 d-inline-block shadow-sm" style="width: fit-content;">
+              <i class="bi bi-droplet-half fs-3"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Clean Fuel Protocols</h5>
+            <p class="small text-muted mb-0">Ensure fuel supplies are moisture-free and treated with biocide in sub-zero weather to eliminate paraffin waxing and filter clogging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: INDUSTRY NEWS & REGULATION UPDATES -->
+  <section class="section-padding bg-light-grey border-bottom">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="section-tag"><i class="bi bi-broadcast"></i> Regulatory Updates</span>
+          <h2 class="section-title">Industry News & Emissions Directives</h2>
+          <p class="text-muted mb-4">
+            Stay informed on environmental mandates, Stage V / Tier 4 Final standards, noise ordinances, and alternative biofuels transforming temporary power generation.
+          </p>
+          <div class="p-3 bg-white rounded-3 border mb-3">
+            <h6 class="fw-bold mb-1"><i class="bi bi-patch-check-fill text-success me-2"></i>100% HVO Biofuel Compatible Fleet</h6>
+            <p class="small text-muted mb-0">Every PowerRent generator is certified to operate on Hydrotreated Vegetable Oil, cutting net greenhouse emissions by up to 90%.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card border-0 rounded-4 p-4 bg-white shadow-sm">
+            <div class="d-flex align-items-start gap-3 pb-3 border-bottom mb-3">
+              <span class="badge bg-danger mt-1">Regulatory</span>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">EPA Tier 4 Final and EU Stage V Mandates in Urban Centers</h6>
+                <p class="small text-muted mb-1">New municipal clean air guidelines require zero visible smoke and 90% reduction in particulate matter for inner-city construction.</p>
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i>Oct 2026</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 pb-3 border-bottom mb-3">
+              <span class="badge bg-success mt-1">Innovation</span>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">The Rapid Adoption of Paraffinic HVO Fuel in Temporary Power</h6>
+                <p class="small text-muted mb-1">Why top construction firms are abandoning fossil diesel in favor of fossil-free, odorless synthetic biofuels with zero engine modification.</p>
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i>Sep 2026</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3">
+              <span class="badge bg-primary mt-1">Smart Grid</span>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Cellular Telemetry and Remote Automated Start in Emergency Fleets</h6>
+                <p class="small text-muted mb-1">How 24/7 cloud telemetry systems monitor oil pressure, coolant temperatures, and fuel levels to prevent site shut-offs.</p>
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i>Aug 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: POPULAR ARTICLES -->
+  <section class="section-padding bg-white border-bottom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-fire text-danger"></i> High Readership</span>
+        <h2 class="section-title">Popular Articles & Reader Favorites</h2>
+        <p class="section-subtitle">
+          Our most frequently accessed whitepapers and technical guides among engineers and facility operators.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card border rounded-4 p-3 shadow-sm h-100 bg-light-grey">
+            <div class="row g-3 align-items-center">
+              <div class="col-sm-4">
+                <img src="../assets/images/blog/blog-5.jpg" alt="Acoustic Limits" class="img-fluid rounded-3 w-100" style="height: 120px; object-fit: cover;">
+              </div>
+              <div class="col-sm-8">
+                <span class="badge bg-secondary mb-1">Acoustics</span>
+                <h6 class="fw-bold text-navy mb-1">
+                  <a href="blog-details.html?id=blog-5" class="text-decoration-none text-navy">
+                    Managing Acoustic Limits: Soundproof Canopies for Urban Events
+                  </a>
+                </h6>
+                <p class="small text-muted mb-2">How double acoustic rockwool baffles maintain sound ratings below 63 dB(A).</p>
+                <span class="small text-muted"><i class="bi bi-eye me-1"></i>3,420 reads</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border rounded-4 p-3 shadow-sm h-100 bg-light-grey">
+            <div class="row g-3 align-items-center">
+              <div class="col-sm-4">
+                <img src="../assets/images/blog/blog-6.jpg" alt="Preventative Maintenance" class="img-fluid rounded-3 w-100" style="height: 120px; object-fit: cover;">
+              </div>
+              <div class="col-sm-8">
+                <span class="badge bg-secondary mb-1">Maintenance</span>
+                <h6 class="fw-bold text-navy mb-1">
+                  <a href="blog-details.html?id=blog-6" class="text-decoration-none text-navy">
+                    Preventative Generator Maintenance Checklist During Long Rentals
+                  </a>
+                </h6>
+                <p class="small text-muted mb-2">Oil analysis, coolant testing, and load-banking on continuous 24/7 contracts.</p>
+                <span class="small text-muted"><i class="bi bi-eye me-1"></i>2,890 reads</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: NEWSLETTER SUBSCRIPTION -->
+  <section class="section-padding text-center position-relative" style="background: linear-gradient(135deg, #101c2c 0%, #1a2f4c 100%);">
+    <div class="container py-4 position-relative z-1">
+      <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase mb-3"><i class="bi bi-envelope-paper me-1"></i> Engineering Digest</span>
+      <h2 class="display-5 fw-bold text-white mb-3">Subscribe to PowerRent Engineering Insights</h2>
+      <p class="lead text-white-50 max-w-700 mx-auto mb-4">
+        Receive our monthly technical digest covering fuel optimization formulas, generator load sizing matrices, and regulatory safety frameworks. Zero spam, unsubscribe anytime.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <form class="d-flex flex-column flex-sm-row gap-2 bg-white p-2 rounded-4 shadow-lg" onsubmit="event.preventDefault(); alert('Thank you for subscribing to PowerRent Engineering Insights!');">
+            <input type="email" class="form-control form-control-lg border-0 px-3" placeholder="Enter your work email address..." required>
+            <button type="submit" class="btn btn-pr-primary btn-lg px-4 fw-bold text-nowrap">
+              <i class="bi bi-send-check me-2"></i>Subscribe
+            </button>
+          </form>
+          <div class="text-white-50 small mt-3">
+            <i class="bi bi-shield-check me-1 text-warning"></i> Your corporate data is safe. We respect your confidentiality.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="d-inline-block mb-3">
+            <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="fleet.html"><i class="bi bi-chevron-right"></i>Generator Fleet</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="fleet.html?category=5-20"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="fleet.html?category=25-50"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="fleet.html?category=60-100"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="fleet.html?category=125-250"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="fleet.html?category=300-500"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="fleet.html?category=above-500"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

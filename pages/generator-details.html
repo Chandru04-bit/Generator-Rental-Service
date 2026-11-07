@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generator Specifications & Rental Details | PowerRent</title>
+  <meta name="description" content="Detailed technical specifications, fuel efficiency, acoustic ratings, and rental booking for PowerRent industrial generators.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================================================================
+       1. GENERATOR HERO SECTION
+       =================================================================== -->
+  <header class="page-banner" style="background-image: url('../assets/images/hero/hero-fleet.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-3">
+          <li class="breadcrumb-item"><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item"><a href="fleet.html" class="text-white text-decoration-none">Generator Fleet</a></li>
+          <li class="breadcrumb-item active text-accent" id="breadcrumb-gen-title">Generator Details</li>
+        </ol>
+      </nav>
+      <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+        <span class="badge bg-accent text-dark fw-bold px-3 py-2 text-uppercase" id="detail-category-badge">60–100 kVA Industrial</span>
+        <span class="badge bg-success-subtle text-success fw-bold px-3 py-2" id="detail-status-badge">Available Now</span>
+      </div>
+      <h1 class="display-4 fw-bold text-white mb-2" id="detail-gen-name">Cummins 80kVA Industrial Power</h1>
+      <p class="lead text-white-50" id="detail-gen-model">Model: C80-D5-Silent | Capacity: 80 kVA Prime Output</p>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       2. PRODUCT OVERVIEW SECTION (GALLERY & SPECS QUICK BAR)
+       =================================================================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Image Gallery -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-3">
+            <img src="../assets/images/generators/gen-60-100-1.jpg" alt="Generator Image" id="detail-main-img" class="img-fluid w-100" style="max-height: 480px; object-fit: cover;">
+          </div>
+          <div class="d-flex gap-3 mb-4" id="detail-gallery-thumbs">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <!-- Right: Equipment Highlights & Quick Booking Card -->
+        <div class="col-lg-5">
+          <div class="p-4 rounded-4 bg-light-grey border shadow-sm h-100 d-flex flex-column">
+            <span class="section-tag mb-2"><i class="bi bi-info-circle"></i> Equipment Overview</span>
+            <h3 class="fw-bold text-navy mb-2" id="detail-overview-title">Prime Power Performance</h3>
+            <p class="text-muted small mb-4" id="detail-long-desc">
+              Industry-standard prime power unit equipped with sound-attenuated acoustic canopy, electronic engine management, and automated transfer capability.
+            </p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <div class="p-3 bg-white rounded-3 border">
+                  <div class="text-accent fs-3 mb-1"><i class="bi bi-volume-down-fill"></i></div>
+                  <div class="small text-muted">Acoustic Rating</div>
+                  <div class="fw-bold text-navy" id="detail-quick-noise">68 dB(A) @ 7m</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-white rounded-3 border">
+                  <div class="text-accent fs-3 mb-1"><i class="bi bi-fuel-pump-fill"></i></div>
+                  <div class="small text-muted">Fuel Consumption</div>
+                  <div class="fw-bold text-navy" id="detail-quick-fuel">12.4 L/hr @ 75%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-auto pt-3 border-top">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="text-muted small d-block">Starting Rental Rate</span>
+                  <span class="display-6 fw-bold text-navy" id="detail-price-daily">$220</span>
+                  <span class="text-muted">/ day</span>
+                </div>
+                <div class="text-end">
+                  <span class="badge bg-accent text-dark fw-bold px-3 py-2">Weekly: <span id="detail-price-weekly-badge">$1,320</span></span>
+                </div>
+              </div>
+              <div class="d-grid gap-2">
+                <a href="booking.html" id="detail-book-now-btn" class="btn btn-pr-primary btn-lg shadow">
+                  <i class="bi bi-calendar-check me-2"></i>Book This Generator Online
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3. TECHNICAL SPECIFICATIONS SECTION
+       =================================================================== -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-sliders"></i> Certified Engineering Data</span>
+        <h2 class="section-title">Technical Specifications</h2>
+        <p class="section-subtitle">Verified performance metrics, engine specifications, electrical ratings, and dimensions.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card p-4 border rounded-4 bg-white shadow-sm">
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0" id="detail-specs-table">
+                <tbody>
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. KEY FEATURES SECTION
+       =================================================================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-cpu-fill"></i> Factory Inclusions</span>
+        <h2 class="section-title">Standard Equipment Features</h2>
+        <p class="section-subtitle">Engineered for ease of integration, safe operation, and environmental compliance.</p>
+      </div>
+
+      <div class="row g-4" id="detail-features-grid">
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-soundwave"></i></div>
+            <h5 class="fw-bold text-navy mb-2">Acoustic Soundproofing</h5>
+            <p class="small text-muted mb-0">Multi-density sound baffles and heavy acoustic foam keep sound pressure within strict urban municipal limits.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-motherboard-fill"></i></div>
+            <h5 class="fw-bold text-navy mb-2">Digital Controller</h5>
+            <p class="small text-muted mb-0">Deep Sea Electronics (DSE) panel provides automated startup, ATS integration, and real-time load telemetry.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-shield-fill-check"></i></div>
+            <h5 class="fw-bold text-navy mb-2">110% Bunded Base</h5>
+            <p class="small text-muted mb-0">Fully integrated environmental spill containment reservoir prevents any fuel, oil, or coolant site leakage.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light-grey text-center h-100">
+            <div class="text-accent fs-1 mb-3"><i class="bi bi-fuel-pump-diesel"></i></div>
+            <h5 class="fw-bold text-navy mb-2">HVO Biofuel Certified</h5>
+            <p class="small text-muted mb-0">Engine is 100% approved for Hydrotreated Vegetable Oil, reducing lifecycle net greenhouse emissions by up to 90%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. APPLICATIONS & RECOMMENDED SECTOR USAGE
+       =================================================================== -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-gear-wide-connected"></i> Ideal Deployments</span>
+        <h2 class="section-title">Common Applications For This Capacity</h2>
+        <p class="section-subtitle">Where this generator set delivers the highest operational and cost efficiency.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="text-accent fs-2 mb-2"><i class="bi bi-cone-striped"></i></div>
+            <h5 class="fw-bold text-navy mb-2">Construction Sites & Rigging</h5>
+            <p class="small text-muted mb-0">Provides steady 3-phase power for tower cranes, concrete pumps, high-output arc welders, and drying blowers.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="text-accent fs-2 mb-2"><i class="bi bi-hospital"></i></div>
+            <h5 class="fw-bold text-navy mb-2">Healthcare & Clinic Standby</h5>
+            <p class="small text-muted mb-0">Paired with an Automatic Transfer Switch (ATS) to provide instantaneous emergency backup for medical life-support.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="text-accent fs-2 mb-2"><i class="bi bi-music-note-beamed"></i></div>
+            <h5 class="fw-bold text-navy mb-2">Concerts & Outdoor Broadcasts</h5>
+            <p class="small text-muted mb-0">Clean sine wave power ensures zero hum or line interference across LED stage walls, line arrays, and broadcast units.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6. RENTAL PRICING PLANS & DEPOSIT BREAKDOWN
+       =================================================================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-cash-stack"></i> Transparent Rates</span>
+        <h2 class="section-title">Rental Pricing & Terms Breakdown</h2>
+        <p class="section-subtitle">Flexible terms with substantial discounts for long-term project commitments.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Daily -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey text-center h-100">
+            <h6 class="text-uppercase text-muted fw-bold small mb-2">Daily Hire</h6>
+            <div class="display-6 fw-bold text-navy mb-1" id="pricing-daily-val">$220</div>
+            <span class="small text-muted">Per 24-hr period</span>
+            <hr class="my-3">
+            <p class="small text-muted mb-0">Ideal for weekend events, quick emergency repairs, and concrete pours.</p>
+          </div>
+        </div>
+        <!-- Weekly -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 rounded-4 border border-warning bg-light-grey text-center h-100 shadow-sm">
+            <span class="badge bg-accent text-dark fw-bold px-2 py-1 mb-2">Popular Plan</span>
+            <h6 class="text-uppercase text-muted fw-bold small mb-2">Weekly Hire (10% Off)</h6>
+            <div class="display-6 fw-bold text-navy mb-1" id="pricing-weekly-val">$1,320</div>
+            <span class="small text-muted">7 consecutive days</span>
+            <hr class="my-3">
+            <p class="small text-muted mb-0">Discounted weekly rate includes pre-hire load bank certificate.</p>
+          </div>
+        </div>
+        <!-- Monthly -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey text-center h-100">
+            <h6 class="text-uppercase text-muted fw-bold small mb-2">Monthly Hire (25% Off)</h6>
+            <div class="display-6 fw-bold text-navy mb-1" id="pricing-monthly-val">$4,500</div>
+            <span class="small text-muted">30 consecutive days</span>
+            <hr class="my-3">
+            <p class="small text-muted mb-0">Maximum savings for continuous construction and seasonal plant operations.</p>
+          </div>
+        </div>
+        <!-- Fees & Deposit -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 rounded-4 border bg-light-grey h-100">
+            <h6 class="text-uppercase text-muted fw-bold small mb-3 text-center">Fees & Security</h6>
+            <div class="d-flex justify-content-between py-1 small">
+              <span class="text-muted">Security Deposit:</span>
+              <strong class="text-navy" id="detail-deposit">$1,000</strong>
+            </div>
+            <div class="d-flex justify-content-between py-1 small">
+              <span class="text-muted">Delivery & Rigging:</span>
+              <strong class="text-navy" id="detail-delivery">$110</strong>
+            </div>
+            <div class="d-flex justify-content-between py-1 small">
+              <span class="text-muted">24/7 Monitoring:</span>
+              <strong class="text-success">Included</strong>
+            </div>
+            <div class="d-flex justify-content-between py-1 small">
+              <span class="text-muted">Load Bank Test:</span>
+              <strong class="text-success">Included</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7. RELATED GENERATORS RECOMMENDATIONS
+       =================================================================== -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-grid-fill"></i> More Options</span>
+        <h2 class="section-title">Related Generator Recommendations</h2>
+        <p class="section-subtitle">Alternate kVA capacities that may suit adjacent requirements or multi-generator paralleling.</p>
+      </div>
+
+      <div class="row g-4" id="detail-related-grid">
+        <!-- Dynamically rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       8. BOOKING CTA SECTION (CLEAN BACKGROUND)
+       =================================================================== -->
+  <section class="section-padding text-center position-relative">
+    <div class="container py-2">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <span class="badge bg-accent text-dark px-3 py-2 fw-bold text-uppercase mb-3">
+            <i class="bi bi-lightning-charge-fill me-1"></i> Fast Reservation
+          </span>
+          <h2 class="display-5 text-navy fw-bold mb-3">Ready to Reserve This Generator?</h2>
+          <p class="lead text-muted mb-4 max-w-700 mx-auto">
+            Lock in your rental dates online in under two minutes, or speak with our engineers for custom transfer switch and cable distribution setups.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="booking.html" id="cta-book-btn" class="btn btn-pr-primary btn-lg shadow">
+              <i class="bi bi-calendar-check me-2"></i>Book This Generator Now
+            </a>
+            <a href="fleet.html" class="btn btn-pr-dark btn-lg shadow">
+              <i class="bi bi-grid me-2"></i>Browse All Fleet Models
+            </a>
+            <a href="contact.html" class="btn btn-pr-secondary btn-lg shadow">
+              <i class="bi bi-headset me-2"></i>Contact Power Dispatch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="d-inline-block mb-3">
+            <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="fleet.html"><i class="bi bi-chevron-right"></i>Generator Fleet</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="fleet.html?category=5-20"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="fleet.html?category=25-50"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="fleet.html?category=60-100"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="fleet.html?category=125-250"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="fleet.html?category=300-500"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="fleet.html?category=above-500"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Page Dynamic Population Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const genId = urlParams.get('id') || 'gen-80kva';
+      const gen = window.PowerRentFleet.getById(genId);
+
+      if (!gen) return;
+
+      // Update text fields
+      document.title = `${gen.name} Specs & Rental | PowerRent`;
+      document.getElementById('breadcrumb-gen-title').textContent = gen.name;
+      document.getElementById('detail-gen-name').textContent = gen.name;
+      document.getElementById('detail-gen-model').textContent = `Model: ${gen.model} | Capacity: ${gen.powerOutput}`;
+      document.getElementById('detail-category-badge').textContent = gen.categoryLabel;
+      document.getElementById('detail-status-badge').textContent = gen.status === 'Available' ? 'Available Now' : 'In Rental';
+      
+      const longDesc = document.getElementById('detail-long-desc');
+      if (longDesc) longDesc.textContent = gen.longDesc || gen.shortDesc;
+
+      const quickNoise = document.getElementById('detail-quick-noise');
+      if (quickNoise) quickNoise.textContent = gen.noiseLevel;
+
+      const quickFuel = document.getElementById('detail-quick-fuel');
+      if (quickFuel) quickFuel.textContent = gen.fuelConsumption;
+
+      // Pricing
+      document.getElementById('detail-price-daily').textContent = `$${gen.dailyPrice}`;
+      const weeklyBadge = document.getElementById('detail-price-weekly-badge');
+      if (weeklyBadge) weeklyBadge.textContent = `$${gen.weeklyPrice}`;
+      
+      const pricingDaily = document.getElementById('pricing-daily-val');
+      if (pricingDaily) pricingDaily.textContent = `$${gen.dailyPrice}`;
+
+      const pricingWeekly = document.getElementById('pricing-weekly-val');
+      if (pricingWeekly) pricingWeekly.textContent = `$${gen.weeklyPrice}`;
+
+      const pricingMonthly = document.getElementById('pricing-monthly-val');
+      if (pricingMonthly) pricingMonthly.textContent = `$${gen.monthlyPrice}`;
+
+      document.getElementById('detail-deposit').textContent = `$${gen.securityDeposit}`;
+      document.getElementById('detail-delivery').textContent = `$${gen.deliveryFee}`;
+
+      // Images
+      const mainImg = document.getElementById('detail-main-img');
+      mainImg.src = `../${gen.primaryImage}`;
+      mainImg.alt = gen.name;
+
+      const thumbsContainer = document.getElementById('detail-gallery-thumbs');
+      if (thumbsContainer && gen.gallery) {
+        thumbsContainer.innerHTML = gen.gallery.map(img => `
+          <img src="../${img}" class="rounded-3 border cursor-pointer detail-thumb" style="width: 80px; height: 60px; object-fit: cover;" onclick="document.getElementById('detail-main-img').src = this.src;">
+        `).join('');
+      }
+
+      // Action links
+      const bookBtn = document.getElementById('detail-book-now-btn');
+      if (bookBtn) bookBtn.href = `booking.html?id=${gen.id}`;
+
+      const ctaBookBtn = document.getElementById('cta-book-btn');
+      if (ctaBookBtn) ctaBookBtn.href = `booking.html?id=${gen.id}`;
+
+      // Technical Specs Table
+      const specsTable = document.getElementById('detail-specs-table').querySelector('tbody');
+      if (specsTable) {
+        const specs = [
+          ['Power Rating', gen.powerOutput],
+          ['Electrical Voltage', gen.voltage || '400V / 230V 3-Phase'],
+          ['Frequency', gen.frequency || '50 Hz'],
+          ['Fuel Type', gen.fuelType],
+          ['Fuel Consumption Rate', gen.fuelConsumption],
+          ['Internal Fuel Tank', gen.tankCapacity],
+          ['Acoustic Noise Emission', gen.noiseLevel],
+          ['Overall Dimensions (L x W x H)', gen.dimensions],
+          ['Dry Weight', gen.weight],
+          ...Object.entries(gen.technicalSpecs || {})
+        ];
+
+        specsTable.innerHTML = specs.map(([k, v]) => `
+          <tr>
+            <th class="text-navy w-40 small py-3 px-4">${k}</th>
+            <td class="text-muted small py-3 px-4">${v}</td>
+          </tr>
+        `).join('');
+      }
+
+      // Related recommendations
+      const relatedContainer = document.getElementById('detail-related-grid');
+      if (relatedContainer) {
+        const related = window.PowerRentFleet.getRelated(gen.id, 3);
+        relatedContainer.innerHTML = related.map(r => `
+          <div class="col-md-4">
+            <div class="gen-card h-100">
+              <div class="gen-card-img-wrap">
+                <span class="gen-card-badge">${r.capacity} kVA</span>
+                <img src="../${r.primaryImage}" alt="${r.name}" class="gen-card-img">
+              </div>
+              <div class="gen-card-body">
+                <span class="text-accent fw-bold small">${r.model}</span>
+                <h4 class="gen-card-title">${r.name}</h4>
+                <div class="gen-card-price-wrap">
+                  <div><span class="gen-price-amount">$${r.dailyPrice}</span><span class="gen-price-unit">/ day</span></div>
+                </div>
+                <div class="gen-card-actions">
+                  <a href="generator-details.html?id=${r.id}" class="btn btn-pr-secondary btn-sm">Details</a>
+                  <a href="booking.html?id=${r.id}" class="btn btn-pr-primary btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>

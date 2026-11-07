@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerRent – Industrial Generator Rental Service | Reliable Power. Anytime. Anywhere.</title>
+  <meta name="description" content="PowerRent offers dependable generator rental solutions for industrial, commercial, construction sites, outdoor events, and emergency power backup.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Core Stylesheets -->
+  <script src="assets/js/theme.js"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" style="position: fixed; inset: 0; background: #101C2C; z-index: 99999; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: opacity 0.4s ease;">
+    <div style="position: relative; width: 64px; height: 64px; margin-bottom: 20px;">
+      <div style="position: absolute; inset: 0; border: 4px solid rgba(245, 158, 11, 0.2); border-top-color: #F59E0B; border-radius: 50%; animation: spin 0.9s linear infinite;"></div>
+      <div style="position: absolute; inset: 16px; display: flex; align-items: center; justify-content: center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#F59E0B">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+        </svg>
+      </div>
+    </div>
+    <div style="font-family: system-ui, sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 2px; color: #FFFFFF; text-transform: uppercase;">
+      Power<span style="color: #F59E0B;">Rent</span>
+    </div>
+    <style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
+  </div>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent" aria-controls="powerrentNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pages/about.html">About Us</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="pages/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. HERO SECTION -->
+  <header class="hero-section" style="background-image: url('assets/images/hero/hero-home-1.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-xl-7">
+          <div class="section-tag"><i class="bi bi-shield-check"></i> 24/7 Prime & Emergency Power Services</div>
+          <h1 class="hero-title">Reliable Power. Anytime. Anywhere.</h1>
+          <p class="hero-desc">
+            Industry-leading generator rental solutions tailored for manufacturing, construction grids, major entertainment events, and mission-critical emergency backups. Capacities from 10 kVA to 1,250 kVA available for immediate deployment.
+          </p>
+          <div class="d-flex flex-wrap gap-3 hero-buttons">
+            <a href="pages/booking.html" class="btn btn-pr-primary btn-lg">
+              <i class="bi bi-file-earmark-text me-1"></i>Get a Quote
+            </a>
+            <a href="pages/services.html" class="btn btn-pr-outline btn-lg">
+              <i class="bi bi-grid me-1"></i>Explore Generators
+            </a>
+            <a href="pages/booking.html" class="btn btn-pr-dark btn-lg">
+              <i class="bi bi-calendar-check me-1"></i>Book Now
+            </a>
+          </div>
+
+          <div class="hero-stats-badge">
+            <div class="hero-stats-item">
+              <span class="hero-stats-number">99.98%</span>
+              <span class="hero-stats-label">Fleet Uptime</span>
+            </div>
+            <div class="border-end border-secondary d-none d-sm-block" style="height: 32px;"></div>
+            <div class="hero-stats-item">
+              <span class="hero-stats-number">10kVA–1.25MW</span>
+              <span class="hero-stats-label">Capacity Range</span>
+            </div>
+            <div class="border-end border-secondary d-none d-sm-block" style="height: 32px;"></div>
+            <div class="hero-stats-item">
+              <span class="hero-stats-number">&lt; 2 Hours</span>
+              <span class="hero-stats-label">Emergency Response</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. OUR POWER SOLUTIONS -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-lightning-charge-fill"></i> Turnkey Capabilities</div>
+        <h2 class="section-title">Our Power Solutions</h2>
+        <p class="section-subtitle">
+          Engineered power packages built to handle any challenge, from urban sound ordinances to remote off-grid mining sites.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon"><i class="bi bi-building"></i></div>
+              <h4 class="mb-0 fw-bold">Commercial Standby</h4>
+            </div>
+            <p class="text-muted small">Seamless automatic transfer systems safeguarding data centers, corporate campuses, cold storage, and healthcare facilities.</p>
+            <a href="pages/service-details.html?id=commercial" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon"><i class="bi bi-cone-striped"></i></div>
+              <h4 class="mb-0 fw-bold">Construction Power</h4>
+            </div>
+            <p class="text-muted small">Heavy-duty diesel generators engineered for high-inductive crane motors, batch plants, and remote site trailers.</p>
+            <a href="pages/service-details.html?id=construction" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon"><i class="bi bi-music-note-beamed"></i></div>
+              <h4 class="mb-0 fw-bold">Events & Festivals</h4>
+            </div>
+            <p class="text-muted small">Whisper-quiet canopy generators with ultra-stable electronic frequency control for concert audio, lighting, and broadcasting.</p>
+            <a href="pages/service-details.html?id=events" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon"><i class="bi bi-factory"></i></div>
+              <h4 class="mb-0 fw-bold">Industrial Prime Power</h4>
+            </div>
+            <p class="text-muted small">Continuous multi-megawatt generation with synchronized load-sharing for oil, gas, manufacturing, and refineries.</p>
+            <a href="pages/service-details.html?id=industrial" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon"><i class="bi bi-shield-exclamation"></i></div>
+              <h4 class="mb-0 fw-bold">Disaster Recovery</h4>
+            </div>
+            <p class="text-muted small">Rapid mobilize fleet on mobile trailers with dedicated fuel support during severe storms, grid failures, and floods.</p>
+            <a href="pages/service-details.html?id=emergency" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon"><i class="bi bi-tools"></i></div>
+              <h4 class="mb-0 fw-bold">Temporary Microgrids</h4>
+            </div>
+            <p class="text-muted small">Full-package distribution boards, step-up transformers, ATS panels, and external auxiliary bulk fuel logistics.</p>
+            <a href="pages/service-details.html?id=temporary" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. FEATURED GENERATOR FLEET -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-5">
+        <div>
+          <div class="section-tag"><i class="bi bi-cpu-fill"></i> Modern Fleet</div>
+          <h2 class="section-title mb-0">Featured Generator Fleet</h2>
+        </div>
+        <a href="pages/services.html" class="btn btn-pr-secondary mt-3 mt-md-0">
+          <i class="bi bi-grid-3x3-gap me-1"></i>Explore Rental Services
+        </a>
+      </div>
+
+      <div class="row g-4" id="home-featured-fleet">
+        <!-- Rendered statically for instant render & enhanced by generator.js -->
+        <div class="col-lg-4 col-md-6">
+          <div class="gen-card">
+            <div class="gen-card-img-wrap">
+              <span class="gen-card-badge">10 kVA</span>
+              <span class="gen-card-status status-available"><i class="bi bi-check-circle-fill me-1"></i>Available</span>
+              <img src="assets/images/generators/gen-5-20-1.jpg" alt="VoltMaster 10kVA" class="gen-card-img">
+            </div>
+            <div class="gen-card-body">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="text-accent fw-bold small">VM-10i-Ultra</span>
+                <span class="badge bg-light text-dark border">5–20 kVA</span>
+              </div>
+              <h3 class="gen-card-title">VoltMaster 10kVA Inverter</h3>
+              <p class="small text-muted mb-2">Whisper-quiet acoustic canopy portable generator for events and broadcasts.</p>
+              <div class="gen-card-specs">
+                <div class="gen-spec-item"><i class="bi bi-fuel-pump"></i><span>Diesel</span></div>
+                <div class="gen-spec-item"><i class="bi bi-volume-down-fill"></i><span>58 dB(A)</span></div>
+                <div class="gen-spec-item"><i class="bi bi-speedometer2"></i><span>2.1 L/hr</span></div>
+                <div class="gen-spec-item"><i class="bi bi-droplet-fill"></i><span>45 L Tank</span></div>
+              </div>
+              <div class="gen-card-price-wrap">
+                <div><span class="gen-price-amount">$65</span><span class="gen-price-unit">/ day</span></div>
+                <div class="text-end small text-muted">Weekly: <strong class="text-navy">$390</strong></div>
+              </div>
+              <div class="gen-card-actions">
+                <a href="pages/generator-details.html?id=gen-10kva" class="btn btn-pr-secondary btn-sm">Details</a>
+                <a href="pages/booking.html?id=gen-10kva" class="btn btn-pr-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gen-card">
+            <div class="gen-card-img-wrap">
+              <span class="gen-card-badge">80 kVA</span>
+              <span class="gen-card-status status-available"><i class="bi bi-check-circle-fill me-1"></i>Available</span>
+              <img src="assets/images/generators/gen-60-100-1.jpg" alt="Cummins 80kVA" class="gen-card-img">
+            </div>
+            <div class="gen-card-body">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="text-accent fw-bold small">C80-D5-Silent</span>
+                <span class="badge bg-light text-dark border">60–100 kVA</span>
+              </div>
+              <h3 class="gen-card-title">Cummins 80kVA Industrial</h3>
+              <p class="small text-muted mb-2">Industry-standard Cummins prime power unit for manufacturing lines and hospitals.</p>
+              <div class="gen-card-specs">
+                <div class="gen-spec-item"><i class="bi bi-fuel-pump"></i><span>Diesel</span></div>
+                <div class="gen-spec-item"><i class="bi bi-volume-down-fill"></i><span>66 dB(A)</span></div>
+                <div class="gen-spec-item"><i class="bi bi-speedometer2"></i><span>13.2 L/hr</span></div>
+                <div class="gen-spec-item"><i class="bi bi-droplet-fill"></i><span>240 L Tank</span></div>
+              </div>
+              <div class="gen-card-price-wrap">
+                <div><span class="gen-price-amount">$240</span><span class="gen-price-unit">/ day</span></div>
+                <div class="text-end small text-muted">Weekly: <strong class="text-navy">$1,440</strong></div>
+              </div>
+              <div class="gen-card-actions">
+                <a href="pages/generator-details.html?id=gen-80kva" class="btn btn-pr-secondary btn-sm">Details</a>
+                <a href="pages/booking.html?id=gen-80kva" class="btn btn-pr-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gen-card">
+            <div class="gen-card-img-wrap">
+              <span class="gen-card-badge">250 kVA</span>
+              <span class="gen-card-status status-available"><i class="bi bi-check-circle-fill me-1"></i>Available</span>
+              <img src="assets/images/generators/gen-125-250-2.jpg" alt="Cummins 250kVA" class="gen-card-img">
+            </div>
+            <div class="gen-card-body">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="text-accent fw-bold small">C250-D5-Power</span>
+                <span class="badge bg-light text-dark border">125–250 kVA</span>
+              </div>
+              <h3 class="gen-card-title">Cummins 250kVA Powerhouse</h3>
+              <p class="small text-muted mb-2">High-capacity standby generator with automatic synchronization for large infrastructure.</p>
+              <div class="gen-card-specs">
+                <div class="gen-spec-item"><i class="bi bi-fuel-pump"></i><span>Diesel</span></div>
+                <div class="gen-spec-item"><i class="bi bi-volume-down-fill"></i><span>69 dB(A)</span></div>
+                <div class="gen-spec-item"><i class="bi bi-speedometer2"></i><span>41.0 L/hr</span></div>
+                <div class="gen-spec-item"><i class="bi bi-droplet-fill"></i><span>600 L Tank</span></div>
+              </div>
+              <div class="gen-card-price-wrap">
+                <div><span class="gen-price-amount">$520</span><span class="gen-price-unit">/ day</span></div>
+                <div class="text-end small text-muted">Weekly: <strong class="text-navy">$3,120</strong></div>
+              </div>
+              <div class="gen-card-actions">
+                <a href="pages/generator-details.html?id=gen-250kva" class="btn btn-pr-secondary btn-sm">Details</a>
+                <a href="pages/booking.html?id=gen-250kva" class="btn btn-pr-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. GENERATOR RENTAL SERVICES (8 SERVICES GRID) -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-gear-fill"></i> Dedicated Services</div>
+        <h2 class="section-title">Generator Rental Services</h2>
+        <p class="section-subtitle">
+          Comprehensive temporary power support designed around your specific project requirements.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-industrial.jpg" alt="Industrial Rental" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-factory"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">1. Industrial Generator Rental</h4>
+              <p class="small text-muted">High-output generators for heavy manufacturing, chemical processing, and mining operations.</p>
+              <a href="pages/service-details.html?id=industrial" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-commercial.jpg" alt="Commercial Rental" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-building"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">2. Commercial Generator Rental</h4>
+              <p class="small text-muted">Backup power systems for corporate offices, retail complexes, and hospitals.</p>
+              <a href="pages/service-details.html?id=commercial" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-construction.jpg" alt="Construction Site Power" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-cone-striped"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">3. Construction Site Power</h4>
+              <p class="small text-muted">Rugged, weather-resistant power supply for cranes, tools, lighting, and site facilities.</p>
+              <a href="pages/service-details.html?id=construction" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-events.jpg" alt="Event Generator Rental" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-music-note"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">4. Event Generator Rental</h4>
+              <p class="small text-muted">Whisper-quiet generators for concerts, outdoor festivals, weddings, and sports venues.</p>
+              <a href="pages/service-details.html?id=events" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-emergency.jpg" alt="Emergency Power Backup" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-shield-exclamation"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">5. Emergency Power Backup</h4>
+              <p class="small text-muted">24/7 rapid deployment during storm outages, utility failures, and critical downtime.</p>
+              <a href="pages/service-details.html?id=emergency" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-installation.jpg" alt="Generator Installation" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-wrench-adjustable"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">6. Generator Installation</h4>
+              <p class="small text-muted">Certified electrical cabling, transfer switches, load testing, and commissioning.</p>
+              <a href="pages/service-details.html?id=installation" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-maintenance.jpg" alt="Generator Maintenance" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-tools"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">7. Generator Maintenance</h4>
+              <p class="small text-muted">Scheduled servicing, fluid management, remote telemetry, and emergency repair.</p>
+              <a href="pages/service-details.html?id=maintenance" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="assets/images/services/service-temporary.jpg" alt="Temporary Power Solutions" class="service-img">
+              <div class="service-icon-box"><i class="bi bi-diagram-3"></i></div>
+            </div>
+            <div class="service-card-body">
+              <h4 class="service-card-title">8. Temporary Power Solutions</h4>
+              <p class="small text-muted">Customized multi-megawatt setups with synchronizing switchgear and auxiliary bulk tanks.</p>
+              <a href="pages/service-details.html?id=temporary" class="service-link">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WHY CHOOSE POWERRENT -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="section-tag"><i class="bi bi-check-circle-fill"></i> The PowerRent Standard</div>
+          <h2 class="section-title">Why Engineering Teams & Contractors Trust PowerRent</h2>
+          <p class="text-muted mb-4">
+            With over 15 years in mission-critical power logistics, we maintain one of the newest, cleanest, and most rigorously inspected generator fleets in North America.
+          </p>
+
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="text-accent fs-3"><i class="bi bi-clock-history"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1">24/7 Field Support</h6>
+                  <p class="small text-muted mb-0">Certified mobile diesel technicians dispatched within 60 minutes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="text-accent fs-3"><i class="bi bi-shield-check"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1">Zero Downtime Promise</h6>
+                  <p class="small text-muted mb-0">Redundant generator pairs and automatic load failover options.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="text-accent fs-3"><i class="bi bi-soundwave"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1">Whisper-Quiet Canopies</h6>
+                  <p class="small text-muted mb-0">Sub-65 dB acoustic enclosures meeting strict municipal night limits.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="text-accent fs-3"><i class="bi bi-reception-4"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1">Live Telemetry & Fuel</h6>
+                  <p class="small text-muted mb-0">GPS tracking, remote fuel level monitoring, and auto-refill schedules.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-top">
+            <a href="pages/about.html" class="btn btn-pr-dark me-3">About Our Company</a>
+            <a href="pages/contact.html" class="btn btn-pr-outline text-dark border-dark">Speak to an Engineer</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="assets/images/about/about-company.jpg" alt="PowerRent Generator Fleet Depot" class="img-fluid rounded-4 shadow-lg border">
+            <div class="position-absolute bottom-0 start-0 m-4 p-3 bg-dark text-white rounded-3 shadow d-flex align-items-center gap-3" style="max-width: 280px; opacity: 0.95;">
+              <i class="bi bi-award-fill text-warning fs-1"></i>
+              <div>
+                <div class="fw-bold">ISO 9001 Certified</div>
+                <div class="small text-secondary">Safety & Quality Guaranteed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. HOW OUR RENTAL PROCESS WORKS -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-arrow-repeat"></i> Simple & Streamlined</div>
+        <h2 class="section-title">How Our Rental Process Works</h2>
+        <p class="section-subtitle">
+          From the initial capacity calculation to on-site commissioning and fuel maintenance, our 4-step workflow guarantees uninterrupted operations.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon-wrap"><i class="bi bi-calculator"></i></div>
+            <h4 class="fw-bold mb-2">Power Sizing</h4>
+            <p class="small text-muted mb-0">Our engineers evaluate your peak kVA demand, motor starting loads, and fuel run-hours to specify the ideal unit.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon-wrap"><i class="bi bi-truck"></i></div>
+            <h4 class="fw-bold mb-2">Rapid Transport</h4>
+            <p class="small text-muted mb-0">Dedicated crane and flatbed fleet dispatches your generator, external fuel tank, and cables directly to site.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon-wrap"><i class="bi bi-plug-fill"></i></div>
+            <h4 class="fw-bold mb-2">Setup & Commissioning</h4>
+            <p class="small text-muted mb-0">Certified technicians wire all connections, configure the ATS switch, and conduct a full load bank verification.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step-card">
+            <div class="step-number">04</div>
+            <div class="step-icon-wrap"><i class="bi bi-shield-check"></i></div>
+            <h4 class="fw-bold mb-2">24/7 Operations</h4>
+            <p class="small text-muted mb-0">We monitor runtime hours, dispatch routine oil/filter servicing, and refill fuel throughout the rental lifecycle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. GENERATOR CAPACITY CATEGORIES -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-speedometer"></i> Capacity Tiers</div>
+        <h2 class="section-title">Generator Capacity Categories</h2>
+        <p class="section-subtitle">
+          Choose the right power tier matching your exact technical specifications.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 border rounded-3 bg-white h-100 shadow-sm hover-shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark px-3 py-2 fw-bold fs-6">5–20 kVA</span>
+              <span class="text-muted small">Portable Silent</span>
+            </div>
+            <h4 class="fw-bold mb-2">Residential & Small Events</h4>
+            <p class="text-muted small mb-3">Whisper-quiet inverter & diesel sets for outdoor film shoots, broadcast trailers, food events, and homes.</p>
+            <ul class="list-unstyled small mb-4">
+              <li><i class="bi bi-check2 text-success me-2"></i>Single & 3-Phase outputs</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Integrated wheel transport kits</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Pure sine wave protection</li>
+            </ul>
+            <a href="pages/services.html" class="btn btn-sm btn-pr-secondary w-100">Browse 5–20 kVA Units</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 border rounded-3 bg-white h-100 shadow-sm hover-shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark px-3 py-2 fw-bold fs-6">25–50 kVA</span>
+              <span class="text-muted small">Commercial Standby</span>
+            </div>
+            <h4 class="fw-bold mb-2">Commercial & Construction</h4>
+            <p class="text-muted small mb-3">Heavy-duty canopy units for medium commercial plazas, medical clinics, and site work lighting.</p>
+            <ul class="list-unstyled small mb-4">
+              <li><i class="bi bi-check2 text-success me-2"></i>24-Hour continuous base fuel tanks</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Deep Sea Electronics controller</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>110% bunded environmental base</li>
+            </ul>
+            <a href="pages/services.html" class="btn btn-sm btn-pr-secondary w-100">Browse 25–50 kVA Units</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 border rounded-3 bg-white h-100 shadow-sm hover-shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark px-3 py-2 fw-bold fs-6">60–100 kVA</span>
+              <span class="text-muted small">Industrial Prime</span>
+            </div>
+            <h4 class="fw-bold mb-2">Industrial & Manufacturing</h4>
+            <p class="text-muted small mb-3">Cummins and Volvo Penta prime power sets for batching plants, cold storage, and music festivals.</p>
+            <ul class="list-unstyled small mb-4">
+              <li><i class="bi bi-check2 text-success me-2"></i>Low noise sub-66 dB(A) enclosures</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Multi-voltage distribution panels</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Stage IIIA / V emission options</li>
+            </ul>
+            <a href="pages/services.html" class="btn btn-sm btn-pr-secondary w-100">Browse 60–100 kVA Units</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 border rounded-3 bg-white h-100 shadow-sm hover-shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark px-3 py-2 fw-bold fs-6">125–250 kVA</span>
+              <span class="text-muted small">Heavy Duty Workhorse</span>
+            </div>
+            <h4 class="fw-bold mb-2">Major Infrastructure & Plants</h4>
+            <p class="text-muted small mb-3">Caterpillar & Cummins high-torque engines engineered for crane hoists and industrial process lines.</p>
+            <ul class="list-unstyled small mb-4">
+              <li><i class="bi bi-check2 text-success me-2"></i>Auto-synchronization capable</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Dual fuel filtration with water traps</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>High ambient tropical radiators (50°C)</li>
+            </ul>
+            <a href="pages/services.html" class="btn btn-sm btn-pr-secondary w-100">Browse 125–250 kVA Units</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 border rounded-3 bg-white h-100 shadow-sm hover-shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark px-3 py-2 fw-bold fs-6">300–500 kVA</span>
+              <span class="text-muted small">Containerized Power</span>
+            </div>
+            <h4 class="fw-bold mb-2">Hospitals & Data Centers</h4>
+            <p class="text-muted small mb-3">ISO containerized units providing mission-critical power for regional healthcare and tunnel excavation.</p>
+            <ul class="list-unstyled small mb-4">
+              <li><i class="bi bi-check2 text-success me-2"></i>Internal fire suppression system</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Powerlock rapid camlock connections</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>10-second NFPA 110 load acceptance</li>
+            </ul>
+            <a href="pages/services.html" class="btn btn-sm btn-pr-secondary w-100">Browse 300–500 kVA Units</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 border rounded-3 bg-white h-100 shadow-sm hover-shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark px-3 py-2 fw-bold fs-6">Above 500 kVA</span>
+              <span class="text-muted small">Multi-Megawatt</span>
+            </div>
+            <h4 class="fw-bold mb-2">Utility & Microgrid Power</h4>
+            <p class="text-muted small mb-3">750 kVA and 1,250 kVA heavy container units designed to power entire towns, refineries, and ports.</p>
+            <ul class="list-unstyled small mb-4">
+              <li><i class="bi bi-check2 text-success me-2"></i>Medium voltage 11kV step-up available</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Bulk fuel farm automated feed pumps</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Paralleling bus for 10MW+ stations</li>
+            </ul>
+            <a href="pages/services.html" class="btn btn-sm btn-pr-secondary w-100">Browse Megawatt Units</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. INDUSTRIES WE SERVE -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-briefcase-fill"></i> Industry Applications</div>
+        <h2 class="section-title">Industries We Serve</h2>
+        <p class="section-subtitle">
+          Engineered temporary energy tailored to the regulatory and operational demands of critical sectors.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="p-4 bg-white rounded-3 border shadow-sm">
+            <i class="bi bi-hospital fs-1 text-accent mb-2 d-block"></i>
+            <h6 class="fw-bold mb-0">Healthcare</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="p-4 bg-white rounded-3 border shadow-sm">
+            <i class="bi bi-buildings fs-1 text-accent mb-2 d-block"></i>
+            <h6 class="fw-bold mb-0">Construction</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="p-4 bg-white rounded-3 border shadow-sm">
+            <i class="bi bi-hdd-network fs-1 text-accent mb-2 d-block"></i>
+            <h6 class="fw-bold mb-0">Data Centers</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="p-4 bg-white rounded-3 border shadow-sm">
+            <i class="bi bi-speaker fs-1 text-accent mb-2 d-block"></i>
+            <h6 class="fw-bold mb-0">Live Events</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="p-4 bg-white rounded-3 border shadow-sm">
+            <i class="bi bi-fuel-pump fs-1 text-accent mb-2 d-block"></i>
+            <h6 class="fw-bold mb-0">Oil & Gas</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="p-4 bg-white rounded-3 border shadow-sm">
+            <i class="bi bi-water fs-1 text-accent mb-2 d-block"></i>
+            <h6 class="fw-bold mb-0">Marine & Ports</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FEATURED PROJECTS -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-trophy-fill"></i> Proven Track Record</div>
+        <h2 class="section-title">Featured Power Projects</h2>
+        <p class="section-subtitle">
+          Take a look at how PowerRent delivers when failure is not an option.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+            <img src="assets/images/services/service-construction.jpg" alt="Highway Expansion Project" style="height: 220px; object-fit: cover;">
+            <div class="card-body p-4">
+              <span class="badge bg-warning text-dark mb-2">Infrastructure</span>
+              <h5 class="fw-bold">Interstate 94 Bridge Replacement</h5>
+              <p class="small text-muted mb-3">Deployed 4x 250kVA synchronized Cummins generators providing continuous continuous duty for hydraulic jacking and underwater concrete pours.</p>
+              <div class="d-flex justify-content-between small text-muted border-top pt-2">
+                <span>Duration: <strong>90 Days</strong></span>
+                <span>Power: <strong>1,000 kVA</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+            <img src="assets/images/services/service-events.jpg" alt="Music Festival" style="height: 220px; object-fit: cover;">
+            <div class="card-body p-4">
+              <span class="badge bg-warning text-dark mb-2">Live Entertainment</span>
+              <h5 class="fw-bold">Horizon Sound & Light Festival</h5>
+              <p class="small text-muted mb-3">Provided 6x 100kVA ultra-quiet Volvo Penta sets across 3 main stages with zero acoustic interference and 100% broadcast stability.</p>
+              <div class="d-flex justify-content-between small text-muted border-top pt-2">
+                <span>Duration: <strong>5 Days</strong></span>
+                <span>Power: <strong>600 kVA</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+            <img src="assets/images/services/service-emergency.jpg" alt="Hospital Backup" style="height: 220px; object-fit: cover;">
+            <div class="card-body p-4">
+              <span class="badge bg-warning text-dark mb-2">Disaster Recovery</span>
+              <h5 class="fw-bold">Regional Medical Center Grid Failure</h5>
+              <p class="small text-muted mb-3">Dispatched two 500kVA containerized Cat generators within 90 minutes of municipal substation transformer explosion, powering ICU units.</p>
+              <div class="d-flex justify-content-between small text-muted border-top pt-2">
+                <span>Duration: <strong>14 Days</strong></span>
+                <span>Power: <strong>1,000 kVA</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. CUSTOMER TESTIMONIALS -->
+  <section class="section-padding bg-light-grey">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-star-fill"></i> Client Reviews</div>
+        <h2 class="section-title">What Project Directors Say</h2>
+        <p class="section-subtitle">
+          Read direct feedback from construction superintendents, festival producers, and hospital facility managers.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"PowerRent delivered two 250kVA units on four hours notice when our primary substation tripped. Their technician stayed on site until our line was restored. Exceptional commitment."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonials/client-1.jpg" alt="Robert Sterling" class="author-avatar">
+              <div>
+                <div class="author-name">Robert Sterling</div>
+                <div class="author-role">Site Director, Apex Construction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"The Volvo 100kVA super-silent sets were right behind our VIP hospitality tents, and you couldn't hear a hum. Flawless power and spotless equipment."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonials/client-2.jpg" alt="Amanda Flores" class="author-avatar">
+              <div>
+                <div class="author-name">Amanda Flores</div>
+                <div class="author-role">Executive Producer, Horizon Festivals</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"Their customer dashboard and real-time fuel telemetry made tracking our 30-day rental effortless. Invoices and runtime logs were accurate to the minute."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonials/client-3.jpg" alt="Vikram Patel" class="author-avatar">
+              <div>
+                <div class="author-name">Vikram Patel</div>
+                <div class="author-role">Facilities Manager, Metro Healthcare</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"High inductive motors on our stone crushers usually cause voltage sag. The CAT 500kVA handled full block loading effortlessly. True industrial heavyweights."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonials/client-4.jpg" alt="Kevin Zhang" class="author-avatar">
+              <div>
+                <div class="author-name">Kevin Zhang</div>
+                <div class="author-role">Operations Lead, Global Logistics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FREQUENTLY ASKED QUESTIONS -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-question-circle-fill"></i> Clear Answers</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Common questions regarding our generator fleet, delivery logistics, fuel management, and rental agreements.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion" id="homeFaqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq1">
+                  How do I choose the correct generator capacity for my site?
+                </button>
+              </h2>
+              <div id="hfaq1" class="accordion-collapse collapse show" data-bs-parent="#homeFaqAccordion">
+                <div class="accordion-body">
+                  Generator capacity is calculated based on total running watts (kW) plus the motor starting surge requirements (kVA). Equipment with large electric motors (such as cranes, air compressors, and chillers) typically requires 2.5 to 3 times their running power during startup. You can contact our technical engineering team with your site single-line diagram or load schedule, and we will calculate the exact kVA requirement.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq2">
+                  What is included in the generator rental package?
+                </button>
+              </h2>
+              <div id="hfaq2" class="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div class="accordion-body">
+                  Every PowerRent rental includes the fully serviced sound-attenuated generator, initial full fuel tank, delivery and positioning via hiab crane truck, certified power cabling up to 25 meters, automatic voltage regulation (AVR), 24/7 technical hotline access, and scheduled fluid and filter servicing every 250 runtime hours.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq3">
+                  How fast can an emergency generator be dispatched?
+                </button>
+              </h2>
+              <div id="hfaq3" class="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div class="accordion-body">
+                  For emergency scenarios, our dedicated rapid response units can be mobilized from our nearest regional depot within 60 to 90 minutes. Our emergency dispatch hotline operates 24 hours a day, 365 days a year.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq4">
+                  Do you offer fuel management and refueling services?
+                </button>
+              </h2>
+              <div id="hfaq4" class="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div class="accordion-body">
+                  Yes. All generators over 35 kVA are equipped with cellular telemetry fuel sensors. When your fuel drops below 30%, our automated dispatch system schedules a certified fuel tanker to top off your generator or external auxiliary bulk tank on site, ensuring zero operational downtime.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. GET A FREE QUOTE CTA BANNER -->
+  <section class="section-padding-sm">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <span class="badge bg-warning text-dark px-3 py-1 mb-2 fw-bold">Instant Online Sizing</span>
+            <h2 class="mb-2">Need Dependable Temporary Power for Your Project?</h2>
+            <p class="mb-0 text-white-50 fs-5">Speak with a certified power consultant today or book directly through our online rental portal.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="cta-banner-actions">
+              <a href="pages/booking.html" class="btn btn-pr-primary btn-lg"><i class="bi bi-calendar-check me-1"></i>Book Online</a>
+              <a href="pages/contact.html" class="btn btn-pr-outline btn-lg"><i class="bi bi-telephone me-1"></i>Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. CONTACT INFORMATION STRIP -->
+  <section class="section-padding-sm bg-light-grey">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="p-3 bg-white rounded border">
+            <i class="bi bi-telephone-outbound text-accent fs-3 mb-2 d-block"></i>
+            <h6 class="fw-bold mb-1">Direct Dispatch Hotline</h6>
+            <span class="text-navy fw-bold">+1 (800) 555-POWER / (312) 555-0199</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-white rounded border">
+            <i class="bi bi-envelope-paper text-accent fs-3 mb-2 d-block"></i>
+            <h6 class="fw-bold mb-1">Quote Inquiries</h6>
+            <span class="text-navy fw-bold">dispatch@powerrent-service.com</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-white rounded border">
+            <i class="bi bi-geo-alt-fill text-accent fs-3 mb-2 d-block"></i>
+            <h6 class="fw-bold mb-1">Central Fleet Depot</h6>
+            <span class="text-navy fw-bold">100 Power Industrial Park, Chicago, IL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. PROFESSIONAL FOOTER (BACKGROUND EXACTLY MATCHES NAVBAR) -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="pages/about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="pages/services.html"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="pages/pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="pages/blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="pages/faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="pages/contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="pages/services.html"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="pages/services.html"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="pages/services.html"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="pages/services.html"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="pages/services.html"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="pages/services.html"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="pages/faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="assets/js/direction.js"></script>
+  <script src="assets/js/generator.js"></script>
+  <script src="assets/js/authentication.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

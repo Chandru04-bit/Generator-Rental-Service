@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed – Reservation Reference | PowerRent</title>
+  <meta name="description" content="Your generator rental booking has been successfully confirmed. View your reference ID, deployment dates, and invoice.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+
+  <script src="../assets/js/theme.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Global Header & Navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent">
+        <i class="bi bi-list fs-1 text-accent"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="powerrentNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
+              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
+            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <div id="nav-auth-item">
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONFIRMATION CONTENT -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+          <!-- Success Card -->
+          <div class="card p-4 p-md-5 border-0 shadow-lg rounded-4 text-center bg-white mb-4">
+            <div class="d-inline-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); color: #10B981;">
+              <i class="bi bi-check-lg display-4"></i>
+            </div>
+            
+            <h2 class="fw-bold text-navy mb-2">Rental Booking Confirmed!</h2>
+            <p class="text-muted max-w-600 mx-auto mb-4">
+              Thank you for choosing PowerRent. Your reservation has been recorded in our dispatch system. Our logistics team will review access details and dispatch your equipment on schedule.
+            </p>
+
+            <div class="p-3 bg-light rounded-3 border d-inline-block px-4 mb-4">
+              <span class="text-muted small d-block">Booking Reference ID</span>
+              <strong class="fs-4 text-accent" id="conf-ref-id">PR-2026-98412</strong>
+            </div>
+
+            <!-- Booking Overview Details Table -->
+            <div class="text-start border rounded-3 p-4 bg-white mb-4">
+              <h5 class="fw-bold text-navy mb-3 border-bottom pb-2">Reservation Summary</h5>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Client Name / Company</span>
+                  <strong class="text-navy" id="conf-client-name">John Doe</strong>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Contact Email & Phone</span>
+                  <span id="conf-client-contact">john.doe@enterprise.com | +1 (555) 234-5678</span>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Selected Generator</span>
+                  <strong class="text-accent" id="conf-generator-name">Cummins 80kVA Industrial</strong>
+                  <span class="d-block small text-muted" id="conf-generator-capacity">80 kVA Prime Output</span>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Contract Schedule</span>
+                  <strong class="text-navy" id="conf-dates">2026-11-10 to 2026-11-15</strong>
+                  <span class="d-block small text-muted" id="conf-duration">Duration: 5 Days</span>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Delivery Site Address</span>
+                  <span id="conf-address">100 Power Industrial Park, Chicago, IL</span>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Total Estimated Cost</span>
+                  <strong class="fs-5 text-navy" id="conf-total-amount">$1,480.00</strong>
+                </div>
+                <div class="col-sm-6">
+                  <span class="text-muted small d-block">Booking Status</span>
+                  <span class="badge-status badge-status-confirmed" id="conf-status"><i class="bi bi-check-circle-fill me-1"></i>Confirmed</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="../customer/my-bookings.html" class="btn btn-pr-primary btn-lg">
+                <i class="bi bi-speedometer2 me-1"></i>View in My Bookings
+              </a>
+              <a href="../customer/invoice-details.html" id="conf-invoice-link" class="btn btn-pr-secondary btn-lg">
+                <i class="bi bi-receipt me-1"></i>View Official Invoice
+              </a>
+              <a href="../index.html" class="btn btn-pr-outline text-dark border-dark btn-lg">
+                <i class="bi bi-house me-1"></i>Return to Home
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="powerrent-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="d-inline-block mb-3">
+            <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="200" height="42">
+          </a>
+          <p class="small text-muted mb-4 pe-lg-3">
+            PowerRent provides industry-grade generator rental solutions engineered for peak reliability. From 10 kVA silent event sets to 1,250 kVA multi-megawatt industrial microgrids, we deliver temporary and emergency power anywhere, anytime.
+          </p>
+          <div class="border-start border-warning ps-3">
+            <span class="d-block text-white fw-bold">24/7 Rapid Response</span>
+            <span class="small text-muted">Emergency Line: +1 (800) 555-POWER</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-widget-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right"></i>Pricing Plans</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i>Industry News</a></li>
+            <li><a href="faq.html"><i class="bi bi-chevron-right"></i>Rental FAQ</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i>Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-widget-title">Fleet Capacities</h5>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>5–20 kVA Portable</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>25–50 kVA Commercial</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>60–100 kVA Industrial</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>125–250 kVA Heavy Duty</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>300–500 kVA Containerized</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i>Above 500 kVA Megawatt</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-widget-title">Global Headquarters</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>100 Power Industrial Park, Chicago, IL 60616</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+1 (800) 555-7693 / (312) 555-0199</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>dispatch@powerrent-service.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Operations: 24/7/365 Non-Stop</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">&copy; 2026 PowerRent Inc. All rights reserved. Industrial Power Solutions.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-muted text-decoration-none me-3 small">Privacy Policy</a>
+            <a href="#" class="text-muted text-decoration-none me-3 small">Terms of Service</a>
+            <a href="faq.html" class="text-muted text-decoration-none small">Rental Agreement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../assets/js/direction.js"></script>
+  <script src="../assets/js/generator.js"></script>
+  <script src="../assets/js/authentication.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Confirmation Loader -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const ref = urlParams.get('ref');
+
+      let booking = null;
+      const bookings = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
+      if (ref) {
+        booking = bookings.find(b => b.id === ref);
+      }
+      if (!booking) {
+        booking = JSON.parse(localStorage.getItem('powerrent_latest_booking') || 'null');
+      }
+      if (!booking && bookings.length > 0) {
+        booking = bookings[0];
+      }
+
+      if (booking) {
+        document.getElementById('conf-ref-id').textContent = booking.id;
+        document.getElementById('conf-client-name').textContent = booking.customerName;
+        document.getElementById('conf-client-contact').textContent = `${booking.email} | ${booking.phone}`;
+        document.getElementById('conf-generator-name').textContent = booking.generatorName;
+        document.getElementById('conf-generator-capacity').textContent = `${booking.capacity} kVA Prime Output | ${booking.generatorModel}`;
+        document.getElementById('conf-dates').textContent = `${booking.startDate} to ${booking.endDate}`;
+        document.getElementById('conf-duration').textContent = `Duration: ${booking.durationDays} Days`;
+        document.getElementById('conf-address').textContent = `${booking.address}, ${booking.city}`;
+        document.getElementById('conf-total-amount').textContent = `$${booking.totalAmount.toLocaleString()}`;
+        document.getElementById('conf-invoice-link').href = `../customer/invoice-details.html?ref=${booking.id}`;
+      }
+    });
+  </script>
+</body>
+</html>
