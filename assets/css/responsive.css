@@ -1,7 +1,13 @@
 /* Global overflow protection on mobile */
 html, body {
-  max-width: 100vw;
-  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /* ===================================================================
@@ -217,6 +223,11 @@ html, body {
 
 /* Breakpoint: Mobile (320px - 767.98px) */
 @media (max-width: 767.98px) {
+  .ancillary-charge-card h5,
+  .ancillary-charge-card p {
+    min-height: 0;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
@@ -814,4 +825,128 @@ html[dir="rtl"] .powerrent-navbar .navbar-collapse .nav-controls #nav-auth-item 
     bottom: 16px !important;
     width: auto !important;
   }
+}
+
+
+/* ===================================================================
+   FOOTER RESPONSIVE FIXES (Stacking, Legal Links, Spacing)
+   =================================================================== */
+@media (max-width: 575.98px) {
+  .powerrent-footer {
+    padding: 45px 0 0 0 !important;
+  }
+  .powerrent-footer .row.g-4 > [class*="col-"] {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .powerrent-footer .footer-widget-title {
+    margin-bottom: 14px !important;
+    font-size: 1.1rem !important;
+  }
+  .powerrent-footer .footer-links li {
+    margin-bottom: 10px !important;
+  }
+  .powerrent-footer .footer-links a {
+    font-size: 0.95rem !important;
+  }
+  .powerrent-footer .footer-contact-item {
+    font-size: 0.92rem !important;
+    margin-bottom: 12px !important;
+  }
+  .powerrent-footer .footer-bottom {
+    margin-top: 36px !important;
+    padding: 20px 0 !important;
+    text-align: center !important;
+  }
+}
+
+.footer-legal-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem 1rem !important;
+}
+
+@media (min-width: 768px) {
+  .footer-legal-links {
+    justify-content: flex-end !important;
+  }
+}
+
+.footer-legal-links a {
+  white-space: nowrap !important;
+  display: inline-block !important;
+  margin: 0 !important;
+}
+
+/* ===================================================================
+   CTA BUTTON RESPONSIVE STACKING & UNIFORM SIZING
+   =================================================================== */
+@media (max-width: 575.98px) {
+  .cta-btn-group {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .cta-btn-group .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 50px !important;
+    font-size: 0.95rem !important;
+    padding: 12px 18px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* ===================================================================
+   PRICING TIER TABLE RESPONSIVE & HORIZONTAL SCROLL
+   =================================================================== */
+@media (max-width: 767.98px) {
+  .pricing-tier-card {
+    padding: 1rem !important;
+  }
+  
+  .pricing-tier-table th,
+  .pricing-tier-table td {
+    padding: 10px 10px !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+/* RTL Support for Footers, CTA Buttons, and Tables */
+html[dir="rtl"] .powerrent-footer .border-start {
+  border-left: none !important;
+  border-right: 3px solid var(--pr-accent) !important;
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+}
+
+html[dir="rtl"] .powerrent-footer .footer-widget-title::after {
+  left: auto !important;
+  right: 0 !important;
+}
+
+html[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-4px) !important;
+}
+
+html[dir="rtl"] .pricing-tier-table th:nth-child(1),
+html[dir="rtl"] .pricing-tier-table td:nth-child(1) {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .pricing-tier-table th:nth-child(3),
+html[dir="rtl"] .pricing-tier-table td:nth-child(3),
+html[dir="rtl"] .pricing-tier-table th:nth-child(4),
+html[dir="rtl"] .pricing-tier-table td:nth-child(4) {
+  text-align: left !important;
+}
+
+html[dir="rtl"] .table-scroll-hint i {
+  transform: scaleX(-1);
 }

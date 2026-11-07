@@ -565,3 +565,32 @@ html[data-theme="dark"] .related-service-card:hover .related-icon-badge {
   background: var(--pr-accent) !important;
   color: #101C2C !important;
 }
+
+
+/* ===================================================================
+   PRICING TIER TABLES & CARDS IN DARK MODE
+   =================================================================== */
+html[data-theme="dark"] .pricing-tier-card {
+  background-color: var(--pr-card-bg) !important;
+  border-color: var(--pr-border) !important;
+}
+
+html[data-theme="dark"] .pricing-tier-table thead th {
+  background-color: #1A283C !important;
+  color: #FFFFFF !important;
+  border-bottom-color: var(--pr-border) !important;
+}
+
+html[data-theme="dark"] .pricing-tier-table tbody td {
+  border-bottom-color: var(--pr-border) !important;
+  color: var(--pr-text) !important;
+}
+
+html[data-theme="dark"] .pricing-tier-table tbody td .text-navy {
+  color: #F8FAFC !important;
+}
+
+html[data-theme="dark"] .table-scroll-hint {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #CBD5E1 !important;
+}
