@@ -60,32 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
       dashboardButton.href = `${prefixToCustomer}dashboard.html`;
     }
 
+    // Ensure all auth navbar dashboard buttons point directly to customer dashboard
+    document.querySelectorAll('.auth-dashboard-btn').forEach(btn => {
+      btn.href = `${prefixToCustomer}dashboard.html`;
+    });
+
     if (user) {
       // User is logged in
       if (authNavItem) {
         authNavItem.innerHTML = `
-          <div class="dropdown">
-            <button class="btn btn-sm btn-outline-warning dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
-              <i class="bi bi-person-circle text-accent"></i>
-              <span class="d-none d-md-inline">${user.name.split(' ')[0]}</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><span class="dropdown-item-text text-muted small"><i class="bi bi-shield-check me-1 text-success"></i>Logged in</span></li>
-              <li><hr class="dropdown-divider border-secondary"></li>
-              <li><a class="dropdown-item" href="${prefixToCustomer}dashboard.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
-              <li><a class="dropdown-item" href="${prefixToCustomer}my-bookings.html"><i class="bi bi-calendar-check me-2"></i>My Bookings</a></li>
-              <li><a class="dropdown-item" href="${prefixToCustomer}invoices.html"><i class="bi bi-receipt me-2"></i>Invoices</a></li>
-              <li><a class="dropdown-item" href="${prefixToCustomer}profile.html"><i class="bi bi-person-gear me-2"></i>Profile</a></li>
-              <li><hr class="dropdown-divider border-secondary"></li>
-              <li><a class="dropdown-item text-danger" href="#" id="nav-logout-action"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
-            </ul>
-          </div>
+          <button class="btn btn-sm btn-pr-outline" type="button" id="nav-logout-action">
+            <i class="bi bi-box-arrow-right me-1"></i>Logout
+          </button>
         `;
 
         const logoutBtn = document.getElementById('nav-logout-action');
         if (logoutBtn) {
-          logoutBtn.addEventListener('click', (e) => {
-            e.preventDefault();
+          logoutBtn.addEventListener('click', () => {
             if (window.PowerRentAuth) window.PowerRentAuth.logout();
           });
         }

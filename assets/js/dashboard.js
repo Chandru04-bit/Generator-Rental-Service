@@ -1,30 +1,34 @@
 /**
  * POWERRENT - CUSTOMER DASHBOARD CONTROLLER (dashboard.js)
  * Manages Overview, Bookings, Active Rentals, History, Invoices, and Profile
+ * Guarantees direct access without unwanted login redirects, and dynamic authenticated user display.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Protect dashboard routes
-  if (window.location.pathname.includes('/customer/')) {
-    if (window.PowerRentAuth && !window.PowerRentAuth.requireAuth()) {
-      return;
-    }
-  }
+  // 1. Evaluate authentication status (never automatically redirect to login)
+  const currentUser = window.PowerRentAuth ? window.PowerRentAuth.getCurrentUser() : null;
+  const isAuthenticated = Boolean(currentUser);
 
-  // Seed sample bookings if none exist
+  // 2. Render prominent in-page authentication banner for unauthenticated guests
+  renderAuthBanner(isAuthenticated);
+
+  // 3. Populate user profile details in sidebar, topbar, and greetings
+  populateDashboardUser(currentUser);
+
+  // 4. Seed demo data in local storage if none exists
   seedDemoBookings();
 
-  // Populate user data in dashboard topbar/sidebar
-  populateDashboardUser();
-
-  // Route-specific page renderers
-  renderOverviewPage();
-  renderMyBookingsPage();
-  renderActiveRentalsPage();
-  renderRentalHistoryPage();
-  renderProfilePage();
+  // 5. Route-specific page renderers
+  renderOverviewPage(currentUser);
+  renderMyBookingsPage(currentUser);
+  renderActiveRentalsPage(currentUser);
+  renderRentalHistoryPage(currentUser);
+  renderProfilePage(currentUser);
 });
 
+/**
+ * Seed initial sample bookings if storage is completely empty
+ */
 function seedDemoBookings() {
   if (!localStorage.getItem('powerrent_bookings') || JSON.parse(localStorage.getItem('powerrent_bookings')).length === 0) {
     const demoBookings = [
@@ -180,30 +184,129 @@ function seedDemoBookings() {
   }
 }
 
-function populateDashboardUser() {
-  const user = window.PowerRentAuth ? window.PowerRentAuth.getCurrentUser() : null;
-  if (!user) return;
+/**
+ * Display non-intrusive alert banner on dashboard when accessed without authentication
+ */
+function renderAuthBanner(isAuthenticated) {
+  const contentArea = document.querySelector('.dashboard-content');
+  if (!contentArea) return;
 
-  document.querySelectorAll('.dash-user-name-display').forEach(el => el.textContent = user.name);
-  document.querySelectorAll('.dash-user-email-display').forEach(el => el.textContent = user.email);
-  document.querySelectorAll('.dash-user-company-display').forEach(el => el.textContent = user.company || 'Enterprise Account');
-
-  // Sidebar logout link
-  const sidebarLogout = document.getElementById('dash-sidebar-logout');
-  if (sidebarLogout) {
-    sidebarLogout.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (window.PowerRentAuth) window.PowerRentAuth.logout();
-    });
+  let authBanner = document.getElementById('dash-auth-required-banner');
+  if (!isAuthenticated) {
+    if (!authBanner) {
+      authBanner = document.createElement('div');
+      authBanner.id = 'dash-auth-required-banner';
+      authBanner.className = 'alert alert-warning border-warning shadow-sm mb-4 d-flex align-items-center justify-content-between flex-wrap gap-3 p-3 rounded-3';
+      authBanner.setAttribute('role', 'alert');
+      authBanner.innerHTML = `
+        <div class="d-flex align-items-center gap-3">
+          <div class="bg-warning text-dark p-2 rounded-circle fs-4 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; flex-shrink: 0;">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <div>
+            <h6 class="alert-heading mb-1 fw-bold text-dark">Authentication Required</h6>
+            <p class="mb-0 text-muted small">You are viewing the Customer Dashboard in <strong>Guest Mode</strong>. Sign in or register an account to view your bookings, active rentals, and invoices.</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <a href="../auth/login.html" class="btn btn-sm btn-pr-primary"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In</a>
+          <a href="../auth/register.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-person-plus me-1"></i>Create Account</a>
+        </div>
+      `;
+      contentArea.insertBefore(authBanner, contentArea.firstChild);
+    }
+  } else if (authBanner) {
+    authBanner.remove();
   }
 }
 
+/**
+ * Populates authenticated user details or sets guest state across sidebar, topbar, and greetings
+ */
+function populateDashboardUser(user) {
+  if (user) {
+    // Authenticated state
+    const userName = user.name || 'Valued Client';
+    const userEmail = user.email || 'account@powerrent.com';
+    const userCompany = user.company || 'Enterprise Client';
+
+    document.querySelectorAll('.dash-user-name-display').forEach(el => el.textContent = userName);
+    document.querySelectorAll('.dash-user-email-display').forEach(el => el.textContent = userEmail);
+    document.querySelectorAll('.dash-user-company-display').forEach(el => el.textContent = userCompany);
+
+    const topbarGreeting = document.querySelector('.dashboard-topbar p');
+    if (topbarGreeting) {
+      topbarGreeting.innerHTML = `Welcome back, <span class="dash-user-name-display fw-bold text-accent">${userName}</span>. Real-time fleet overview and site power telemetry.`;
+    }
+
+    const topbarRole = document.querySelector('.dashboard-topbar .border-start span:last-child');
+    if (topbarRole) {
+      topbarRole.textContent = userCompany;
+    }
+
+    const sidebarFooter = document.querySelector('.dash-sidebar-footer');
+    if (sidebarFooter) {
+      sidebarFooter.innerHTML = `
+        <a href="../index.html" class="btn btn-sm btn-outline-light w-100 mb-2">
+          <i class="bi bi-arrow-left me-1"></i>Return to Website
+        </a>
+        <button class="btn btn-sm btn-danger w-100" id="dash-sidebar-logout">
+          <i class="bi bi-box-arrow-right me-1"></i>Logout
+        </button>
+      `;
+      const sidebarLogout = document.getElementById('dash-sidebar-logout');
+      if (sidebarLogout) {
+        sidebarLogout.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (window.PowerRentAuth) window.PowerRentAuth.logout();
+        });
+      }
+    }
+  } else {
+    // Guest state
+    document.querySelectorAll('.dash-user-name-display').forEach(el => el.textContent = 'Guest User');
+    document.querySelectorAll('.dash-user-email-display').forEach(el => el.textContent = 'Not Signed In');
+    document.querySelectorAll('.dash-user-company-display').forEach(el => el.textContent = 'Guest Mode');
+
+    const topbarGreeting = document.querySelector('.dashboard-topbar p');
+    if (topbarGreeting) {
+      topbarGreeting.innerHTML = `You are viewing the dashboard in <strong class="text-accent">Guest Mode</strong>. Sign in to view equipment telemetry and bookings.`;
+    }
+
+    const topbarRole = document.querySelector('.dashboard-topbar .border-start span:last-child');
+    if (topbarRole) {
+      topbarRole.textContent = 'Guest Mode';
+    }
+
+    const sidebarFooter = document.querySelector('.dash-sidebar-footer');
+    if (sidebarFooter) {
+      sidebarFooter.innerHTML = `
+        <a href="../index.html" class="btn btn-sm btn-outline-light w-100 mb-2">
+          <i class="bi bi-arrow-left me-1"></i>Return to Website
+        </a>
+        <a href="../auth/login.html" class="btn btn-sm btn-pr-primary w-100" id="dash-sidebar-login-btn">
+          <i class="bi bi-box-arrow-in-right me-1"></i>Sign In
+        </a>
+      `;
+    }
+  }
+}
+
+/**
+ * Retrieve bookings filtered by authenticated user
+ */
+function getUserBookings(currentUser) {
+  if (!currentUser) return [];
+  const all = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
+  return all.filter(b => b.email && b.email.toLowerCase() === currentUser.email.toLowerCase());
+}
+
 // 1. Overview Page
-function renderOverviewPage() {
+function renderOverviewPage(currentUser) {
   const statsOverview = document.getElementById('dash-overview-stats');
   if (!statsOverview) return;
 
-  const bookings = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
+  const bookings = getUserBookings(currentUser);
   const totalCount = bookings.length;
   const activeCount = bookings.filter(b => b.status === 'Active').length;
   const completedCount = bookings.filter(b => b.status === 'Completed').length;
@@ -217,6 +320,32 @@ function renderOverviewPage() {
   // Recent Bookings Table
   const tbody = document.getElementById('dash-recent-bookings-tbody');
   if (tbody) {
+    if (!currentUser) {
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="7" class="text-center py-4">
+            <div class="text-muted mb-2"><i class="bi bi-shield-lock text-warning fs-3"></i></div>
+            <h6 class="fw-bold mb-1">Authentication Required</h6>
+            <p class="text-muted small mb-2">Sign in with your account to view your bookings and telemetry data.</p>
+            <a href="../auth/login.html" class="btn btn-sm btn-pr-primary"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In</a>
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    if (bookings.length === 0) {
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="7" class="text-center py-4 text-muted">
+            <i class="bi bi-inbox fs-3 d-block mb-2"></i>
+            No bookings on record yet. <a href="../pages/services.html" class="text-accent fw-bold ms-1">Book your first generator</a>
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
     const recents = bookings.slice(0, 5);
     tbody.innerHTML = recents.map(b => `
       <tr>
@@ -245,11 +374,23 @@ function renderOverviewPage() {
 }
 
 // 2. My Bookings Page
-function renderMyBookingsPage() {
+function renderMyBookingsPage(currentUser) {
   const bookingsContainer = document.getElementById('my-bookings-list-container');
   if (!bookingsContainer) return;
 
-  const bookings = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
+  if (!currentUser) {
+    bookingsContainer.innerHTML = `
+      <div class="text-center py-5 border rounded bg-white">
+        <i class="bi bi-shield-lock text-warning fs-1"></i>
+        <h5 class="mt-2 fw-bold">Authentication Required</h5>
+        <p class="text-muted small">Please sign in to view and search your generator rental bookings.</p>
+        <a href="../auth/login.html" class="btn btn-sm btn-pr-primary mt-2"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In to Account</a>
+      </div>
+    `;
+    return;
+  }
+
+  const bookings = getUserBookings(currentUser);
   const searchInput = document.getElementById('booking-search-input');
   const statusFilterBtns = document.querySelectorAll('.booking-filter-btn');
 
@@ -333,11 +474,23 @@ function renderMyBookingsPage() {
 }
 
 // 3. Active Rentals Page
-function renderActiveRentalsPage() {
+function renderActiveRentalsPage(currentUser) {
   const activeContainer = document.getElementById('active-rentals-list-container');
   if (!activeContainer) return;
 
-  const bookings = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
+  if (!currentUser) {
+    activeContainer.innerHTML = `
+      <div class="text-center py-5 border rounded bg-white">
+        <i class="bi bi-shield-lock text-warning fs-1"></i>
+        <h5 class="mt-2 fw-bold">Authentication Required</h5>
+        <p class="text-muted small">Please sign in to view live telemetry and running generator deployments.</p>
+        <a href="../auth/login.html" class="btn btn-sm btn-pr-primary mt-2"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In</a>
+      </div>
+    `;
+    return;
+  }
+
+  const bookings = getUserBookings(currentUser);
   const activeList = bookings.filter(b => b.status === 'Active');
 
   if (activeList.length === 0) {
@@ -410,11 +563,23 @@ function renderActiveRentalsPage() {
 }
 
 // 4. Rental History Page
-function renderRentalHistoryPage() {
+function renderRentalHistoryPage(currentUser) {
   const historyContainer = document.getElementById('rental-history-list-container');
   if (!historyContainer) return;
 
-  const bookings = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
+  if (!currentUser) {
+    historyContainer.innerHTML = `
+      <div class="text-center py-5 border rounded bg-white">
+        <i class="bi bi-shield-lock text-warning fs-1"></i>
+        <h5 class="mt-2 fw-bold">Authentication Required</h5>
+        <p class="text-muted small">Please sign in to view your completed rental history and archived invoices.</p>
+        <a href="../auth/login.html" class="btn btn-sm btn-pr-primary mt-2"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In</a>
+      </div>
+    `;
+    return;
+  }
+
+  const bookings = getUserBookings(currentUser);
   const completedList = bookings.filter(b => b.status === 'Completed');
 
   if (completedList.length === 0) {
@@ -475,30 +640,72 @@ function renderRentalHistoryPage() {
 }
 
 // 5. Profile Page
-function renderProfilePage() {
+function renderProfilePage(currentUser) {
   const profileForm = document.getElementById('customer-profile-form');
   if (!profileForm) return;
 
-  const user = window.PowerRentAuth ? window.PowerRentAuth.getCurrentUser() : null;
-  if (!user) return;
+  if (!currentUser) {
+    profileForm.querySelectorAll('input').forEach(input => {
+      input.disabled = true;
+      input.placeholder = 'Sign in to view and edit profile';
+    });
+    const submitBtn = profileForm.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+    }
 
-  document.getElementById('profile-name').value = user.name || '';
-  document.getElementById('profile-email').value = user.email || '';
-  document.getElementById('profile-phone').value = user.phone || '';
-  document.getElementById('profile-company').value = user.company || '';
-  document.getElementById('profile-address').value = user.address || '';
-  document.getElementById('profile-city').value = user.city || '';
+    const profileCard = profileForm.closest('.dash-panel') || profileForm.parentElement;
+    if (profileCard && !document.getElementById('profile-guest-notice')) {
+      const notice = document.createElement('div');
+      notice.id = 'profile-guest-notice';
+      notice.className = 'alert alert-warning mb-4';
+      notice.innerHTML = `
+        <i class="bi bi-shield-lock me-2"></i>You are viewing profile settings in guest mode. 
+        <a href="../auth/login.html" class="fw-bold text-accent ms-1">Sign in</a> to manage your account details and corporate billing settings.
+      `;
+      profileCard.insertBefore(notice, profileForm);
+    }
+    return;
+  }
+
+  // Populate authenticated user details
+  const nameEl = document.getElementById('profile-name');
+  const emailEl = document.getElementById('profile-email');
+  const phoneEl = document.getElementById('profile-phone');
+  const companyEl = document.getElementById('profile-company');
+  const addressEl = document.getElementById('profile-address');
+  const cityEl = document.getElementById('profile-city');
+
+  if (nameEl) nameEl.value = currentUser.name || '';
+  if (emailEl) emailEl.value = currentUser.email || '';
+  if (phoneEl) phoneEl.value = currentUser.phone || '';
+  if (companyEl) companyEl.value = currentUser.company || '';
+  if (addressEl) addressEl.value = currentUser.address || '';
+  if (cityEl) cityEl.value = currentUser.city || '';
 
   profileForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    user.name = document.getElementById('profile-name').value.trim();
-    user.phone = document.getElementById('profile-phone').value.trim();
-    user.company = document.getElementById('profile-company').value.trim();
-    user.address = document.getElementById('profile-address').value.trim();
-    user.city = document.getElementById('profile-city').value.trim();
+    currentUser.name = nameEl ? nameEl.value.trim() : currentUser.name;
+    currentUser.phone = phoneEl ? phoneEl.value.trim() : currentUser.phone;
+    currentUser.company = companyEl ? companyEl.value.trim() : currentUser.company;
+    currentUser.address = addressEl ? addressEl.value.trim() : currentUser.address;
+    currentUser.city = cityEl ? cityEl.value.trim() : currentUser.city;
 
-    localStorage.setItem('powerrent_user', JSON.stringify(user));
-    populateDashboardUser();
+    localStorage.setItem('powerrent_user', JSON.stringify(currentUser));
+
+    // Also update registered users store
+    try {
+      const users = JSON.parse(localStorage.getItem('powerrent_registered_users') || '[]');
+      const userIdx = users.findIndex(u => u.email && u.email.toLowerCase() === currentUser.email.toLowerCase());
+      if (userIdx !== -1) {
+        users[userIdx] = { ...users[userIdx], ...currentUser };
+        localStorage.setItem('powerrent_registered_users', JSON.stringify(users));
+      }
+    } catch (err) {
+      console.warn('Could not sync user to registered users database:', err);
+    }
+
+    populateDashboardUser(currentUser);
 
     if (window.PowerRentAuth) {
       window.PowerRentAuth.showToast('Profile Updated', 'Your profile details have been saved successfully.', 'success');

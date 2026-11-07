@@ -16,36 +16,22 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- Global Header & Navbar -->
-  <nav class="navbar navbar-expand-xl powerrent-navbar">
+  <!-- Minimal auth navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar auth-navbar">
     <div class="container">
       <a class="navbar-brand" href="../index.html">
         <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
       </a>
-      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent">
-        <i class="bi bi-list fs-1 text-accent"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="powerrentNavContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/about.html">About Us</a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="../pages/services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact</a></li>
-          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
-            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
-          </li>
-        </ul>
-
-        <div class="nav-controls">
-          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
-          <div id="nav-auth-item">
-            <a href="login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
-          </div>
-        </div>
+      <div class="nav-controls ms-auto">
+        <button class="control-btn theme-toggle-btn" type="button" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Text Direction" aria-label="Toggle Text Direction">
+          <i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span>
+        </button>
+        <a class="btn btn-sm btn-pr-outline auth-dashboard-btn" href="../customer/dashboard.html">
+          <i class="bi bi-speedometer2 me-1"></i><span class="dash-btn-text">Dashboard</span>
+        </a>
       </div>
     </div>
   </nav>
@@ -57,7 +43,6 @@
         <div class="col-lg-6 col-md-8">
           <div class="form-card">
             <div class="text-center mb-4">
-              <div class="stat-icon mx-auto mb-3"><i class="bi bi-person-plus"></i></div>
               <h3 class="fw-bold text-navy mb-1">Create Customer Account</h3>
               <p class="text-muted small">Register for online reservations, telemetry access, and billing management</p>
             </div>
@@ -68,28 +53,28 @@
               <div class="row g-3 mb-3">
                 <div class="col-12">
                   <label class="form-label" for="reg-name">Full Name or Company Representative *</label>
-                  <input type="text" class="form-control" id="reg-name" placeholder="John Doe" required>
+                  <input type="text" class="form-control" id="reg-name" placeholder="John Doe" autocomplete="name" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="reg-email">Email Address *</label>
-                  <input type="email" class="form-control" id="reg-email" placeholder="john.doe@enterprise.com" required>
+                  <input type="email" class="form-control" id="reg-email" placeholder="Enter your email address" autocomplete="email" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="reg-phone">Phone Number *</label>
-                  <input type="tel" class="form-control" id="reg-phone" placeholder="+1 (555) 234-5678" required>
+                  <input type="tel" class="form-control" id="reg-phone" placeholder="+1 (555) 234-5678" autocomplete="tel" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="reg-password">Create Password *</label>
                   <div class="input-group">
-                    <input type="password" class="form-control" id="reg-password" placeholder="••••••••" required>
-                    <button class="btn btn-outline-secondary password-toggle-btn" type="button"><i class="bi bi-eye"></i></button>
+                    <input type="password" class="form-control" id="reg-password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
+                    <button class="btn btn-outline-secondary password-toggle-btn" type="button" aria-label="Show password"><i class="bi bi-eye"></i></button>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="reg-confirm-password">Confirm Password *</label>
                   <div class="input-group">
-                    <input type="password" class="form-control" id="reg-confirm-password" placeholder="••••••••" required>
-                    <button class="btn btn-outline-secondary password-toggle-btn" type="button"><i class="bi bi-eye"></i></button>
+                    <input type="password" class="form-control" id="reg-confirm-password" placeholder="Confirm your password" autocomplete="new-password" minlength="8" required>
+                    <button class="btn btn-outline-secondary password-toggle-btn" type="button" aria-label="Show password"><i class="bi bi-eye"></i></button>
                   </div>
                 </div>
                 <div class="col-12">
@@ -102,8 +87,8 @@
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-pr-primary btn-lg w-100 fw-bold mb-3 shadow">
-                <i class="bi bi-person-check-fill me-1"></i>Create Customer Account
+              <button type="submit" class="btn btn-pr-primary register-submit-button fw-bold mb-3 shadow">
+                <i class="bi bi-person-check-fill"></i><span class="register-submit-label">Create Customer Account</span>
               </button>
 
               <div class="text-center small text-muted">

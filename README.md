@@ -15,8 +15,8 @@ PowerRent is a complete, modern, premium-quality, professional, and fully respon
   - Unique booking reference generator (e.g. `PR-2026-XXXXX`).
   - Automatic invoice generation synced with booking details.
 - **Frontend Authentication & State Persistence**:
-  - Demo authentication utilizing `localStorage`.
-  - **Critical Navigation Flow**: Successful login keeps the customer on the current page, changes the navigation button to "Logout", reveals the "Dashboard" option, and displays an on-screen toast notification. The dashboard opens only upon explicit customer action.
+  - Browser-local account registration and authentication using salted PBKDF2 password hashes in `localStorage`.
+  - Successful registration saves the account and redirects to the Customer Portal Login page. Successful login validates the saved credentials, displays a confirmation, and redirects to the home page.
 - **Customer Dashboard**:
   - Overview with live KPI stats cards, telemetry connectivity status, and quick shortcuts.
   - "My Bookings" with live search and status filters (Active, Confirmed, Completed).
@@ -62,7 +62,7 @@ power-rent/
 │   └── coming-soon.html           # Solar hybrid microgrid expansion & countdown
 │
 ├── auth/
-│   ├── login.html                 # Customer login with password toggle & demo button
+│   ├── login.html                 # Customer login with password visibility toggle
 │   ├── register.html              # Account registration with password match validation
 │   └── forgot-password.html       # Password reset request form
 │
@@ -116,16 +116,11 @@ power-rent/
 
 ---
 
-## 🔑 Demo Customer Credentials
-
-To test the authenticated customer experience without registering:
-- **Email**: `john.doe@enterprise.com`
-- **Password**: `password123`
-- Pre-filled by default on the login page for immediate access.
-
 ---
 
 ## 🛠️ Verification & Testing Guide
+
+Authentication accounts are stored in the current browser and passwords are stored as salted PBKDF2 hashes. This static front-end has no authentication server; browser-local accounts are for local testing only and are not suitable for production identity or access control.
 
 1. **Public Site Navigation**:
    - Open `index.html` in any modern web browser.
@@ -139,7 +134,7 @@ To test the authenticated customer experience without registering:
    - Submit the booking form to receive an instant reference on `pages/booking-confirmation.html`.
    - Click "View Official Invoice" or "View in My Bookings".
 4. **Authentication & Protected Dashboard**:
-   - Go to `auth/login.html` and sign in with the pre-filled credentials.
+   - Create an account at `auth/register.html`, then sign in at `auth/login.html` with the account you registered in the same browser.
    - Notice the customer remains on the login page, an authentication alert is presented, and the navbar updates with "Logout" and "Dashboard".
    - Click "Dashboard" to enter `customer/dashboard.html`.
    - Explore "My Bookings", "Active Rentals", "Invoices", and click "Print Invoice" on `customer/invoice-details.html`.

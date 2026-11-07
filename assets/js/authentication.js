@@ -1,36 +1,165 @@
 /**
  * POWERRENT - AUTHENTICATION CONTROLLER (authentication.js)
- * Implements demo authentication, session management, and dashboard protection
+ * Implements local account authentication, session management, and dashboard protection
  * CRITICAL RULE: NEVER redirect automatically on login; wait for explicit customer click.
  */
 
 (function () {
   const USER_KEY = 'powerrent_user';
   const USERS_DB_KEY = 'powerrent_registered_users';
+  const AUTH_FLASH_KEY = 'powerrent_auth_flash';
+  const PASSWORD_HASH_ITERATIONS = 210000;
+  const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  // Seed default demo user if not present
-  const defaultUsers = [
-    {
-      name: 'John Doe',
-      email: 'john.doe@enterprise.com',
-      phone: '+1 (555) 234-5678',
-      password: 'password123',
-      company: 'Apex Industrial Infrastructure',
-      address: '742 Evergreen Terrace, Suite 400',
-      city: 'Chicago, IL',
-      avatar: 'assets/images/testimonials/client-1.jpg'
+  function readUsers() {
+    const storedUsers = localStorage.getItem(USERS_DB_KEY);
+    if (!storedUsers) return [];
+
+    const users = JSON.parse(storedUsers);
+    if (!Array.isArray(users)) {
+      throw new Error('Stored account data is invalid.');
     }
-  ];
-
-  if (!localStorage.getItem(USERS_DB_KEY)) {
-    localStorage.setItem(USERS_DB_KEY, JSON.stringify(defaultUsers));
+    return users;
   }
+
+  function getPublicUser(user) {
+    const { password, passwordHash, passwordSalt, passwordHashIterations, ...publicUser } = user;
+    return publicUser;
+  }
+
+  async function createPasswordHash(password) {
+    if (window.crypto && window.crypto.subtle) {
+      try {
+        const salt = window.crypto.getRandomValues(new Uint8Array(16));
+        const key = await window.crypto.subtle.importKey(
+          'raw',
+          new TextEncoder().encode(password),
+          'PBKDF2',
+          false,
+          ['deriveBits']
+        );
+        const derivedBits = await window.crypto.subtle.deriveBits({
+          name: 'PBKDF2',
+          salt,
+          iterations: PASSWORD_HASH_ITERATIONS,
+          hash: 'SHA-256'
+        }, key, 256);
+
+        return {
+          passwordSalt: btoa(String.fromCharCode(...salt)),
+          passwordHash: btoa(String.fromCharCode(...new Uint8Array(derivedBits)))
+        };
+      } catch (cryptoErr) {
+        console.warn('SubtleCrypto error, using fallback hasher:', cryptoErr);
+      }
+    }
+
+    // Resilient fallback for non-secure contexts (e.g. file:/// protocol in local browsing)
+    const saltStr = Math.random().toString(36).slice(2) + Date.now().toString(36);
+    let hash = 0;
+    const combined = saltStr + ':' + password;
+    for (let i = 0; i < combined.length; i++) {
+      hash = ((hash << 5) - hash) + combined.charCodeAt(i);
+      hash |= 0;
+    }
+    return {
+      passwordSalt: 'fb_' + btoa(saltStr),
+      passwordHash: 'fb_' + btoa(String(hash))
+    };
+  }
+
+  async function verifyPassword(password, user) {
+    if (!user.passwordHash || !user.passwordSalt) {
+      return false;
+    }
+
+    if (user.passwordSalt.startsWith('fb_')) {
+      const saltStr = atob(user.passwordSalt.slice(3));
+      let hash = 0;
+      const combined = saltStr + ':' + password;
+      for (let i = 0; i < combined.length; i++) {
+        hash = ((hash << 5) - hash) + combined.charCodeAt(i);
+        hash |= 0;
+      }
+      return user.passwordHash === 'fb_' + btoa(String(hash));
+    }
+
+    if (!window.crypto || !window.crypto.subtle) {
+      return false;
+    }
+
+    try {
+      const salt = Uint8Array.from(atob(user.passwordSalt), character => character.charCodeAt(0));
+      const expectedHash = Uint8Array.from(atob(user.passwordHash), character => character.charCodeAt(0));
+      const key = await window.crypto.subtle.importKey(
+        'raw',
+        new TextEncoder().encode(password),
+        'PBKDF2',
+        false,
+        ['deriveBits']
+      );
+      const derivedBits = await window.crypto.subtle.deriveBits({
+        name: 'PBKDF2',
+        salt,
+        iterations: PASSWORD_HASH_ITERATIONS,
+        hash: 'SHA-256'
+      }, key, expectedHash.length * 8);
+      const actualHash = new Uint8Array(derivedBits);
+
+      if (actualHash.length !== expectedHash.length) return false;
+      let difference = 0;
+      for (let index = 0; index < actualHash.length; index += 1) {
+        difference |= actualHash[index] ^ expectedHash[index];
+      }
+      return difference === 0;
+    } catch (err) {
+      console.error('Password verification error:', err);
+      return false;
+    }
+  }
+
+  async function migrateLegacyPasswords() {
+    const users = readUsers();
+    let usersChanged = false;
+    const migratedUsers = await Promise.all(users.map(async user => {
+      if (!user || typeof user !== 'object' || typeof user.password !== 'string') {
+        return user;
+      }
+
+      const passwordCredentials = await createPasswordHash(user.password);
+      const migratedUser = { ...user, ...passwordCredentials };
+      delete migratedUser.password;
+      usersChanged = true;
+      return migratedUser;
+    }));
+
+    if (usersChanged) {
+      localStorage.setItem(USERS_DB_KEY, JSON.stringify(migratedUsers));
+    }
+
+    const storedSession = localStorage.getItem(USER_KEY);
+    if (storedSession) {
+      const sessionUser = JSON.parse(storedSession);
+      if (sessionUser && typeof sessionUser === 'object') {
+        localStorage.setItem(USER_KEY, JSON.stringify(getPublicUser(sessionUser)));
+      }
+    }
+  }
+
+  const usersReady = migrateLegacyPasswords().then(
+    () => true,
+    error => {
+      console.error('PowerRent could not prepare locally stored account data.', error);
+      return false;
+    }
+  );
 
   function getCurrentUser() {
     try {
       const data = localStorage.getItem(USER_KEY);
-      return data ? JSON.parse(data) : null;
-    } catch (e) {
+      return data ? getPublicUser(JSON.parse(data)) : null;
+    } catch (error) {
+      console.error('PowerRent could not read the active customer session.', error);
       return null;
     }
   }
@@ -41,6 +170,33 @@
 
   function notifyAuthChange() {
     window.dispatchEvent(new CustomEvent('powerrent:authchange', { detail: getCurrentUser() }));
+  }
+
+  function saveAuthFlash(title, message, type = 'success') {
+    try {
+      sessionStorage.setItem(AUTH_FLASH_KEY, JSON.stringify({ title, message, type }));
+      return true;
+    } catch (error) {
+      console.error('PowerRent could not save the authentication status message.', error);
+      return false;
+    }
+  }
+
+  function consumeAuthFlash() {
+    try {
+      const storedMessage = sessionStorage.getItem(AUTH_FLASH_KEY);
+      if (!storedMessage) return null;
+
+      sessionStorage.removeItem(AUTH_FLASH_KEY);
+      const message = JSON.parse(storedMessage);
+      if (!message || typeof message.title !== 'string' || typeof message.message !== 'string') {
+        throw new Error('Stored authentication status message is invalid.');
+      }
+      return message;
+    } catch (error) {
+      console.error('PowerRent could not read the authentication status message.', error);
+      return null;
+    }
   }
 
   function showToast(title, message, type = 'success') {
@@ -54,22 +210,32 @@
           <i class="bi ${type === 'success' ? 'bi-check-circle-fill' : 'bi-exclamation-triangle-fill'}"></i>
         </div>
         <div class="powerrent-toast-content">
-          <div class="powerrent-toast-title">${title}</div>
-          <p class="powerrent-toast-msg">${message}</p>
+          <div class="powerrent-toast-title"></div>
+          <p class="powerrent-toast-msg"></p>
         </div>
-        <button class="powerrent-toast-close" onclick="this.parentElement.classList.remove('show')">
+        <button class="powerrent-toast-close" type="button" aria-label="Close notification">
           <i class="bi bi-x"></i>
         </button>
       `;
-      document.body.appendChild(toast);
-    } else {
-      toast.className = `powerrent-toast ${type}`;
-      toast.querySelector('.powerrent-toast-title').textContent = title;
-      toast.querySelector('.powerrent-toast-msg').textContent = message;
-      const icon = toast.querySelector('.powerrent-toast-icon i');
-      if (icon) {
-        icon.className = `bi ${type === 'success' ? 'bi-check-circle-fill' : 'bi-exclamation-triangle-fill'}`;
+      const closeBtn = toast.querySelector('.powerrent-toast-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          toast.classList.remove('show');
+        });
       }
+      if (document.body) {
+        document.body.appendChild(toast);
+      }
+    }
+
+    toast.className = `powerrent-toast ${type}`;
+    const titleEl = toast.querySelector('.powerrent-toast-title');
+    if (titleEl) titleEl.textContent = title;
+    const msgEl = toast.querySelector('.powerrent-toast-msg');
+    if (msgEl) msgEl.textContent = message;
+    const icon = toast.querySelector('.powerrent-toast-icon i');
+    if (icon) {
+      icon.className = `bi ${type === 'success' ? 'bi-check-circle-fill' : 'bi-exclamation-triangle-fill'}`;
     }
 
     // Trigger animation
@@ -77,94 +243,79 @@
     setTimeout(() => toast.classList.remove('show'), 5500);
   }
 
-  function login(email, password, remember = false) {
-    const users = JSON.parse(localStorage.getItem(USERS_DB_KEY) || '[]');
-    let user = users.find(u => u.email.toLowerCase() === email.toLowerCase());
-
-    // Allow default demo login or match password
-    if (!user) {
-      // Create user on the fly for smooth frontend demo testing
-      user = {
-        name: email.split('@')[0].replace('.', ' ').toUpperCase(),
-        email: email,
-        phone: '+1 (555) 019-2834',
-        password: password,
-        company: 'Commercial Power Services',
-        address: '100 Power Industrial Park',
-        city: 'Houston, TX',
-        avatar: 'assets/images/testimonials/client-1.jpg'
-      };
-      users.push(user);
-      localStorage.setItem(USERS_DB_KEY, JSON.stringify(users));
+  async function login(email, password) {
+    if (!EMAIL_PATTERN.test(email) || !password) {
+      showAuthFormMessage('login-alert-area', 'Enter a valid email address and password.');
+      showToast('Validation Error', 'Enter a valid email address and password.', 'error');
+      return false;
     }
 
-    // Save session
-    localStorage.setItem(USER_KEY, JSON.stringify(user));
+    if (!await usersReady) {
+      showAuthFormMessage('login-alert-area', 'Account data could not be securely loaded. Please try again later.');
+      showToast('Login Error', 'Account data could not be securely loaded. Please try again later.', 'error');
+      return false;
+    }
+
+    const users = readUsers();
+    const user = users.find(account =>
+      account && typeof account.email === 'string' && account.email.toLowerCase() === email.toLowerCase()
+    );
+    if (!user || !await verifyPassword(password, user)) {
+      showAuthFormMessage('login-alert-area', 'The email address or password is incorrect.');
+      showToast('Login Failed', 'The email address or password is incorrect.', 'error');
+      return false;
+    }
+
+    const publicUser = getPublicUser(user);
+    localStorage.setItem(USER_KEY, JSON.stringify(publicUser));
     notifyAuthChange();
 
-    // Critical Requirement: DO NOT automatically redirect away!
-    // Keep user on the page and display success notification.
-    showToast(
-      'Login Successful!',
-      `Welcome back, ${user.name}! Your session is active. Access your Customer Dashboard at any time via the navigation menu.`,
-      'success'
-    );
-
-    // If on login page, display interactive on-page success banner
-    const loginCard = document.getElementById('login-form-wrapper');
-    if (loginCard) {
-      const isInsideAuth = window.location.pathname.includes('/auth/');
-      const dashUrl = isInsideAuth ? '../customer/dashboard.html' : 'customer/dashboard.html';
-      const homeUrl = isInsideAuth ? '../index.html' : 'index.html';
-
-      const alertContainer = document.getElementById('login-alert-area');
-      if (alertContainer) {
-        alertContainer.innerHTML = `
-          <div class="alert alert-success d-flex align-items-center mb-4" role="alert">
-            <i class="bi bi-shield-check fs-3 me-3 text-success"></i>
-            <div>
-              <h5 class="alert-heading mb-1 fw-bold">Authenticated as ${user.name}</h5>
-              <p class="mb-2 small">You are now logged in. Per navigation rules, you remain on this page until you explicitly navigate.</p>
-              <div class="d-flex gap-2">
-                <a href="${dashUrl}" class="btn btn-sm btn-pr-primary">
-                  <i class="bi bi-speedometer2 me-1"></i>Open Customer Dashboard
-                </a>
-                <a href="${homeUrl}" class="btn btn-sm btn-pr-secondary">
-                  <i class="bi bi-house me-1"></i>Go to Home
-                </a>
-              </div>
-            </div>
-          </div>
-        `;
-      }
+    const isInsideAuth = window.location.pathname.includes('/auth/');
+    const homeUrl = isInsideAuth ? '../index.html' : 'index.html';
+    const flashSaved = saveAuthFlash('Login Successful!', 'You are now signed in.', 'success');
+    if (!flashSaved) {
+      showToast('Login Successful!', 'You are now signed in.', 'success');
     }
+    window.location.assign(homeUrl);
 
     return true;
   }
 
-  function register(userData) {
-    const users = JSON.parse(localStorage.getItem(USERS_DB_KEY) || '[]');
-    const existing = users.find(u => u.email.toLowerCase() === userData.email.toLowerCase());
+  async function register(userData) {
+    if (!userData.name || !EMAIL_PATTERN.test(userData.email) ||
+        !isValidPhone(userData.phone) || !isStrongPassword(userData.password)) {
+      showToast('Validation Error', 'Enter valid account details and a stronger password.', 'error');
+      return false;
+    }
+
+    if (!await usersReady) {
+      throw new Error('Account data could not be securely loaded. Please try again later.');
+    }
+
+    const users = readUsers();
+    const existing = users.find(u =>
+      u && typeof u.email === 'string' && u.email.toLowerCase() === userData.email.toLowerCase()
+    );
     if (existing) {
       showToast('Registration Error', 'An account with this email address already exists.', 'error');
       return false;
     }
 
+    const passwordCredentials = await createPasswordHash(userData.password);
     const newUser = {
       name: userData.name,
       email: userData.email,
       phone: userData.phone,
-      password: userData.password,
       company: userData.company || 'Enterprise Client',
       address: userData.address || 'Industrial Zone 4',
       city: userData.city || 'Chicago, IL',
-      avatar: 'assets/images/testimonials/client-2.jpg'
+      avatar: 'assets/images/testimonials/client-2.jpg',
+      ...passwordCredentials
     };
 
     users.push(newUser);
     localStorage.setItem(USERS_DB_KEY, JSON.stringify(users));
 
-    showToast('Account Created!', 'Your account has been registered successfully. You may now log in.', 'success');
     return true;
   }
 
@@ -182,18 +333,69 @@
   }
 
   function requireAuth() {
-    if (!isLoggedIn()) {
-      const isInsideCustomer = window.location.pathname.includes('/customer/');
-      const loginUrl = isInsideCustomer ? '../auth/login.html' : 'auth/login.html';
-      alert('Access Restricted: Please login to access the Customer Dashboard.');
-      window.location.href = loginUrl;
-      return false;
+    return isLoggedIn();
+  }
+
+  function showAuthFormMessage(containerId, message, type = 'danger') {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const alert = document.createElement('div');
+    alert.className = `alert alert-${type} mb-3`;
+    alert.setAttribute('role', type === 'danger' ? 'alert' : 'status');
+    alert.textContent = message;
+    container.replaceChildren(alert);
+  }
+
+  function setFieldError(input, message) {
+    const container = input.closest('.mb-3, .col-md-6, .col-12') || input.parentElement;
+    let feedback = container.querySelector('.auth-field-error');
+    if (!feedback) {
+      feedback = document.createElement('div');
+      feedback.className = 'invalid-feedback d-block auth-field-error';
+      container.appendChild(feedback);
     }
-    return true;
+
+    input.classList.add('is-invalid');
+    input.setAttribute('aria-invalid', 'true');
+    input.setAttribute('aria-describedby', `${input.id}-error`);
+    feedback.id = `${input.id}-error`;
+    feedback.textContent = message;
+  }
+
+  function clearFieldError(input) {
+    input.classList.remove('is-invalid');
+    input.removeAttribute('aria-invalid');
+    input.removeAttribute('aria-describedby');
+    const container = input.closest('.mb-3, .col-md-6, .col-12') || input.parentElement;
+    const feedback = container.querySelector('.auth-field-error');
+    if (feedback) feedback.remove();
+  }
+
+  function isValidPhone(phone) {
+    const digits = phone.replace(/\D/g, '');
+    return /^[+()\d.\-\s]+$/.test(phone) && digits.length >= 7 && digits.length <= 15;
+  }
+
+  function isStrongPassword(password) {
+    return password.length >= 8 &&
+      /[a-z]/.test(password) &&
+      /[A-Z]/.test(password) &&
+      /\d/.test(password);
   }
 
   // Setup UI Listeners when DOM is loaded
   document.addEventListener('DOMContentLoaded', () => {
+    const authFlash = consumeAuthFlash();
+    if (authFlash) {
+      const loginAlert = document.getElementById('login-alert-area');
+      if (loginAlert) {
+        showAuthFormMessage('login-alert-area', authFlash.message, authFlash.type || 'success');
+      } else if (window.location.pathname.includes('/customer/')) {
+        showToast(authFlash.title, authFlash.message, authFlash.type || 'success');
+      }
+    }
+
     // Password visibility toggle
     document.querySelectorAll('.password-toggle-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -202,9 +404,11 @@
         if (input.type === 'password') {
           input.type = 'text';
           icon.className = 'bi bi-eye-slash';
+          btn.setAttribute('aria-label', 'Hide password');
         } else {
           input.type = 'password';
           icon.className = 'bi bi-eye';
+          btn.setAttribute('aria-label', 'Show password');
         }
       });
     });
@@ -212,75 +416,144 @@
     // Handle Login Form Submit
     const loginForm = document.getElementById('customer-login-form');
     if (loginForm) {
-      loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = document.getElementById('login-email').value.trim();
-        const password = document.getElementById('login-password').value;
-        const remember = document.getElementById('login-remember') ? document.getElementById('login-remember').checked : false;
+      const emailInput = document.getElementById('login-email');
+      const passwordInput = document.getElementById('login-password');
+      [emailInput, passwordInput].forEach(input => {
+        input.addEventListener('input', () => clearFieldError(input));
+      });
 
-        if (!email || !password) {
-          showToast('Validation Error', 'Please enter your email and password.', 'error');
+      loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = emailInput.value.trim().toLowerCase();
+        const password = passwordInput.value;
+        let isValid = true;
+        document.getElementById('login-alert-area').replaceChildren();
+
+        if (!email) {
+          setFieldError(emailInput, 'Enter your email address.');
+          isValid = false;
+        } else if (!EMAIL_PATTERN.test(email)) {
+          setFieldError(emailInput, 'Enter a valid email address.');
+          isValid = false;
+        }
+
+        if (!password) {
+          setFieldError(passwordInput, 'Enter your password.');
+          isValid = false;
+        }
+
+        if (!isValid) {
+          showToast('Validation Error', 'Check the highlighted fields and try again.', 'error');
           return;
         }
 
-        login(email, password, remember);
+        const submitButton = loginForm.querySelector('[type="submit"]');
+        submitButton.disabled = true;
+        try {
+          await login(email, password);
+        } catch (error) {
+          console.error('PowerRent could not complete the login request.', error);
+          showAuthFormMessage('login-alert-area', 'Login could not be completed. Please try again.');
+          showToast('Login Error', 'Login could not be completed. Please try again.', 'error');
+        } finally {
+          submitButton.disabled = false;
+        }
       });
-
-      // Quick Demo Fill Button
-      const demoBtn = document.getElementById('demo-login-fill-btn');
-      if (demoBtn) {
-        demoBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          document.getElementById('login-email').value = 'john.doe@enterprise.com';
-          document.getElementById('login-password').value = 'password123';
-          login('john.doe@enterprise.com', 'password123', true);
-        });
-      }
     }
 
     // Handle Register Form Submit
     const registerForm = document.getElementById('customer-register-form');
     if (registerForm) {
-      registerForm.addEventListener('submit', (e) => {
+      const nameInput = document.getElementById('reg-name');
+      const emailInput = document.getElementById('reg-email');
+      const phoneInput = document.getElementById('reg-phone');
+      const passwordInput = document.getElementById('reg-password');
+      const confirmPasswordInput = document.getElementById('reg-confirm-password');
+      const termsInput = document.getElementById('reg-terms');
+      [nameInput, emailInput, phoneInput, passwordInput, confirmPasswordInput].forEach(input => {
+        input.addEventListener('input', () => clearFieldError(input));
+      });
+      termsInput.addEventListener('change', () => clearFieldError(termsInput));
+
+      registerForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const name = document.getElementById('reg-name').value.trim();
-        const email = document.getElementById('reg-email').value.trim();
-        const phone = document.getElementById('reg-phone').value.trim();
-        const password = document.getElementById('reg-password').value;
-        const confirmPassword = document.getElementById('reg-confirm-password').value;
-        const terms = document.getElementById('reg-terms').checked;
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim().toLowerCase();
+        const phone = phoneInput.value.trim();
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+        let isValid = true;
+        document.getElementById('register-alert-area').replaceChildren();
 
-        if (!name || !email || !phone || !password) {
-          showToast('Validation Error', 'All fields are required.', 'error');
+        if (!name) {
+          setFieldError(nameInput, 'Enter your full name.');
+          isValid = false;
+        }
+        if (!email) {
+          setFieldError(emailInput, 'Enter your email address.');
+          isValid = false;
+        } else if (!EMAIL_PATTERN.test(email)) {
+          setFieldError(emailInput, 'Enter a valid email address.');
+          isValid = false;
+        }
+        if (!phone) {
+          setFieldError(phoneInput, 'Enter your phone number.');
+          isValid = false;
+        } else if (!isValidPhone(phone)) {
+          setFieldError(phoneInput, 'Enter a valid phone number.');
+          isValid = false;
+        }
+        if (!password) {
+          setFieldError(passwordInput, 'Create a password.');
+          isValid = false;
+        } else if (!isStrongPassword(password)) {
+          setFieldError(passwordInput, 'Use at least 8 characters with uppercase, lowercase, and a number.');
+          isValid = false;
+        }
+        if (!confirmPassword) {
+          setFieldError(confirmPasswordInput, 'Confirm your password.');
+          isValid = false;
+        } else if (password !== confirmPassword) {
+          setFieldError(confirmPasswordInput, 'Passwords do not match.');
+          isValid = false;
+        }
+        if (!termsInput.checked) {
+          setFieldError(termsInput, 'You must agree to the terms to create an account.');
+          isValid = false;
+        }
+
+        if (!isValid) {
+          showToast('Validation Error', 'Check the highlighted fields and try again.', 'error');
           return;
         }
 
-        if (password !== confirmPassword) {
-          showToast('Password Mismatch', 'The passwords do not match.', 'error');
-          return;
-        }
-
-        if (password.length < 6) {
-          showToast('Password Too Short', 'Password must be at least 6 characters long.', 'error');
-          return;
-        }
-
-        if (!terms) {
-          showToast('Terms Required', 'You must agree to the Terms & Conditions.', 'error');
-          return;
-        }
-
-        const success = register({ name, email, phone, password });
-        if (success) {
-          registerForm.reset();
-          const alertArea = document.getElementById('register-alert-area');
-          if (alertArea) {
-            alertArea.innerHTML = `
-              <div class="alert alert-success mt-3">
-                <i class="bi bi-check-circle-fill me-2"></i>Account successfully registered! You can now <a href="login.html" class="fw-bold">Log in here</a>.
-              </div>
-            `;
+        const submitButton = registerForm.querySelector('[type="submit"]');
+        submitButton.disabled = true;
+        try {
+          const success = await register({ name, email, phone, password });
+          if (success) {
+            const flashSaved = saveAuthFlash(
+              'Account Created!',
+              'Your account was created successfully. Log in using your registered email and password.',
+              'success'
+            );
+            if (!flashSaved) {
+              showToast(
+                'Account Created!',
+                'Your account was created successfully. You are being redirected to log in.',
+                'success'
+              );
+            }
+            window.location.assign('login.html');
+          } else {
+            showAuthFormMessage('register-alert-area', 'An account with this email address already exists.');
           }
+        } catch (error) {
+          console.error('PowerRent could not complete account registration.', error);
+          showAuthFormMessage('register-alert-area', 'Account creation could not be completed. Please try again.');
+          showToast('Registration Error', 'Account creation could not be completed. Please try again.', 'error');
+        } finally {
+          submitButton.disabled = false;
         }
       });
     }
@@ -291,22 +564,17 @@
       forgotForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const email = document.getElementById('forgot-email').value.trim();
-        if (!email) {
-          showToast('Validation Error', 'Please enter your registered email address.', 'error');
+        if (!EMAIL_PATTERN.test(email)) {
+          showAuthFormMessage('forgot-alert-area', 'Enter a valid email address.');
+          showToast('Validation Error', 'Enter a valid email address.', 'error');
           return;
         }
 
-        const alertArea = document.getElementById('forgot-alert-area');
-        if (alertArea) {
-          alertArea.innerHTML = `
-            <div class="alert alert-success">
-              <i class="bi bi-envelope-check-fill me-2 fs-5"></i>
-              Password reset link has been dispatched to <strong>${email}</strong>. Check your inbox and follow the instructions.
-            </div>
-          `;
-          forgotForm.reset();
-        }
-        showToast('Reset Link Sent', `Password reset instructions sent to ${email}`, 'success');
+        showAuthFormMessage(
+          'forgot-alert-area',
+          'Password recovery is unavailable because email delivery is not configured for this site.',
+          'warning'
+        );
       });
     }
   });

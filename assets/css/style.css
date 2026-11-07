@@ -50,7 +50,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -399,8 +399,7 @@ img {
   gap: 10px;
 }
 
-.powerrent-navbar .nav-controls .btn-pr-outline,
-.powerrent-navbar .nav-controls #nav-auth-item > .dropdown > .btn {
+.powerrent-navbar .nav-controls .btn-pr-outline {
   min-height: 38px;
   padding: 6px 12px;
   border-width: 1px;
@@ -410,6 +409,116 @@ img {
 .powerrent-navbar .nav-controls #nav-auth-item {
   display: flex;
   align-items: center;
+}
+
+/* ===================================================================
+   AUTH NAVBAR (Login, Register & Forgot Password)
+   Compact, fixed single-line alignment with zero wrapping
+   =================================================================== */
+.auth-navbar {
+  min-height: 64px;
+  background-color: var(--pr-nav-bg) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.auth-navbar .container {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px;
+}
+
+.auth-navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-navbar .navbar-brand img {
+  height: 36px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
+}
+
+.auth-navbar .nav-controls {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  gap: 8px !important;
+}
+
+.auth-navbar .control-btn {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.auth-navbar .control-btn-badge {
+  width: auto;
+  padding: 0 10px;
+  font-size: 0.75rem;
+  height: 36px;
+}
+
+.powerrent-navbar.auth-navbar .nav-controls .auth-dashboard-btn {
+  height: 36px;
+  min-height: 36px;
+  padding: 0 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+#customer-login-form .login-submit-button {
+  display: flex;
+  width: fit-content;
+  min-height: 48px;
+  margin-inline: auto;
+  padding: 10px 36px;
+  font-size: 1rem;
+}
+
+#customer-register-form .register-submit-button {
+  display: flex;
+  width: fit-content;
+  min-height: 48px;
+  margin-inline: auto;
+  padding: 10px 28px;
+  font-size: 1rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+#customer-register-form .register-submit-button i {
+  flex: 0 0 auto;
+}
+
+#customer-register-form .register-submit-label {
+  white-space: nowrap;
 }
 
 .control-btn {
@@ -1331,6 +1440,10 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+html[data-theme] .powerrent-footer .text-muted {
+  color: #B8C4CE !important;
+}
+
 .footer-widget-title {
   color: #FFFFFF;
   font-size: 1.15rem;
@@ -1498,4 +1611,35 @@ img {
   font-size: 1.1rem;
   cursor: pointer;
   padding: 0;
+}
+
+/* ===================================================================
+   SERVICE DETAILS CARDS & ALIGNMENT ENHANCEMENTS
+   =================================================================== */
+.benefit-card,
+.app-card,
+.related-service-card {
+  transition: var(--pr-transition);
+  border: 1px solid rgba(16, 28, 44, 0.08) !important;
+}
+
+.benefit-card:hover,
+.app-card:hover,
+.related-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09) !important;
+  border-color: var(--pr-accent) !important;
+}
+
+.benefit-icon-badge,
+.app-icon-badge,
+.related-icon-badge {
+  transition: var(--pr-transition);
+}
+
+.benefit-card:hover .benefit-icon-badge,
+.app-card:hover .app-icon-badge,
+.related-service-card:hover .related-icon-badge {
+  background: var(--pr-accent) !important;
+  color: #101C2C !important;
 }

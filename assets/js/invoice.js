@@ -1,6 +1,7 @@
 /**
  * POWERRENT - INVOICE ENGINE (invoice.js)
  * Manages invoice rendering, lookup by booking reference, printing, and download
+ * Supports authenticated user isolation and guest authentication messaging.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,13 +13,30 @@ function renderInvoicesList() {
   const container = document.getElementById('invoices-list-tbody');
   if (!container) return;
 
-  const invoices = JSON.parse(localStorage.getItem('powerrent_invoices') || '[]');
+  const user = window.PowerRentAuth ? window.PowerRentAuth.getCurrentUser() : null;
+  if (!user) {
+    container.innerHTML = `
+      <tr>
+        <td colspan="9" class="text-center py-5">
+          <div class="text-muted mb-2"><i class="bi bi-shield-lock text-warning fs-1"></i></div>
+          <h5 class="fw-bold mb-1">Authentication Required</h5>
+          <p class="text-muted small mb-3">Please sign in with your account to view billing statements and download invoices.</p>
+          <a href="../auth/login.html" class="btn btn-sm btn-pr-primary"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In</a>
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
+  const allInvoices = JSON.parse(localStorage.getItem('powerrent_invoices') || '[]');
+  const invoices = allInvoices.filter(inv => inv.customerEmail && inv.customerEmail.toLowerCase() === user.email.toLowerCase());
 
   if (invoices.length === 0) {
     container.innerHTML = `
       <tr>
-        <td colspan="8" class="text-center py-4 text-muted">
-          No invoices recorded yet. Invoices are generated automatically upon booking confirmation.
+        <td colspan="9" class="text-center py-4 text-muted">
+          <i class="bi bi-receipt fs-3 d-block mb-2"></i>
+          No invoices recorded yet for your account. Invoices are generated automatically upon booking confirmation.
         </td>
       </tr>
     `;
@@ -60,26 +78,42 @@ function renderInvoiceDetails() {
   const detailCard = document.getElementById('invoice-detail-wrapper');
   if (!detailCard) return;
 
+  const user = window.PowerRentAuth ? window.PowerRentAuth.getCurrentUser() : null;
+  if (!user) {
+    detailCard.innerHTML = `
+      <div class="alert alert-warning text-center p-5">
+        <i class="bi bi-shield-lock fs-1 text-warning d-block mb-3"></i>
+        <h4 class="fw-bold">Authentication Required</h4>
+        <p class="text-muted">Please log in to your PowerRent account to access invoice documentation.</p>
+        <a href="../auth/login.html" class="btn btn-pr-primary mt-2"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In</a>
+      </div>
+    `;
+    return;
+  }
+
   const urlParams = new URLSearchParams(window.location.search);
   const ref = urlParams.get('ref') || urlParams.get('id');
   const shouldPrint = urlParams.get('print') === '1';
 
-  const invoices = JSON.parse(localStorage.getItem('powerrent_invoices') || '[]');
-  const bookings = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
+  const allInvoices = JSON.parse(localStorage.getItem('powerrent_invoices') || '[]');
+  const allBookings = JSON.parse(localStorage.getItem('powerrent_bookings') || '[]');
 
-  let inv = invoices.find(i => i.bookingId === ref || i.invoiceNumber === ref);
-  let b = bookings.find(item => item.id === ref || item.invoiceNumber === ref);
+  const userInvoices = allInvoices.filter(i => i.customerEmail && i.customerEmail.toLowerCase() === user.email.toLowerCase());
+  const userBookings = allBookings.filter(b => b.email && b.email.toLowerCase() === user.email.toLowerCase());
 
-  if (!inv && invoices.length > 0) {
-    inv = invoices[0];
-    b = bookings.find(item => item.id === inv.bookingId) || bookings[0];
+  let inv = userInvoices.find(i => i.bookingId === ref || i.invoiceNumber === ref);
+  let b = userBookings.find(item => item.id === ref || item.invoiceNumber === ref);
+
+  if (!inv && userInvoices.length > 0) {
+    inv = userInvoices[0];
+    b = userBookings.find(item => item.id === inv.bookingId) || userBookings[0];
   }
 
   if (!inv) {
     detailCard.innerHTML = `
       <div class="alert alert-warning text-center">
         <h4>Invoice Not Found</h4>
-        <p>No invoice matched the requested reference. Please check your bookings list.</p>
+        <p>No invoice matched the requested reference for your account. Please check your bookings list.</p>
         <a href="invoices.html" class="btn btn-pr-primary mt-2">Back to Invoices</a>
       </div>
     `;
@@ -99,10 +133,10 @@ function renderInvoiceDetails() {
   setText('inv-booking-ref', inv.bookingId);
 
   // Customer info
-  setText('inv-cust-name', inv.customerName);
-  setText('inv-cust-email', inv.customerEmail);
-  setText('inv-cust-phone', inv.customerPhone);
-  setText('inv-cust-address', inv.customerAddress);
+  setText('inv-cust-name', inv.customerName || user.name);
+  setText('inv-cust-email', inv.customerEmail || user.email);
+  setText('inv-cust-phone', inv.customerPhone || user.phone || '+1 (555) 000-0000');
+  setText('inv-cust-address', inv.customerAddress || 'Client Operating Site');
 
   // Line items
   setText('inv-item-name', `${inv.generatorName} (${inv.generatorModel})`);

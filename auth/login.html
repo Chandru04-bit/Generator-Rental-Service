@@ -16,42 +16,22 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- Global Header & Navbar -->
-  <nav class="navbar navbar-expand-xl powerrent-navbar">
+  <!-- Minimal auth navbar -->
+  <nav class="navbar navbar-expand-xl powerrent-navbar auth-navbar">
     <div class="container">
       <a class="navbar-brand" href="../index.html">
         <img src="../assets/images/logo/logo.svg" alt="PowerRent Logo" width="180" height="38">
       </a>
-      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#powerrentNavContent">
-        <i class="bi bi-list fs-1 text-accent"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="powerrentNavContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
-              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="../pages/about.html">About Us</a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="../pages/services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact</a></li>
-          <li class="nav-item" id="nav-dashboard-item" style="display: none;">
-            <a class="nav-link text-warning fw-bold" href="../customer/dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
-          </li>
-        </ul>
-
-        <div class="nav-controls">
-          <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
-          <div id="nav-auth-item">
-            <a href="login.html" class="btn btn-sm btn-pr-outline active"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
-          </div>
-        </div>
+      <div class="nav-controls ms-auto">
+        <button class="control-btn theme-toggle-btn" type="button" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Text Direction" aria-label="Toggle Text Direction">
+          <i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span>
+        </button>
+        <a class="btn btn-sm btn-pr-outline auth-dashboard-btn" href="../customer/dashboard.html">
+          <i class="bi bi-speedometer2 me-1"></i><span class="dash-btn-text">Dashboard</span>
+        </a>
       </div>
     </div>
   </nav>
@@ -63,7 +43,6 @@
         <div class="col-lg-5 col-md-8">
           <div class="form-card" id="login-form-wrapper">
             <div class="text-center mb-4">
-              <div class="stat-icon mx-auto mb-3"><i class="bi bi-person-lock"></i></div>
               <h3 class="fw-bold text-navy mb-1">Customer Portal Login</h3>
               <p class="text-muted small">Access your bookings, fuel reports, and digital invoices</p>
             </div>
@@ -76,7 +55,7 @@
                 <label class="form-label" for="login-email">Corporate / Work Email Address *</label>
                 <div class="input-group">
                   <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                  <input type="email" class="form-control" id="login-email" placeholder="john.doe@enterprise.com" required value="john.doe@enterprise.com">
+                  <input type="email" class="form-control" id="login-email" placeholder="Enter your email address" autocomplete="username" required>
                 </div>
               </div>
 
@@ -87,8 +66,8 @@
                 </div>
                 <div class="input-group">
                   <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
-                  <input type="password" class="form-control" id="login-password" placeholder="••••••••" required value="password123">
-                  <button class="btn btn-outline-secondary password-toggle-btn" type="button" title="Show/Hide Password">
+                  <input type="password" class="form-control" id="login-password" placeholder="Enter your password" autocomplete="current-password" required>
+                  <button class="btn btn-outline-secondary password-toggle-btn" type="button" title="Show/Hide Password" aria-label="Show password">
                     <i class="bi bi-eye"></i>
                   </button>
                 </div>
@@ -101,7 +80,7 @@
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-pr-primary btn-lg w-100 fw-bold mb-3 shadow">
+              <button type="submit" class="btn btn-pr-primary login-submit-button fw-bold mb-3 shadow">
                 <i class="bi bi-box-arrow-in-right me-1"></i>Sign In to Account
               </button>
 

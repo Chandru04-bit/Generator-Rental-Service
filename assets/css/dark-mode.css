@@ -417,6 +417,22 @@ html[data-theme="dark"] .alert-success strong {
   color: #ECFDF5 !important;
 }
 
+html[data-theme="dark"] .alert-warning {
+  background-color: rgba(245, 158, 11, 0.16) !important;
+  border-color: rgba(245, 158, 11, 0.4) !important;
+  color: #FDE68A !important;
+}
+
+html[data-theme="dark"] .alert-warning .alert-heading,
+html[data-theme="dark"] .alert-warning h6 {
+  color: #FBBF24 !important;
+}
+
+html[data-theme="dark"] .alert-warning p,
+html[data-theme="dark"] .alert-warning strong {
+  color: #F3F4F6 !important;
+}
+
 html[data-theme="dark"] .alert-danger {
   background-color: rgba(239, 68, 68, 0.16) !important;
   border-color: rgba(239, 68, 68, 0.4) !important;
@@ -519,4 +535,33 @@ html[data-theme="dark"] .badge.bg-info.text-dark {
   html[data-theme="dark"] .text-dark {
     color: #101C2C !important;
   }
+}
+
+/* Service Details in Dark Mode */
+html[data-theme="dark"] .benefit-card,
+html[data-theme="dark"] .app-card,
+html[data-theme="dark"] .related-service-card {
+  background-color: #18283E !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html[data-theme="dark"] .benefit-card:hover,
+html[data-theme="dark"] .app-card:hover,
+html[data-theme="dark"] .related-service-card:hover {
+  border-color: var(--pr-accent) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4) !important;
+}
+
+html[data-theme="dark"] .benefit-icon-badge,
+html[data-theme="dark"] .app-icon-badge,
+html[data-theme="dark"] .related-icon-badge {
+  background: rgba(245, 158, 11, 0.18) !important;
+  color: var(--pr-accent) !important;
+}
+
+html[data-theme="dark"] .benefit-card:hover .benefit-icon-badge,
+html[data-theme="dark"] .app-card:hover .app-icon-badge,
+html[data-theme="dark"] .related-service-card:hover .related-icon-badge {
+  background: var(--pr-accent) !important;
+  color: #101C2C !important;
 }
