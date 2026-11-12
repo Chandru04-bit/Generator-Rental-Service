@@ -310,18 +310,25 @@
 
             <div class="row align-items-center g-4">
               <div class="col-lg-8">
-                <div class="p-3 bg-light-grey rounded-3 border">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
-                    <strong class="text-navy">CAT 150kVA Heavy Duty Diesel</strong>
-                    <span class="badge bg-info text-dark">Ref: PR-2026-99214</span>
+                <div class="dash-job-details-card p-3 rounded-3 border">
+                  <!-- Row 1: Job Title & Reference ID -->
+                  <div class="dash-job-header d-flex align-items-center justify-content-between gap-2 mb-2">
+                    <strong class="dash-job-title text-navy">CAT 150kVA Heavy Duty Diesel</strong>
+                    <span class="badge bg-info text-dark dash-job-ref">Ref: PR-2026-99214</span>
                   </div>
-                  <p class="small text-muted mb-2">
-                    <strong>Delivery Target:</strong> Nov 15, 2026 @ 07:00 AM CST &bull; <strong>Job Site:</strong> Apex Commercial Complex, West Loop Gate 3, Chicago, IL
-                  </p>
-                  <div class="d-flex flex-wrap gap-3 small">
-                    <span class="text-success"><i class="bi bi-check-circle-fill me-1"></i>Rigging Crew Assigned</span>
-                    <span class="text-success"><i class="bi bi-check-circle-fill me-1"></i>ATS Switchgear Included</span>
-                    <span class="text-muted"><i class="bi bi-telephone me-1"></i>Driver Dispatch: +1 (312) 555-0199</span>
+
+                  <!-- Row 2: Delivery Target & Job Site -->
+                  <div class="dash-job-meta small text-muted mb-2">
+                    <span class="meta-delivery"><strong>Delivery Target:</strong> Nov 15, 2026 @ 07:00 AM CST</span>
+                    <span class="meta-bullet mx-1">&bull;</span>
+                    <span class="meta-site"><strong>Job Site:</strong> Apex Commercial Complex, West Loop Gate 3, Chicago, IL</span>
+                  </div>
+
+                  <!-- Row 3: Status Indicators & Driver Dispatch -->
+                  <div class="dash-job-status-row d-flex flex-wrap align-items-center gap-3 small">
+                    <span class="dash-status-item text-success"><i class="bi bi-check-circle-fill me-1"></i>Rigging Crew Assigned</span>
+                    <span class="dash-status-item text-success"><i class="bi bi-check-circle-fill me-1"></i>ATS Switchgear Included</span>
+                    <span class="dash-status-item text-muted"><i class="bi bi-telephone me-1"></i>Driver Dispatch: +1 (312) 555-0199</span>
                   </div>
                 </div>
               </div>
