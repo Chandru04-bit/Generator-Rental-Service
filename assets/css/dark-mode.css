@@ -150,6 +150,49 @@ html[data-theme="dark"] .badge.bg-accent * {
 }
 
 /* Outline & Secondary Buttons */
+html[data-theme="dark"] .btn-pr-outline {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: rgba(255, 255, 255, 0.5);
+  --bs-btn-hover-color: #101820;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-active-color: #101820;
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #ffffff;
+}
+
+html[data-theme="dark"] .btn-pr-outline:hover,
+html[data-theme="dark"] .btn-pr-outline:focus,
+html[data-theme="dark"] .btn-pr-outline:focus-visible,
+html[data-theme="dark"] .btn-pr-outline:active,
+html[data-theme="dark"] .btn-pr-outline.active {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #101820 !important;
+}
+
+html[data-theme="dark"] .btn-pr-outline:hover *,
+html[data-theme="dark"] .btn-pr-outline:focus *,
+html[data-theme="dark"] .btn-pr-outline:focus-visible *,
+html[data-theme="dark"] .btn-pr-outline:active *,
+html[data-theme="dark"] .btn-pr-outline.active * {
+  color: #101820 !important;
+}
+
+html[data-theme="dark"] .btn-pr-outline.text-white:hover,
+html[data-theme="dark"] .btn-pr-outline.text-white:focus,
+html[data-theme="dark"] .btn-pr-outline.text-white:focus-visible,
+html[data-theme="dark"] .btn-pr-outline.text-white:active,
+html[data-theme="dark"] .btn-pr-outline.text-white.active,
+html[data-theme="dark"] .btn-pr-outline.text-white:hover *,
+html[data-theme="dark"] .btn-pr-outline.text-white:focus *,
+html[data-theme="dark"] .btn-pr-outline.text-white:focus-visible *,
+html[data-theme="dark"] .btn-pr-outline.text-white:active *,
+html[data-theme="dark"] .btn-pr-outline.text-white.active * {
+  color: #101820 !important;
+}
+
 html[data-theme="dark"] .btn-pr-secondary,
 html[data-theme="dark"] .btn-light {
   background-color: var(--pr-section-bg);
@@ -161,10 +204,20 @@ html[data-theme="dark"] .home2-contact-cta .btn-pr-outline {
   color: #FFFFFF;
 }
 html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:hover,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus {
-  background-color: var(--pr-accent);
-  border-color: var(--pr-accent);
-  color: #101C2C;
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus,
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus-visible,
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:active,
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline.active {
+  background-color: var(--pr-accent) !important;
+  border-color: var(--pr-accent) !important;
+  color: #101C2C !important;
+}
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:hover *,
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus *,
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus-visible *,
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:active *,
+html[data-theme="dark"] .home2-contact-cta .btn-pr-outline.active * {
+  color: #101C2C !important;
 }
 html[data-theme="dark"] .btn-pr-secondary:hover,
 html[data-theme="dark"] .btn-light:hover {
@@ -180,10 +233,14 @@ html[data-theme="dark"] .btn-outline-dark {
   background-color: transparent;
 }
 html[data-theme="dark"] .btn-outline-secondary:hover,
-html[data-theme="dark"] .btn-outline-dark:hover {
-  border-color: var(--pr-accent);
-  color: var(--pr-accent);
-  background-color: rgba(245, 158, 11, 0.1);
+html[data-theme="dark"] .btn-outline-dark:hover,
+html[data-theme="dark"] .btn-outline-secondary:focus,
+html[data-theme="dark"] .btn-outline-dark:focus,
+html[data-theme="dark"] .btn-outline-secondary:active,
+html[data-theme="dark"] .btn-outline-dark:active {
+  border-color: var(--pr-accent) !important;
+  color: var(--pr-accent) !important;
+  background-color: rgba(245, 158, 11, 0.1) !important;
 }
 
 html[data-theme="dark"] .btn-pr-dark {
@@ -191,9 +248,20 @@ html[data-theme="dark"] .btn-pr-dark {
   border-color: var(--pr-border) !important;
   color: #FFFFFF !important;
 }
-html[data-theme="dark"] .btn-pr-dark:hover {
+html[data-theme="dark"] .btn-pr-dark:hover,
+html[data-theme="dark"] .btn-pr-dark:focus,
+html[data-theme="dark"] .btn-pr-dark:focus-visible,
+html[data-theme="dark"] .btn-pr-dark:active,
+html[data-theme="dark"] .btn-pr-dark.active {
   background-color: var(--pr-accent) !important;
   border-color: var(--pr-accent) !important;
+  color: #101C2C !important;
+}
+html[data-theme="dark"] .btn-pr-dark:hover *,
+html[data-theme="dark"] .btn-pr-dark:focus *,
+html[data-theme="dark"] .btn-pr-dark:focus-visible *,
+html[data-theme="dark"] .btn-pr-dark:active *,
+html[data-theme="dark"] .btn-pr-dark.active * {
   color: #101C2C !important;
 }
 
