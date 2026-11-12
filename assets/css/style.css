@@ -91,26 +91,70 @@ body.coming-soon-page .btn-pr-outline {
   color: var(--pr-text-muted);
 }
 
-.about-cta-section .btn-pr-outline {
-  color: var(--pr-text);
-  border-color: var(--pr-text-muted);
+.about-cta-section .btn-pr-outline,
+.pricing-cta-group .btn-pr-outline {
+  background-color: #FFFFFF;
+  color: var(--pr-primary) !important;
+  border: 1.5px solid #CBD5E1;
+  box-shadow: 0 1px 3px rgba(16, 28, 44, 0.05);
 }
 
 .about-cta-section .btn-pr-outline:hover,
 .about-cta-section .btn-pr-outline:focus,
 .about-cta-section .btn-pr-outline:focus-visible,
 .about-cta-section .btn-pr-outline:active,
-.about-cta-section .btn-pr-outline.active {
-  background-color: var(--pr-text);
-  border-color: var(--pr-text);
+.about-cta-section .btn-pr-outline.active,
+.pricing-cta-group .btn-pr-outline:hover,
+.pricing-cta-group .btn-pr-outline:focus,
+.pricing-cta-group .btn-pr-outline:focus-visible,
+.pricing-cta-group .btn-pr-outline:active,
+.pricing-cta-group .btn-pr-outline.active {
+  background-color: var(--pr-primary) !important;
+  border-color: var(--pr-primary) !important;
   color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(16, 28, 44, 0.15);
 }
 
 .about-cta-section .btn-pr-outline:hover *,
 .about-cta-section .btn-pr-outline:focus *,
 .about-cta-section .btn-pr-outline:focus-visible *,
 .about-cta-section .btn-pr-outline:active *,
-.about-cta-section .btn-pr-outline.active * {
+.about-cta-section .btn-pr-outline.active *,
+.pricing-cta-group .btn-pr-outline:hover *,
+.pricing-cta-group .btn-pr-outline:focus *,
+.pricing-cta-group .btn-pr-outline:focus-visible *,
+.pricing-cta-group .btn-pr-outline:active *,
+.pricing-cta-group .btn-pr-outline.active * {
+  color: #FFFFFF !important;
+}
+
+.about-cta-section .btn-light,
+.pricing-cta-group .btn-light {
+  background-color: transparent;
+  color: var(--pr-primary) !important;
+  border: 1.5px solid transparent;
+}
+
+.about-cta-section .btn-light:hover,
+.about-cta-section .btn-light:focus,
+.about-cta-section .btn-light:focus-visible,
+.about-cta-section .btn-light:active,
+.pricing-cta-group .btn-light:hover,
+.pricing-cta-group .btn-light:focus,
+.pricing-cta-group .btn-light:focus-visible,
+.pricing-cta-group .btn-light:active {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: var(--pr-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(16, 28, 44, 0.08);
+}
+
+html[data-theme="dark"] .about-cta-section .btn-pr-outline,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline {
+  background-color: var(--pr-card-bg) !important;
+  border-color: var(--pr-border) !important;
   color: #FFFFFF !important;
 }
 
@@ -118,16 +162,50 @@ html[data-theme="dark"] .about-cta-section .btn-pr-outline:hover,
 html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus,
 html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus-visible,
 html[data-theme="dark"] .about-cta-section .btn-pr-outline:active,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline.active {
-  color: var(--pr-bg) !important;
+html[data-theme="dark"] .about-cta-section .btn-pr-outline.active,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:hover,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus-visible,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:active,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline.active {
+  background-color: var(--pr-accent) !important;
+  border-color: var(--pr-accent) !important;
+  color: #101C2C !important;
 }
 
 html[data-theme="dark"] .about-cta-section .btn-pr-outline:hover *,
 html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus *,
 html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus-visible *,
 html[data-theme="dark"] .about-cta-section .btn-pr-outline:active *,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline.active * {
-  color: var(--pr-bg) !important;
+html[data-theme="dark"] .about-cta-section .btn-pr-outline.active *,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:hover *,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus *,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus-visible *,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:active *,
+html[data-theme="dark"] .pricing-cta-group .btn-pr-outline.active * {
+  color: #101C2C !important;
+}
+
+html[data-theme="dark"] .about-cta-section .btn-light,
+html[data-theme="dark"] .pricing-cta-group .btn-light {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .about-cta-section .btn-light:hover,
+html[data-theme="dark"] .about-cta-section .btn-light:focus,
+html[data-theme="dark"] .about-cta-section .btn-light:focus-visible,
+html[data-theme="dark"] .about-cta-section .btn-light:active,
+html[data-theme="dark"] .about-cta-section .btn-light.active,
+html[data-theme="dark"] .pricing-cta-group .btn-light:hover,
+html[data-theme="dark"] .pricing-cta-group .btn-light:focus,
+html[data-theme="dark"] .pricing-cta-group .btn-light:focus-visible,
+html[data-theme="dark"] .pricing-cta-group .btn-light:active,
+html[data-theme="dark"] .pricing-cta-group .btn-light.active {
+  background-color: var(--pr-card-bg) !important;
+  border-color: var(--pr-border) !important;
+  color: var(--pr-accent) !important;
 }
 
 .why-choose-section .why-choose-actions {
@@ -2551,35 +2629,50 @@ html[data-theme] .powerrent-footer .text-muted {
 /* ===================================================================
    CTA BUTTON GROUPS (Uniform Heights, Alignment, Cross-Device Polish)
    =================================================================== */
-.cta-btn-group {
+.cta-btn-group,
+.pricing-cta-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
-.cta-btn-group .btn {
+@media (min-width: 992px) {
+  .pricing-cta-group,
+  .about-cta-section .cta-btn-group {
+    flex-wrap: nowrap !important;
+    gap: 18px !important;
+  }
+}
+
+.cta-btn-group .btn,
+.pricing-cta-group .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
-  padding: 12px 24px;
+  gap: 10px;
+  min-height: 52px;
+  height: 52px;
+  padding: 12px 26px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 8px;
-  line-height: 1.25;
+  line-height: 1;
   white-space: nowrap;
   box-sizing: border-box;
   text-decoration: none;
   transition: var(--pr-transition);
 }
 
-.cta-btn-group .btn i {
+.cta-btn-group .btn i,
+.pricing-cta-group .btn i {
   font-size: 1.15rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 
