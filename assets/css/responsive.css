@@ -1437,3 +1437,31 @@ html[dir="rtl"] .pricing-table tbody td.col-action {
     aspect-ratio: 16 / 10 !important;
   }
 }
+
+
+/* Why Choose Actions Straight Alignment */
+.why-choose-section .why-choose-actions {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+@media (max-width: 575.98px) {
+  .why-choose-section .why-choose-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  .why-choose-section .why-choose-actions .btn {
+    flex: 1 1 auto !important;
+    padding: 10px 14px !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    min-height: 46px !important;
+  }
+}
