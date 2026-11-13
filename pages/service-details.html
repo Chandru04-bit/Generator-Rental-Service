@@ -29,10 +29,10 @@
       <div class="collapse navbar-collapse" id="powerrentNavContent">
         <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
-              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+              <li><a class="dropdown-item" href="../index.html">Industrial</a></li>
+              <li><a class="dropdown-item" href="../home-2.html">Commercial</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
@@ -47,7 +47,7 @@
 
         <div class="nav-controls">
           <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><span class="dir-label">RTL</span></button>
           <div id="nav-auth-item">
             <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
           </div>
@@ -93,7 +93,7 @@
           <p class="text-muted" id="service-description">
             Our industrial generator rental service delivers robust electrical power generation engineered for severe ambient conditions and continuous 24/7 heavy duty operations. Equipped with electronic isochronous governors, dual redundant battery starting banks, and heavy particulate filtration, our units ensure zero thermal derating even in extreme industrial heat.
           </p>
-          <div class="d-flex flex-wrap gap-3 mt-4 service-overview-actions">
+          <div class="service-overview-actions mt-4">
             <a href="booking.html" class="btn btn-pr-primary shadow">
               <i class="bi bi-calendar-check me-2"></i>Book Equipment for This Service
             </a>
@@ -327,13 +327,13 @@
             Book online in seconds, explore our full 5 kVA to 1,250 kVA equipment fleet, or speak with our application engineers for custom load sizing.
           </p>
           <div class="cta-btn-group d-flex flex-wrap justify-content-center gap-3">
-            <a href="booking.html" class="btn btn-pr-primary btn-lg shadow">
+            <a href="booking.html" class="btn btn-pr-primary btn-lg">
               <i class="bi bi-calendar-check me-2"></i>Book Equipment Online
             </a>
-            <a href="fleet.html" class="btn btn-pr-dark btn-lg shadow">
+            <a href="fleet.html" class="btn btn-pr-secondary btn-lg">
               <i class="bi bi-grid-fill me-2"></i>Browse Generator Fleet
             </a>
-            <a href="contact.html" class="btn btn-pr-secondary btn-lg shadow">
+            <a href="contact.html" class="btn btn-pr-secondary btn-lg">
               <i class="bi bi-headset me-2"></i>Contact 24/7 Dispatch
             </a>
           </div>
@@ -532,7 +532,7 @@
         tagline: "Professional electrical engineering, rigging, crane placement, and ATS commissioning.",
         image: "../assets/images/services/service-installation.jpg",
         icon: "bi-tools",
-        description: `A generator is only as reliable as its installation. PowerRent's licensed electrical engineering crews oversee every facet of deployment: heavy transport, crane rigging, concrete pad placement, grounding rod testing, sub-panel breaker tie-ins, and automated transfer switch calibration.`,
+        description: `A generator is as reliable as its installation. PowerRent's licensed electrical engineering crews oversee every facet of deployment: heavy transport, crane rigging, concrete pad placement, grounding rod testing, sub-panel breaker tie-ins, and automated transfer switch calibration.`,
         benefits: [
           { title: "Licensed Master Electricians", desc: "Complete code compliance with NFPA 70 (NEC) and NFPA 110 regulations.", icon: "bi-person-badge-fill" },
           { title: "Heavy Rigging & Crane Service", desc: "Safe, precision crane lifts over parapet walls, rooftops, and restricted courtyards.", icon: "bi-truck" },

@@ -91,121 +91,29 @@ body.coming-soon-page .btn-pr-outline {
   color: var(--pr-text-muted);
 }
 
-.about-cta-section .btn-pr-outline,
-.pricing-cta-group .btn-pr-outline {
-  background-color: #FFFFFF;
-  color: var(--pr-primary) !important;
-  border: 1.5px solid #CBD5E1;
-  box-shadow: 0 1px 3px rgba(16, 28, 44, 0.05);
+/* ===================================================================
+   WHY CHOOSE POWERRENT SECTION (50/50 EQUAL HEIGHT GRID)
+   Left content and right image are perfectly equal in height on desktop
+   =================================================================== */
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 48px;
+  width: 100%;
 }
 
-.about-cta-section .btn-pr-outline:hover,
-.about-cta-section .btn-pr-outline:focus,
-.about-cta-section .btn-pr-outline:focus-visible,
-.about-cta-section .btn-pr-outline:active,
-.about-cta-section .btn-pr-outline.active,
-.pricing-cta-group .btn-pr-outline:hover,
-.pricing-cta-group .btn-pr-outline:focus,
-.pricing-cta-group .btn-pr-outline:focus-visible,
-.pricing-cta-group .btn-pr-outline:active,
-.pricing-cta-group .btn-pr-outline.active {
-  background-color: var(--pr-primary) !important;
-  border-color: var(--pr-primary) !important;
-  color: #FFFFFF !important;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(16, 28, 44, 0.15);
+.why-choose-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.about-cta-section .btn-pr-outline:hover *,
-.about-cta-section .btn-pr-outline:focus *,
-.about-cta-section .btn-pr-outline:focus-visible *,
-.about-cta-section .btn-pr-outline:active *,
-.about-cta-section .btn-pr-outline.active *,
-.pricing-cta-group .btn-pr-outline:hover *,
-.pricing-cta-group .btn-pr-outline:focus *,
-.pricing-cta-group .btn-pr-outline:focus-visible *,
-.pricing-cta-group .btn-pr-outline:active *,
-.pricing-cta-group .btn-pr-outline.active * {
-  color: #FFFFFF !important;
-}
-
-.about-cta-section .btn-light,
-.pricing-cta-group .btn-light {
-  background-color: transparent;
-  color: var(--pr-primary) !important;
-  border: 1.5px solid transparent;
-}
-
-.about-cta-section .btn-light:hover,
-.about-cta-section .btn-light:focus,
-.about-cta-section .btn-light:focus-visible,
-.about-cta-section .btn-light:active,
-.pricing-cta-group .btn-light:hover,
-.pricing-cta-group .btn-light:focus,
-.pricing-cta-group .btn-light:focus-visible,
-.pricing-cta-group .btn-light:active {
-  background-color: #FFFFFF !important;
-  border-color: #CBD5E1 !important;
-  color: var(--pr-primary) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(16, 28, 44, 0.08);
-}
-
-html[data-theme="dark"] .about-cta-section .btn-pr-outline,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline {
-  background-color: var(--pr-card-bg) !important;
-  border-color: var(--pr-border) !important;
-  color: #FFFFFF !important;
-}
-
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:hover,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus-visible,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:active,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline.active,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:hover,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus-visible,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:active,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline.active {
-  background-color: var(--pr-accent) !important;
-  border-color: var(--pr-accent) !important;
-  color: #101C2C !important;
-}
-
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:hover *,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus *,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:focus-visible *,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline:active *,
-html[data-theme="dark"] .about-cta-section .btn-pr-outline.active *,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:hover *,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus *,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:focus-visible *,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline:active *,
-html[data-theme="dark"] .pricing-cta-group .btn-pr-outline.active * {
-  color: #101C2C !important;
-}
-
-html[data-theme="dark"] .about-cta-section .btn-light,
-html[data-theme="dark"] .pricing-cta-group .btn-light {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  color: #FFFFFF !important;
-}
-
-html[data-theme="dark"] .about-cta-section .btn-light:hover,
-html[data-theme="dark"] .about-cta-section .btn-light:focus,
-html[data-theme="dark"] .about-cta-section .btn-light:focus-visible,
-html[data-theme="dark"] .about-cta-section .btn-light:active,
-html[data-theme="dark"] .about-cta-section .btn-light.active,
-html[data-theme="dark"] .pricing-cta-group .btn-light:hover,
-html[data-theme="dark"] .pricing-cta-group .btn-light:focus,
-html[data-theme="dark"] .pricing-cta-group .btn-light:focus-visible,
-html[data-theme="dark"] .pricing-cta-group .btn-light:active,
-html[data-theme="dark"] .pricing-cta-group .btn-light.active {
-  background-color: var(--pr-card-bg) !important;
-  border-color: var(--pr-border) !important;
-  color: var(--pr-accent) !important;
+.why-choose-image-col {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .why-choose-section .why-choose-actions {
@@ -232,29 +140,51 @@ html[data-theme="dark"] .pricing-cta-group .btn-light.active {
 }
 
 .why-choose-section .why-choose-image {
+  position: relative;
   overflow: hidden;
-  border-radius: var(--pr-radius-lg);
-  border: 1px solid var(--pr-border);
-  box-shadow: var(--pr-shadow-lg);
+  border-radius: 20px;
+  border: 1px solid var(--pr-border, #E2E8F0);
+  box-shadow: 0 10px 30px rgba(16, 28, 44, 0.08);
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
 }
 
-.why-choose-section .why-choose-image > img {
+.why-choose-section .why-choose-image img,
+.why-choose-section .why-choose-image .why-choose-img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.why-choose-section .why-choose-image:hover img,
+.why-choose-section .why-choose-image:hover .why-choose-img {
+  transform: scale(1.03);
 }
 
 .why-choose-section .why-choose-certification {
   position: absolute;
-  right: 16px;
-  bottom: 16px;
-  left: 16px;
+  left: 20px;
+  bottom: 20px;
   max-width: 340px;
-  padding: 16px 20px;
+  padding: 14px 20px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 12px;
   background: rgba(16, 28, 44, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #FFFFFF;
+  z-index: 2;
+}
+
+html[dir="rtl"] .why-choose-section .why-choose-certification {
+  left: auto;
+  right: 20px;
 }
 
 .why-choose-section .why-choose-certification > i {
@@ -406,10 +336,18 @@ img {
   max-width: 320px;
 }
 
-/* Buttons */
-.btn-pr-primary {
+/* ===================================================================
+   BUTTON & CTA SYSTEM (GLOBAL SPECIFICATION)
+   Rule: All Primary CTAs use identical Industrial Orange styling.
+         All Secondary CTAs use identical consistent styling.
+   =================================================================== */
+
+/* --- PRIMARY CTA --- */
+.btn-pr-primary,
+.btn-primary-cta {
   background-color: var(--pr-accent);
-  color: #101C2C;
+  color: #101C2C !important;
+  font-family: var(--pr-font-sans);
   font-weight: 700;
   padding: 12px 28px;
   border-radius: 8px;
@@ -418,54 +356,238 @@ img {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
   transition: var(--pr-transition);
   box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
-  cursor: pointer;
+  line-height: 1.5;
+  vertical-align: middle;
 }
 
 .btn-pr-primary:hover,
 .btn-pr-primary:focus,
 .btn-pr-primary:focus-visible,
 .btn-pr-primary:active,
-.btn-pr-primary.active {
+.btn-pr-primary.active,
+.btn-primary-cta:hover,
+.btn-primary-cta:focus,
+.btn-primary-cta:focus-visible,
+.btn-primary-cta:active,
+.btn-primary-cta.active {
   background-color: var(--pr-accent-hover) !important;
   border-color: var(--pr-accent-hover) !important;
   color: #101C2C !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.45);
+  box-shadow: 0 8px 22px rgba(245, 158, 11, 0.45);
 }
 
 .btn-pr-primary:hover *,
 .btn-pr-primary:focus *,
 .btn-pr-primary:focus-visible *,
 .btn-pr-primary:active *,
-.btn-pr-primary.active * {
+.btn-pr-primary.active *,
+.btn-primary-cta:hover *,
+.btn-primary-cta:focus *,
+.btn-primary-cta:focus-visible *,
+.btn-primary-cta:active *,
+.btn-primary-cta.active * {
   color: #101C2C !important;
 }
 
-.btn-pr-outline {
-  --bs-btn-color: #ffffff;
-  --bs-btn-bg: transparent;
-  --bs-btn-border-color: rgba(255, 255, 255, 0.4);
-  --bs-btn-hover-color: var(--pr-primary);
-  --bs-btn-hover-bg: #ffffff;
-  --bs-btn-hover-border-color: #ffffff;
-  --bs-btn-focus-shadow-rgb: 255, 255, 255;
-  --bs-btn-active-color: var(--pr-primary);
-  --bs-btn-active-bg: #ffffff;
-  --bs-btn-active-border-color: #ffffff;
-  background-color: transparent;
-  color: #ffffff;
+/* --- SECONDARY CTA --- */
+.btn-pr-secondary,
+.btn-secondary-cta {
+  background-color: #FFFFFF;
+  color: var(--pr-primary) !important;
+  font-family: var(--pr-font-sans);
   font-weight: 700;
   padding: 12px 28px;
   border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  border: 2px solid var(--pr-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--pr-transition);
+  box-shadow: 0 2px 8px rgba(16, 28, 44, 0.08);
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.btn-pr-secondary:hover,
+.btn-pr-secondary:focus,
+.btn-pr-secondary:focus-visible,
+.btn-pr-secondary:active,
+.btn-pr-secondary.active,
+.btn-secondary-cta:hover,
+.btn-secondary-cta:focus,
+.btn-secondary-cta:focus-visible,
+.btn-secondary-cta:active,
+.btn-secondary-cta.active {
+  background-color: var(--pr-primary) !important;
+  border-color: var(--pr-primary) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 28, 44, 0.18);
+}
+
+.btn-pr-secondary:hover *,
+.btn-pr-secondary:focus *,
+.btn-pr-secondary:focus-visible *,
+.btn-pr-secondary:active *,
+.btn-pr-secondary.active *,
+.btn-secondary-cta:hover *,
+.btn-secondary-cta:focus *,
+.btn-secondary-cta:focus-visible *,
+.btn-secondary-cta:active *,
+.btn-secondary-cta.active * {
+  color: #FFFFFF !important;
+}
+
+/* Secondary CTA on Dark Contexts (Hero sections, dark banners, dark navy cards) */
+.hero-section .btn-pr-secondary,
+.hero-section .btn-secondary-cta,
+.cta-banner .btn-pr-secondary,
+.cta-banner .btn-secondary-cta,
+.about-banner-actions .btn-pr-secondary,
+.about-banner-actions .btn-secondary-cta,
+.bg-primary-navy .btn-pr-secondary,
+.bg-primary-navy .btn-secondary-cta,
+.bg-dark .btn-pr-secondary,
+.bg-dark .btn-secondary-cta {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.hero-section .btn-pr-secondary:hover,
+.hero-section .btn-pr-secondary:focus,
+.hero-section .btn-pr-secondary:focus-visible,
+.hero-section .btn-pr-secondary:active,
+.hero-section .btn-pr-secondary.active,
+.hero-section .btn-secondary-cta:hover,
+.hero-section .btn-secondary-cta:focus,
+.hero-section .btn-secondary-cta:focus-visible,
+.hero-section .btn-secondary-cta:active,
+.hero-section .btn-secondary-cta.active,
+.cta-banner .btn-pr-secondary:hover,
+.cta-banner .btn-pr-secondary:focus,
+.cta-banner .btn-pr-secondary:focus-visible,
+.cta-banner .btn-pr-secondary:active,
+.cta-banner .btn-pr-secondary.active,
+.cta-banner .btn-secondary-cta:hover,
+.cta-banner .btn-secondary-cta:focus,
+.cta-banner .btn-secondary-cta:focus-visible,
+.cta-banner .btn-secondary-cta:active,
+.cta-banner .btn-secondary-cta.active,
+.about-banner-actions .btn-pr-secondary:hover,
+.about-banner-actions .btn-pr-secondary:focus,
+.about-banner-actions .btn-pr-secondary:focus-visible,
+.about-banner-actions .btn-pr-secondary:active,
+.about-banner-actions .btn-pr-secondary.active,
+.about-banner-actions .btn-secondary-cta:hover,
+.about-banner-actions .btn-secondary-cta:focus,
+.about-banner-actions .btn-secondary-cta:focus-visible,
+.about-banner-actions .btn-secondary-cta:active,
+.about-banner-actions .btn-secondary-cta.active,
+.bg-primary-navy .btn-pr-secondary:hover,
+.bg-primary-navy .btn-pr-secondary:focus,
+.bg-primary-navy .btn-pr-secondary:focus-visible,
+.bg-primary-navy .btn-pr-secondary:active,
+.bg-primary-navy .btn-pr-secondary.active,
+.bg-primary-navy .btn-secondary-cta:hover,
+.bg-primary-navy .btn-secondary-cta:focus,
+.bg-primary-navy .btn-secondary-cta:focus-visible,
+.bg-primary-navy .btn-secondary-cta:active,
+.bg-primary-navy .btn-secondary-cta.active,
+.bg-dark .btn-pr-secondary:hover,
+.bg-dark .btn-pr-secondary:focus,
+.bg-dark .btn-pr-secondary:focus-visible,
+.bg-dark .btn-pr-secondary:active,
+.bg-dark .btn-pr-secondary.active,
+.bg-dark .btn-secondary-cta:hover,
+.bg-dark .btn-secondary-cta:focus,
+.bg-dark .btn-secondary-cta:focus-visible,
+.bg-dark .btn-secondary-cta:active,
+.bg-dark .btn-secondary-cta.active {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  color: var(--pr-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+}
+
+.hero-section .btn-pr-secondary:hover *,
+.hero-section .btn-pr-secondary:focus *,
+.hero-section .btn-pr-secondary:focus-visible *,
+.hero-section .btn-pr-secondary:active *,
+.hero-section .btn-pr-secondary.active *,
+.hero-section .btn-secondary-cta:hover *,
+.hero-section .btn-secondary-cta:focus *,
+.hero-section .btn-secondary-cta:focus-visible *,
+.hero-section .btn-secondary-cta:active *,
+.hero-section .btn-secondary-cta.active *,
+.cta-banner .btn-pr-secondary:hover *,
+.cta-banner .btn-pr-secondary:focus *,
+.cta-banner .btn-pr-secondary:focus-visible *,
+.cta-banner .btn-pr-secondary:active *,
+.cta-banner .btn-pr-secondary.active *,
+.cta-banner .btn-secondary-cta:hover *,
+.cta-banner .btn-secondary-cta:focus *,
+.cta-banner .btn-secondary-cta:focus-visible *,
+.cta-banner .btn-secondary-cta:active *,
+.cta-banner .btn-secondary-cta.active *,
+.about-banner-actions .btn-pr-secondary:hover *,
+.about-banner-actions .btn-pr-secondary:focus *,
+.about-banner-actions .btn-pr-secondary:focus-visible *,
+.about-banner-actions .btn-pr-secondary:active *,
+.about-banner-actions .btn-pr-secondary.active *,
+.about-banner-actions .btn-secondary-cta:hover *,
+.about-banner-actions .btn-secondary-cta:focus *,
+.about-banner-actions .btn-secondary-cta:focus-visible *,
+.about-banner-actions .btn-secondary-cta:active *,
+.about-banner-actions .btn-secondary-cta.active *,
+.bg-primary-navy .btn-pr-secondary:hover *,
+.bg-primary-navy .btn-pr-secondary:focus *,
+.bg-primary-navy .btn-pr-secondary:focus-visible *,
+.bg-primary-navy .btn-pr-secondary:active *,
+.bg-primary-navy .btn-pr-secondary.active *,
+.bg-primary-navy .btn-secondary-cta:hover *,
+.bg-primary-navy .btn-secondary-cta:focus *,
+.bg-primary-navy .btn-secondary-cta:focus-visible *,
+.bg-primary-navy .btn-secondary-cta:active *,
+.bg-primary-navy .btn-secondary-cta.active *,
+.bg-dark .btn-pr-secondary:hover *,
+.bg-dark .btn-pr-secondary:focus *,
+.bg-dark .btn-pr-secondary:focus-visible *,
+.bg-dark .btn-pr-secondary:active *,
+.bg-dark .btn-pr-secondary.active *,
+.bg-dark .btn-secondary-cta:hover *,
+.bg-dark .btn-secondary-cta:focus *,
+.bg-dark .btn-secondary-cta:focus-visible *,
+.bg-dark .btn-secondary-cta:active *,
+.bg-dark .btn-secondary-cta.active * {
+  color: var(--pr-primary) !important;
+}
+
+/* Retain btn-pr-outline for navbar controls and backwards compatibility */
+.btn-pr-outline {
+  background-color: transparent;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   transition: var(--pr-transition);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-pr-outline:hover,
@@ -473,10 +595,11 @@ img {
 .btn-pr-outline:focus-visible,
 .btn-pr-outline:active,
 .btn-pr-outline.active {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
   color: var(--pr-primary) !important;
   transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.25);
 }
 
 .btn-pr-outline:hover *,
@@ -487,24 +610,11 @@ img {
   color: var(--pr-primary) !important;
 }
 
-.btn-pr-outline.text-white:hover,
-.btn-pr-outline.text-white:focus,
-.btn-pr-outline.text-white:focus-visible,
-.btn-pr-outline.text-white:active,
-.btn-pr-outline.text-white.active,
-.btn-pr-outline.text-white:hover *,
-.btn-pr-outline.text-white:focus *,
-.btn-pr-outline.text-white:focus-visible *,
-.btn-pr-outline.text-white:active *,
-.btn-pr-outline.text-white.active * {
-  color: var(--pr-primary) !important;
-}
-
 .btn-pr-dark {
   background-color: var(--pr-primary);
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 700;
-  padding: 11px 24px;
+  padding: 12px 28px;
   border-radius: 8px;
   border: 2px solid var(--pr-primary);
   display: inline-flex;
@@ -532,25 +642,6 @@ img {
 .btn-pr-dark:active *,
 .btn-pr-dark.active * {
   color: #101C2C !important;
-}
-
-.btn-pr-secondary {
-  background-color: #E2E8F0;
-  color: var(--pr-primary);
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid #CBD5E1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  transition: var(--pr-transition);
-}
-
-.btn-pr-secondary:hover {
-  background-color: #CBD5E1;
-  color: var(--pr-primary);
 }
 
 /* ===================================================================
@@ -598,8 +689,13 @@ img {
   color: var(--pr-accent) !important;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.nav-item.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+  display: block !important;
   margin-top: 0;
 }
 
@@ -788,7 +884,9 @@ img {
   font-weight: 700;
   letter-spacing: 0.5px;
   width: auto;
+  min-width: 38px;
   padding: 0 10px;
+  text-align: center;
 }
 
 /* ===================================================================
@@ -1274,148 +1372,236 @@ img {
   margin-top: 14px;
 }
 
-.capacity-tier-section .capacity-tier-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  padding: 24px !important;
+/* ===================================================================
+   GENERATOR CAPACITY CATEGORIES (CLEAN 3-COLUMN MODERN GRID)
+   =================================================================== */
+.capacity-tier-section {
+  position: relative;
+  background-color: #FFFFFF;
 }
 
-.capacity-tier-section .capacity-tier-meta {
+.capacity-tier-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 32px 28px 28px 28px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(16, 28, 44, 0.05);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  position: relative;
+}
+
+.capacity-tier-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(16, 28, 44, 0.1);
+  border-color: #CBD5E1;
+}
+
+.capacity-tier-meta {
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 8px 12px;
-  min-width: 0;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
-.capacity-tier-section .capacity-tier-meta .badge {
-  flex: 0 0 auto;
-  max-width: 100%;
+.capacity-badge {
+  background: var(--pr-accent, #F59E0B);
+  color: #101C2C;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.25;
   white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 
-.capacity-tier-section .capacity-tier-meta > span:last-child {
-  flex: 1 1 0;
-  min-width: 0;
-  line-height: 1.45;
-  overflow-wrap: anywhere;
+.capacity-label {
+  color: #64748B;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
-.capacity-tier-section .capacity-tier-card h4 {
-  min-height: 2.6em;
-  margin-bottom: 8px !important;
-  font-size: 1.25rem;
-  font-weight: 800;
+.capacity-tier-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--pr-primary, #101C2C);
+  margin-bottom: 14px;
   line-height: 1.3;
-  overflow-wrap: break-word;
 }
 
-.capacity-tier-section .capacity-tier-card > p {
-  flex-grow: 1;
-  line-height: 1.55;
+.capacity-tier-desc {
+  color: #64748B;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  min-height: 52px;
 }
 
-.capacity-tier-section .capacity-tier-features {
+.capacity-tier-features {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 20px !important;
+  gap: 12px;
+  margin-bottom: 28px;
   padding: 0;
+  list-style: none;
+  flex-grow: 1;
 }
 
-.capacity-tier-section .capacity-tier-features li {
+.capacity-tier-features li {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  line-height: 1.45;
-  overflow-wrap: anywhere;
-}
-
-.capacity-tier-section .capacity-tier-features li i {
-  flex: 0 0 auto;
-  margin: 0;
+  gap: 10px;
+  color: #334155;
+  font-size: 0.95rem;
   line-height: 1.45;
 }
 
-.capacity-tier-section .capacity-tier-card > .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.capacity-tier-features li i {
+  color: #10B981 !important;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.btn-tier-browse {
   width: 100%;
   min-height: 48px;
-  margin-top: auto;
-  padding: 10px 12px;
+  padding: 11px 20px;
+  background-color: #FFFFFF;
+  border: 2px solid var(--pr-primary, #101C2C);
+  color: var(--pr-primary, #101C2C) !important;
+  font-weight: 700;
   font-size: 0.95rem;
-  line-height: 1.35;
-  white-space: normal;
-  overflow-wrap: anywhere;
-}
-
-.industries-section .industry-card {
-  display: flex;
-  min-height: 176px;
-  flex-direction: column;
+  border-radius: 8px;
+  margin-top: auto;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.industries-section .industry-card > i {
-  display: flex !important;
-  width: 3rem;
-  height: 3rem;
-  flex: 0 0 3rem;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 8px !important;
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.industries-section .industry-card h6 {
-  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
   line-height: 1.35;
-  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+
+.btn-tier-browse:hover {
+  background-color: var(--pr-primary, #101C2C) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(16, 28, 44, 0.15);
 }
 
 /* ===================================================================
-   SERVICES CARDS
+   INDUSTRIES WE SERVE SECTION (EQUAL DIMENSIONS & HOVER POLISH)
+   =================================================================== */
+.industries-section .industry-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+  padding: 32px 16px 28px 16px;
+  min-height: 180px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(16, 28, 44, 0.05);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.industries-section .industry-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 12px 28px rgba(16, 28, 44, 0.1), 0 0 0 1px rgba(245, 158, 11, 0.35) !important;
+}
+
+.industries-section .industry-card > i {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--pr-accent, #F59E0B) !important;
+  font-size: 2.65rem !important;
+  line-height: 1;
+  margin: 0 0 14px 0 !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industries-section .industry-card:hover > i {
+  transform: scale(1.14);
+}
+
+.industries-section .industry-card h6,
+.industries-section .industry-card .industry-title {
+  color: var(--pr-primary, #101C2C);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  transition: color 0.2s ease;
+}
+
+.industries-section .industry-card:hover h6,
+.industries-section .industry-card:hover .industry-title {
+  color: var(--pr-primary, #101C2C);
+}
+
+/* ===================================================================
+   SERVICES CARDS (CLEAN 3x2 GRID SYSTEM)
+   20px rounded corners, soft shadow, thin border, navy icons beside title
    =================================================================== */
 .service-card {
-  background: var(--pr-card-bg);
-  border: 1px solid var(--pr-border);
-  border-radius: var(--pr-radius-lg);
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--pr-shadow-sm);
-  transition: var(--pr-transition);
+  box-shadow: 0 4px 20px rgba(16, 28, 44, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--pr-shadow-lg);
-  border-color: var(--pr-accent);
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(16, 28, 44, 0.12);
+  border-color: #CBD5E1;
 }
 
 .service-img-wrap {
-  height: 200px;
-  overflow: visible;
+  height: 210px;
+  width: 100%;
+  overflow: hidden;
   position: relative;
+  background-color: #0D1724;
 }
 
 .service-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
 
 .service-card:hover .service-img {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .service-icon-box {
@@ -1423,7 +1609,7 @@ img {
   height: 52px;
   padding: 0;
   border-radius: 10px;
-  background: var(--pr-accent);
+  background: var(--pr-accent, #F59E0B);
   color: #101C2C;
   display: inline-flex;
   align-items: center;
@@ -1445,7 +1631,7 @@ img {
 }
 
 .service-card-body {
-  padding: 34px 22px 24px 22px;
+  padding: 26px 24px 24px 24px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -1453,20 +1639,44 @@ img {
 
 .service-card-title {
   font-size: 1.25rem;
-  font-weight: 800;
-  margin-bottom: 10px;
+  font-weight: 700;
+  color: var(--pr-primary, #101C2C);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.service-title-icon {
+  color: var(--pr-primary, #101C2C) !important;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.service-card-desc {
+  color: #64748B;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 22px;
+  flex-grow: 1;
 }
 
 .service-link {
   margin-top: auto;
   font-weight: 700;
+  font-size: 0.95rem;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--pr-accent);
+  color: var(--pr-accent, #F59E0B) !important;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
 }
 
 .service-link:hover {
+  color: var(--pr-accent-hover, #D97706) !important;
   gap: 10px;
 }
 
@@ -1801,53 +2011,188 @@ img {
 }
 
 /* ===================================================================
-   PROCESS / HOW IT WORKS
+   PROCESS / HOW OUR RENTAL PROCESS WORKS (MODERN WORKFLOW)
    =================================================================== */
+.process-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.process-step-row {
+  position: relative;
+}
+
+/* Subtle connecting line running horizontally behind the cards on desktop */
+@media (min-width: 992px) {
+  .process-step-row::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    border-top: 2px dashed rgba(245, 158, 11, 0.4);
+    transform: translateY(-50%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Directional Arrow between cards */
+  .process-step-col:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    width: 28px;
+    height: 28px;
+    background-color: #FFFFFF;
+    border: 2px solid #F59E0B;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(245, 158, 11, 0.25);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16' fill='%23F59E0B'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .process-step-col:not(:last-child):hover::after {
+    transform: translateY(-50%) scale(1.15);
+    background-color: #FFF7ED;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+  }
+}
+
+/* RTL Support for Directional Arrow */
+@media (min-width: 992px) {
+  html[dir="rtl"] .process-step-col:not(:last-child)::after {
+    right: auto;
+    left: -14px;
+    transform: translateY(-50%) scaleX(-1);
+  }
+  html[dir="rtl"] .process-step-col:not(:last-child):hover::after {
+    transform: translateY(-50%) scaleX(-1) scale(1.15);
+  }
+}
+
 .process-step-card {
-  background: var(--pr-card-bg);
-  border: 1px solid var(--pr-border);
-  border-radius: var(--pr-radius-lg);
-  padding: 30px 24px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 40px 24px 32px 24px;
   text-align: center;
   position: relative;
-  transition: var(--pr-transition);
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(16, 28, 44, 0.05);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .process-step-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--pr-shadow);
-  border-color: var(--pr-accent);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(16, 28, 44, 0.12);
+  border-color: #F59E0B;
 }
 
 .step-number {
   position: absolute;
-  top: 14px;
-  right: 18px;
-  font-size: 2rem;
-  font-weight: 900;
-  color: rgba(245, 158, 11, 0.2);
+  top: 18px;
+  right: 22px;
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: rgba(245, 158, 11, 0.3);
   line-height: 1;
+  letter-spacing: -0.02em;
+  font-family: var(--pr-font-sans);
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.process-step-card:hover .step-number {
+  color: #F59E0B;
+  transform: scale(1.08);
+}
+
+html[dir="rtl"] .step-number {
+  right: auto;
+  left: 22px;
 }
 
 .step-icon-wrap {
-  width: 70px;
-  height: 70px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
-  background: var(--pr-accent-light);
-  color: var(--pr-accent);
+  background: rgba(245, 158, 11, 0.1);
+  border: 2px solid rgba(245, 158, 11, 0.25);
+  color: #F59E0B;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  margin-bottom: 18px;
-  transition: var(--pr-transition);
+  font-size: 1.85rem;
+  margin-bottom: 22px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.35s ease,
+              border-color 0.35s ease,
+              color 0.35s ease,
+              box-shadow 0.35s ease;
 }
 
 .process-step-card:hover .step-icon-wrap {
-  background: var(--pr-accent);
+  background: #F59E0B;
+  border-color: #F59E0B;
   color: #101C2C;
-  transform: rotateY(180deg);
+  transform: scale(1.08) rotateY(180deg);
+  box-shadow: 0 8px 22px rgba(245, 158, 11, 0.35);
+}
+
+.process-step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--pr-primary, #101C2C);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.process-step-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #64748B;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+/* Bottom Process CTA Banner */
+.process-cta-banner {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(16, 28, 44, 0.05);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.process-cta-banner:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 10px 30px rgba(16, 28, 44, 0.09);
+}
+
+.process-cta-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.12);
+  color: #F59E0B;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ===================================================================
@@ -1958,6 +2303,9 @@ img {
   box-shadow: var(--pr-shadow-sm);
   transition: var(--pr-transition);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .team-card:hover {
@@ -1966,15 +2314,17 @@ img {
 }
 
 .team-img-wrap {
-  height: 280px;
+  height: 260px;
   overflow: hidden;
   position: relative;
+  background-color: #F1F5F9;
 }
 
 .team-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
 }
 
@@ -1983,26 +2333,32 @@ img {
 }
 
 .team-body {
-  padding: 20px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .team-name {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 700;
+  color: var(--pr-primary);
   margin-bottom: 4px;
 }
 
 .team-role {
-  font-size: 0.85rem;
-  color: var(--pr-accent);
+  font-size: 0.9rem;
+  color: #475569;
   font-weight: 600;
   margin-bottom: 12px;
+  display: block;
 }
 
 .team-socials {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: auto;
 }
 
 .team-socials a {
@@ -2021,6 +2377,72 @@ img {
 .team-socials a:hover {
   background: var(--pr-accent);
   color: #101C2C;
+}
+
+/* ===================================================================
+   TEAM LEADERSHIP CARDS (EQUAL HEIGHT, 4-COLUMN RESPONSIVE)
+   =================================================================== */
+.team-leader-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(16, 28, 44, 0.05);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.team-leader-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(16, 28, 44, 0.1);
+  border-color: #CBD5E1;
+}
+
+.team-leader-img-wrap {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  background-color: #F1F5F9;
+}
+
+.team-leader-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.team-leader-card:hover .team-leader-img {
+  transform: scale(1.04);
+}
+
+.team-leader-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #101C2C;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.team-leader-role {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.team-leader-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #64748B;
+  margin-bottom: 0;
 }
 
 /* ===================================================================
@@ -2274,33 +2696,6 @@ img {
 
 .home2-contact-cta > .container > p {
   color: var(--pr-text-muted);
-}
-
-.home2-contact-cta .btn-pr-outline {
-  border-color: var(--pr-primary);
-  color: var(--pr-primary);
-}
-
-.home2-contact-cta .btn-pr-outline:hover,
-.home2-contact-cta .btn-pr-outline:focus,
-.home2-contact-cta .btn-pr-outline:focus-visible,
-.home2-contact-cta .btn-pr-outline:active,
-.home2-contact-cta .btn-pr-outline.active {
-  background-color: var(--pr-primary) !important;
-  border-color: var(--pr-primary) !important;
-  color: #FFFFFF !important;
-}
-
-.home2-contact-cta .btn-pr-outline:hover *,
-.home2-contact-cta .btn-pr-outline:focus *,
-.home2-contact-cta .btn-pr-outline:focus-visible *,
-.home2-contact-cta .btn-pr-outline:active *,
-.home2-contact-cta .btn-pr-outline.active * {
-  color: #FFFFFF !important;
-}
-
-.home2-contact-cta .btn-light {
-  border: 1px solid var(--pr-border);
 }
 
 /* ===================================================================
@@ -2722,7 +3117,7 @@ button:disabled {
 
 .btn-lg {
   min-height: 52px;
-  padding: 12px 28px;
+  padding: 14px 32px !important;
   font-size: 1.05rem;
   font-weight: 700;
   border-radius: 8px;
@@ -2730,7 +3125,7 @@ button:disabled {
 
 .btn-sm {
   min-height: 38px;
-  padding: 6px 14px;
+  padding: 8px 18px !important;
   font-size: 0.875rem;
   font-weight: 600;
   border-radius: 6px;
@@ -2764,3 +3159,397 @@ button:disabled {
 .spotlight-image-wrapper:hover .spotlight-img {
   transform: scale(1.025);
 }
+
+/* ===================================================================
+   SERVICE OVERVIEW ACTION BUTTONS (SAME LINE & EQUAL WIDTH)
+   Ensures primary & secondary CTAs share exact width, height, alignment,
+   and proper icon/text spacing in the same line on desktop/tablet.
+   =================================================================== */
+.service-overview-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 580px;
+}
+
+.service-overview-actions .btn {
+  width: 100%;
+  min-height: 52px;
+  height: 52px;
+  padding: 12px 18px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 8px;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.service-overview-actions .btn i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  line-height: 1;
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+  flex-shrink: 0;
+}
+
+html[dir="rtl"] .service-overview-actions .btn i {
+  margin-right: 0 !important;
+  margin-left: 8px !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .service-overview-actions {
+    gap: 10px;
+  }
+  .service-overview-actions .btn {
+    font-size: 0.85rem;
+    padding: 10px 10px !important;
+  }
+  .service-overview-actions .btn i {
+    font-size: 1rem;
+    margin-right: 6px !important;
+  }
+  html[dir="rtl"] .service-overview-actions .btn i {
+    margin-right: 0 !important;
+    margin-left: 6px !important;
+  }
+}
+
+/* ===================================================================
+   13. CONTACT INFORMATION STRIP SECTION & CARDS
+   =================================================================== */
+.contact-strip-section {
+  padding: 48px 0;
+  background-color: var(--pr-bg, #F8FAFC);
+}
+
+.contact-strip-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 30px 24px;
+  min-height: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(16, 28, 44, 0.05);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  position: relative;
+}
+
+.contact-strip-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--pr-accent, #F59E0B);
+  box-shadow: 0 12px 28px rgba(16, 28, 44, 0.09);
+}
+
+.contact-strip-icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.contact-strip-icon-box i {
+  font-size: 2.1rem;
+  color: var(--pr-accent, #F59E0B);
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.contact-strip-card:hover .contact-strip-icon-box i {
+  transform: scale(1.12);
+}
+
+.contact-strip-title {
+  color: #101C2C;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.contact-strip-detail {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #101C2C;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.contact-strip-link {
+  color: #101C2C;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.contact-strip-link:hover,
+.contact-strip-link:focus {
+  color: var(--pr-accent, #F59E0B);
+  text-decoration: underline;
+}
+
+.contact-strip-divider {
+  color: #94A3B8;
+  margin: 0 2px;
+  user-select: none;
+}
+
+.contact-strip-text {
+  color: #101C2C;
+  font-weight: 700;
+}
+
+html[dir="rtl"] .contact-strip-detail {
+  direction: ltr;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-strip-card {
+    padding: 24px 14px;
+    min-height: 155px;
+  }
+  .contact-strip-title {
+    font-size: 0.95rem;
+  }
+  .contact-strip-detail {
+    font-size: 0.82rem;
+  }
+  .contact-strip-icon-box i {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-strip-card {
+    padding: 26px 20px;
+    min-height: auto;
+  }
+}
+
+/* ===================================================================
+   SPECIALIZED POWER SOLUTIONS CARDS
+   =================================================================== */
+.specialized-solution-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 18px !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.specialized-solution-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 12px 28px rgba(16, 28, 44, 0.09) !important;
+}
+
+.specialized-img-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #E2E8F0;
+  position: relative;
+}
+
+.specialized-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.specialized-solution-card:hover .specialized-card-img {
+  transform: scale(1.05);
+}
+
+.specialized-link {
+  color: var(--pr-accent, #F59E0B) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.specialized-solution-card:hover .specialized-link,
+.specialized-link:hover {
+  color: #D97706 !important;
+  gap: 8px;
+}
+
+/* ===================================================================
+   COMPLETE TURNKEY POWER SERVICES CARDS
+   =================================================================== */
+.turnkey-service-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 18px !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.turnkey-service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 12px 28px rgba(16, 28, 44, 0.09) !important;
+}
+
+.turnkey-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #E2E8F0;
+  position: relative;
+}
+
+.turnkey-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.turnkey-service-card:hover .turnkey-card-img {
+  transform: scale(1.05);
+}
+
+.turnkey-service-card .text-navy {
+  color: #101C2C;
+}
+
+.turnkey-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.turnkey-icon-badge i {
+  transition: transform 0.3s ease;
+}
+
+.turnkey-service-card:hover .turnkey-icon-badge i {
+  transform: scale(1.1);
+}
+
+/* ===================================================================
+   HOME-2 WHY INDUSTRY LEADERS CHOOSE POWERRENT SECTION (50/50 EQUAL HEIGHT)
+   =================================================================== */
+.home2-why-choose-section {
+  position: relative;
+}
+
+.home2-why-choose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 48px;
+  width: 100%;
+}
+
+.home2-why-choose-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.home2-why-choose-image-col {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.home2-why-choose-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--pr-border, #E2E8F0);
+  box-shadow: 0 10px 30px rgba(16, 28, 44, 0.08);
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+}
+
+.home2-why-choose-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.home2-why-choose-image:hover .home2-why-choose-img {
+  transform: scale(1.03);
+}
+
+.home2-feature-card {
+  background-color: var(--pr-bg, #F8FAFC);
+  border: 1px solid var(--pr-border, #E2E8F0) !important;
+  border-radius: 12px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.home2-feature-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 8px 20px rgba(16, 28, 44, 0.08) !important;
+}
+
+.home2-feature-card h6 {
+  color: #101C2C;
+}
+
+@media (max-width: 991.98px) {
+  .home2-why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .home2-why-choose-image {
+    min-height: 380px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home2-why-choose-image {
+    min-height: 260px;
+    height: 260px;
+    border-radius: 16px;
+  }
+}
+
+
+
+

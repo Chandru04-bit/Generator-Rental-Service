@@ -29,10 +29,10 @@
       <div class="collapse navbar-collapse" id="powerrentNavContent">
         <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
-              <li><a class="dropdown-item active" href="home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+              <li><a class="dropdown-item" href="index.html">Industrial</a></li>
+              <li><a class="dropdown-item active" href="home-2.html">Commercial</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="pages/about.html">About Us</a></li>
@@ -47,7 +47,7 @@
 
         <div class="nav-controls">
           <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><span class="dir-label">RTL</span></button>
           <div id="nav-auth-item">
             <a href="auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
           </div>
@@ -68,9 +68,9 @@
             Explore commercial, industrial, and silent event generators equipped with cloud telemetry and automatic transfer switching. Instant availability across major metropolitan hubs.
           </p>
           <div class="d-flex flex-wrap gap-3 mb-4 hero-buttons">
-            <a href="pages/services.html" class="btn btn-pr-primary btn-lg"><i class="bi bi-grid-fill me-1"></i>Explore Services</a>
-            <a href="pages/pricing.html" class="btn btn-pr-outline btn-lg"><i class="bi bi-tags-fill me-1"></i>View Rental Rates</a>
-            <a href="pages/booking.html" class="btn btn-warning btn-lg fw-bold text-dark"><i class="bi bi-calendar-check me-1"></i>Book Online</a>
+            <a href="pages/booking.html" class="btn btn-pr-primary btn-lg"><i class="bi bi-calendar-check me-1"></i>Book Online</a>
+            <a href="pages/services.html" class="btn btn-pr-secondary btn-lg"><i class="bi bi-grid-fill me-1"></i>Explore Services</a>
+            <a href="pages/pricing.html" class="btn btn-pr-secondary btn-lg"><i class="bi bi-tags-fill me-1"></i>View Rental Rates</a>
           </div>
           <div class="hero-benefits text-white-50 small">
             <div class="hero-benefit"><i class="bi bi-check-circle-fill text-warning"></i><span>Same-Day Delivery</span></div>
@@ -141,7 +141,7 @@
   </header>
 
   <!-- SECTION 2: POWER SOLUTIONS -->
-  <section class="section-padding bg-light-grey">
+  <section class="section-padding bg-light-grey" id="specialized-power-solutions">
     <div class="container">
       <div class="text-center mb-5">
         <span class="section-tag"><i class="bi bi-grid-3x3-gap"></i> Engineered Capability</span>
@@ -150,47 +150,63 @@
       </div>
 
       <div class="row g-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border p-4 rounded-4 shadow-sm bg-white">
+        <!-- 1. Construction Sites -->
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="specialized-solution-card w-100 h-100 border p-3 p-xl-4 rounded-4 shadow-sm bg-white d-flex flex-column">
+            <div class="specialized-img-box mb-3">
+              <img src="assets/images/services/service-construction.jpg" alt="Construction Sites Generator Power" class="specialized-card-img" loading="lazy">
+            </div>
             <div class="rounded-3 bg-light p-3 text-warning mb-3 d-inline-block" style="width: fit-content;">
               <i class="bi bi-cone-striped fs-3"></i>
             </div>
-            <h5 class="fw-bold mb-2">Construction Sites</h5>
-            <p class="small text-muted mb-3">High-inrush capacity to handle tower cranes, batching plants, and welding stations without voltage collapse.</p>
-            <a href="pages/service-details.html?service=construction" class="small fw-bold text-decoration-none">Learn More &rarr;</a>
+            <h5 class="fw-bold mb-2 text-navy">Construction Sites</h5>
+            <p class="small text-muted mb-3 flex-grow-1">High-inrush capacity to handle tower cranes, batching plants, and welding stations without voltage collapse.</p>
+            <a href="pages/service-details.html?service=construction" class="specialized-link small fw-bold text-decoration-none mt-auto">Learn More &rarr;</a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border p-4 rounded-4 shadow-sm bg-white">
+        <!-- 2. Events & Entertainment -->
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="specialized-solution-card w-100 h-100 border p-3 p-xl-4 rounded-4 shadow-sm bg-white d-flex flex-column">
+            <div class="specialized-img-box mb-3">
+              <img src="assets/images/services/service-events.jpg" alt="Events and Entertainment Silent Generator" class="specialized-card-img" loading="lazy">
+            </div>
             <div class="rounded-3 bg-light p-3 text-primary mb-3 d-inline-block" style="width: fit-content;">
               <i class="bi bi-music-note-beamed fs-3"></i>
             </div>
-            <h5 class="fw-bold mb-2">Events & Entertainment</h5>
-            <p class="small text-muted mb-3">Acoustic super-silent generators under 63 dB(A) with clean sinewave voltage for broadcast and concert sound.</p>
-            <a href="pages/service-details.html?service=events" class="small fw-bold text-decoration-none">Learn More &rarr;</a>
+            <h5 class="fw-bold mb-2 text-navy">Events & Entertainment</h5>
+            <p class="small text-muted mb-3 flex-grow-1">Acoustic super-silent generators under 63 dB(A) with clean sinewave voltage for broadcast and concert sound.</p>
+            <a href="pages/service-details.html?service=events" class="specialized-link small fw-bold text-decoration-none mt-auto">Learn More &rarr;</a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border p-4 rounded-4 shadow-sm bg-white">
+        <!-- 3. Commercial Standby -->
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="specialized-solution-card w-100 h-100 border p-3 p-xl-4 rounded-4 shadow-sm bg-white d-flex flex-column">
+            <div class="specialized-img-box mb-3">
+              <img src="assets/images/services/service-commercial.jpg" alt="Commercial Standby Backup Generator" class="specialized-card-img" loading="lazy">
+            </div>
             <div class="rounded-3 bg-light p-3 text-success mb-3 d-inline-block" style="width: fit-content;">
               <i class="bi bi-buildings fs-3"></i>
             </div>
-            <h5 class="fw-bold mb-2">Commercial Standby</h5>
-            <p class="small text-muted mb-3">Automatic transfer switch (ATS) synchronization protecting data centers, corporate towers, and clinics.</p>
-            <a href="pages/service-details.html?service=commercial" class="small fw-bold text-decoration-none">Learn More &rarr;</a>
+            <h5 class="fw-bold mb-2 text-navy">Commercial Standby</h5>
+            <p class="small text-muted mb-3 flex-grow-1">Automatic transfer switch (ATS) synchronization protecting data centers, corporate towers, and clinics.</p>
+            <a href="pages/service-details.html?service=commercial" class="specialized-link small fw-bold text-decoration-none mt-auto">Learn More &rarr;</a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border p-4 rounded-4 shadow-sm bg-white">
+        <!-- 4. Emergency Outage Response -->
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="specialized-solution-card w-100 h-100 border p-3 p-xl-4 rounded-4 shadow-sm bg-white d-flex flex-column">
+            <div class="specialized-img-box mb-3">
+              <img src="assets/images/services/service-emergency.jpg" alt="Emergency Outage Response Mobile Generator" class="specialized-card-img" loading="lazy">
+            </div>
             <div class="rounded-3 bg-light p-3 text-danger mb-3 d-inline-block" style="width: fit-content;">
               <i class="bi bi-lightning-fill fs-3"></i>
             </div>
-            <h5 class="fw-bold mb-2">Emergency Outage Response</h5>
-            <p class="small text-muted mb-3">Pre-fueled, skid and trailer-mounted staging reserve dispatched within 2 hours of catastrophic grid loss.</p>
-            <a href="pages/service-details.html?service=emergency" class="small fw-bold text-decoration-none">Learn More &rarr;</a>
+            <h5 class="fw-bold mb-2 text-navy">Emergency Outage Response</h5>
+            <p class="small text-muted mb-3 flex-grow-1">Pre-fueled, skid and trailer-mounted staging reserve dispatched within 2 hours of catastrophic grid loss.</p>
+            <a href="pages/service-details.html?service=emergency" class="specialized-link small fw-bold text-decoration-none mt-auto">Learn More &rarr;</a>
           </div>
         </div>
       </div>
@@ -282,7 +298,7 @@
   </section>
 
   <!-- SECTION 4: OUR SERVICES -->
-  <section class="section-padding bg-light-grey">
+  <section class="section-padding bg-light-grey" id="complete-turnkey-power-services">
     <div class="container">
       <div class="text-center mb-5">
         <span class="section-tag"><i class="bi bi-gear-fill"></i> End-to-End Delivery</span>
@@ -290,28 +306,46 @@
         <p class="section-subtitle">We don't simply deliver a machine; we engineer, connect, maintain, and fuel your temporary electrical infrastructure.</p>
       </div>
 
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
-            <i class="bi bi-truck fs-1 text-warning mb-3 d-block"></i>
-            <h5 class="fw-bold mb-2">Hiab Crane Delivery</h5>
-            <p class="small text-muted mb-0">Precision offloading, ground-level leveling, and obstacle placement directly onto your site coordinates.</p>
+      <div class="row g-4 justify-content-center">
+        <!-- 1. Hiab Crane Delivery -->
+        <div class="col-lg-4 col-md-6 col-12 d-flex">
+          <div class="turnkey-service-card w-100 h-100 bg-white rounded-4 border p-4 shadow-sm d-flex flex-column">
+            <div class="turnkey-card-img-wrap mb-3">
+              <img src="assets/images/services/turnkey-hiab-crane.jpg" alt="Hiab Crane Delivery" class="turnkey-card-img" loading="lazy">
+            </div>
+            <div class="turnkey-icon-badge mb-2">
+              <i class="bi bi-truck fs-2 text-warning"></i>
+            </div>
+            <h5 class="fw-bold mb-2 text-navy">Hiab Crane Delivery</h5>
+            <p class="small text-muted mb-0 flex-grow-1">Precision offloading, ground-level leveling, and obstacle placement directly onto your site coordinates.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
-            <i class="bi bi-hdd-network fs-1 text-primary mb-3 d-block"></i>
-            <h5 class="fw-bold mb-2">Certified Electrical Tie-In</h5>
-            <p class="small text-muted mb-0">Master electricians connect Cam-Lok cabling, verify phase sequence, and synchronize automatic transfer switches.</p>
+        <!-- 2. Certified Electrical Tie-In -->
+        <div class="col-lg-4 col-md-6 col-12 d-flex">
+          <div class="turnkey-service-card w-100 h-100 bg-white rounded-4 border p-4 shadow-sm d-flex flex-column">
+            <div class="turnkey-card-img-wrap mb-3">
+              <img src="assets/images/services/turnkey-electrical-tiein.jpg" alt="Certified Electrical Tie-In" class="turnkey-card-img" loading="lazy">
+            </div>
+            <div class="turnkey-icon-badge mb-2">
+              <i class="bi bi-hdd-network fs-2 text-primary"></i>
+            </div>
+            <h5 class="fw-bold mb-2 text-navy">Certified Electrical Tie-In</h5>
+            <p class="small text-muted mb-0 flex-grow-1">Master electricians connect Cam-Lok cabling, verify phase sequence, and synchronize automatic transfer switches.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="p-4 bg-white rounded-4 border shadow-sm h-100">
-            <i class="bi bi-fuel-pump fs-1 text-success mb-3 d-block"></i>
-            <h5 class="fw-bold mb-2">Automated Fuel Management</h5>
-            <p class="small text-muted mb-0">Cellular telemetry signals our tankers to refill your diesel or HVO fuel before tanks drop below 30%.</p>
+        <!-- 3. Automated Fuel Management -->
+        <div class="col-lg-4 col-md-6 col-12 d-flex">
+          <div class="turnkey-service-card w-100 h-100 bg-white rounded-4 border p-4 shadow-sm d-flex flex-column">
+            <div class="turnkey-card-img-wrap mb-3">
+              <img src="assets/images/services/turnkey-fuel-management.jpg" alt="Automated Fuel Management" class="turnkey-card-img" loading="lazy">
+            </div>
+            <div class="turnkey-icon-badge mb-2">
+              <i class="bi bi-fuel-pump fs-2 text-success"></i>
+            </div>
+            <h5 class="fw-bold mb-2 text-navy">Automated Fuel Management</h5>
+            <p class="small text-muted mb-0 flex-grow-1">Cellular telemetry signals our tankers to refill your diesel or HVO fuel before tanks drop below 30%.</p>
           </div>
         </div>
       </div>
@@ -319,51 +353,62 @@
   </section>
 
   <!-- SECTION 5: WHY CHOOSE US -->
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-white home2-why-choose-section" id="why-choose-powerrent">
     <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <span class="section-tag"><i class="bi bi-shield-check"></i> Proven Reliability</span>
-          <h2 class="section-title">Why Industry Leaders Choose PowerRent</h2>
-          <p class="lead text-muted mb-4">
-            With more than 15 years in mission-critical power generation, we eliminate downtime through engineering rigor and rapid-response logistics.
-          </p>
+      <div class="home2-why-choose-grid">
+        <!-- Left-Side Content -->
+        <div class="home2-why-choose-content">
+          <div>
+            <span class="section-tag"><i class="bi bi-shield-check"></i> Proven Reliability</span>
+            <h2 class="section-title">Why Industry Leaders Choose PowerRent</h2>
+            <p class="lead text-muted mb-4">
+              With more than 15 years in mission-critical power generation, we eliminate downtime through engineering rigor and rapid-response logistics.
+            </p>
+          </div>
 
           <div class="row g-3">
-            <div class="col-sm-6">
-              <div class="p-3 bg-light-grey rounded-3 border">
+            <!-- 99.98% Uptime SLA -->
+            <div class="col-sm-6 d-flex">
+              <div class="home2-feature-card w-100 p-3 rounded-3 d-flex flex-column">
                 <i class="bi bi-check2-circle text-warning fs-3 mb-1 d-block"></i>
                 <h6 class="fw-bold mb-1">99.98% Uptime SLA</h6>
-                <p class="small text-muted mb-0">Backed by our immediate equipment swap guarantee.</p>
+                <p class="small text-muted mb-0 flex-grow-1">Backed by our immediate equipment swap guarantee.</p>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="p-3 bg-light-grey rounded-3 border">
+
+            <!-- < 2hr Rapid Dispatch -->
+            <div class="col-sm-6 d-flex">
+              <div class="home2-feature-card w-100 p-3 rounded-3 d-flex flex-column">
                 <i class="bi bi-stopwatch text-danger fs-3 mb-1 d-block"></i>
                 <h6 class="fw-bold mb-1">&lt; 2hr Rapid Dispatch</h6>
-                <p class="small text-muted mb-0">Pre-fueled emergency staging bays ready 24/7/365.</p>
+                <p class="small text-muted mb-0 flex-grow-1">Pre-fueled emergency staging bays ready 24/7/365.</p>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="p-3 bg-light-grey rounded-3 border">
+
+            <!-- 100% Load-Banked -->
+            <div class="col-sm-6 d-flex">
+              <div class="home2-feature-card w-100 p-3 rounded-3 d-flex flex-column">
                 <i class="bi bi-award text-success fs-3 mb-1 d-block"></i>
                 <h6 class="fw-bold mb-1">100% Load-Banked</h6>
-                <p class="small text-muted mb-0">Full resistive test certification with every hire.</p>
+                <p class="small text-muted mb-0 flex-grow-1">Full resistive test certification with every hire.</p>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="p-3 bg-light-grey rounded-3 border">
+
+            <!-- Live IoT Telemetry -->
+            <div class="col-sm-6 d-flex">
+              <div class="home2-feature-card w-100 p-3 rounded-3 d-flex flex-column">
                 <i class="bi bi-broadcast-pin text-primary fs-3 mb-1 d-block"></i>
                 <h6 class="fw-bold mb-1">Live IoT Telemetry</h6>
-                <p class="small text-muted mb-0">Remote monitoring of voltage, fuel, and engine temp.</p>
+                <p class="small text-muted mb-0 flex-grow-1">Remote monitoring of voltage, fuel, and engine temp.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="spotlight-image-wrapper shadow-lg border">
-            <img src="assets/images/about/about-experience.jpg" alt="Industrial Power Distribution Substation" class="img-fluid spotlight-img">
+        <!-- Right-Side Image -->
+        <div class="home2-why-choose-image-col">
+          <div class="home2-why-choose-image">
+            <img src="assets/images/about/about-experience.jpg" alt="Industrial Generator Testing and Maintenance Facility" class="home2-why-choose-img" loading="lazy">
           </div>
         </div>
       </div>
@@ -432,7 +477,7 @@
             </div>
             <p class="testimonial-text fst-italic text-dark small">"When our primary hospital transformer failed during summer storms, PowerRent had two 500 kVA generators synchronized within 90 minutes. Lifesaving service."</p>
             <div class="testimonial-author">
-              <img src="assets/images/team/team-2.jpg" alt="Dr. Alistair Finch" class="author-avatar">
+              <img src="assets/images/testimonials/client-1.jpg" alt="Dr. Alistair Finch" class="author-avatar">
               <div class="testimonial-author-copy">
                 <h6 class="author-name mb-0 text-navy">Dr. Alistair Finch</h6>
                 <span class="author-role small text-muted">Facilities Director, Metro Health</span>
@@ -448,7 +493,7 @@
             </div>
             <p class="testimonial-text fst-italic text-dark small">"The Volvo Penta ultra-quiet sets ran flawlessly for 4 straight days across our festival stages. Zero ripple, zero noise complaints from neighboring residents."</p>
             <div class="testimonial-author">
-              <img src="assets/images/team/team-3.jpg" alt="Claire Beauchamp" class="author-avatar">
+              <img src="assets/images/testimonials/client-2.jpg" alt="Claire Beauchamp" class="author-avatar">
               <div class="testimonial-author-copy">
                 <h6 class="author-name mb-0 text-navy">Claire Beauchamp</h6>
                 <span class="author-role small text-muted">Head of Production, SoundWave Festivals</span>
@@ -464,9 +509,9 @@
             </div>
             <p class="testimonial-text fst-italic text-dark small">"PowerRent is our single call for temporary power across all our Midwest bridge construction packages. Equipment is always clean, load-bank verified, and delivered on the hour."</p>
             <div class="testimonial-author">
-              <img src="assets/images/team/team-1.jpg" alt="Marcus Vance" class="author-avatar">
+              <img src="assets/images/testimonials/client-4.jpg" alt="Greg Holloway" class="author-avatar">
               <div class="testimonial-author-copy">
-                <h6 class="author-name mb-0 text-navy">Marcus Vance</h6>
+                <h6 class="author-name mb-0 text-navy">Greg Holloway</h6>
                 <span class="author-role small text-muted">VP Operations, Midwest Civil</span>
               </div>
             </div>
@@ -485,9 +530,9 @@
         Our electrical power specialists are available 24/7 to size, deliver, and commission the exact generator package you need.
       </p>
       <div class="cta-btn-group d-flex flex-wrap justify-content-center gap-3">
-        <a href="pages/booking.html" class="btn btn-warning btn-lg px-4 fw-bold text-dark"><i class="bi bi-calendar-check me-2"></i>Book a Generator Online</a>
-        <a href="pages/fleet.html" class="btn btn-pr-outline btn-lg px-4"><i class="bi bi-grid me-2"></i>Explore Generator Fleet</a>
-        <a href="pages/contact.html" class="btn btn-light btn-lg px-4 text-dark fw-bold"><i class="bi bi-telephone-outbound me-2"></i>Call 24/7 Dispatch</a>
+        <a href="pages/booking.html" class="btn btn-pr-primary btn-lg"><i class="bi bi-calendar-check me-2"></i>Book a Generator Online</a>
+        <a href="pages/fleet.html" class="btn btn-pr-secondary btn-lg"><i class="bi bi-grid me-2"></i>Explore Generator Fleet</a>
+        <a href="pages/contact.html" class="btn btn-pr-secondary btn-lg"><i class="bi bi-telephone-outbound me-2"></i>Call 24/7 Dispatch</a>
       </div>
     </div>
   </section>

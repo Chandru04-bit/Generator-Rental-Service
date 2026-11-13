@@ -22,10 +22,10 @@
       const textSpan = btn.querySelector('.dir-label') || btn;
       if (dir === 'rtl') {
         btn.setAttribute('title', 'Switch to LTR (Left to Right)');
-        btn.innerHTML = '<i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">LTR</span>';
+        btn.innerHTML = '<span class="dir-label">LTR</span>';
       } else {
         btn.setAttribute('title', 'Switch to RTL (Right to Left)');
-        btn.innerHTML = '<i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span>';
+        btn.innerHTML = '<span class="dir-label">RTL</span>';
       }
     });
   }

@@ -129,18 +129,21 @@ html[data-theme="dark"] a:not(.btn):not(.nav-link):not(.dropdown-item):not(.text
 html[data-theme="dark"] .bg-warning,
 html[data-theme="dark"] .bg-accent,
 html[data-theme="dark"] .btn-pr-primary,
+html[data-theme="dark"] .btn-primary-cta,
 html[data-theme="dark"] .btn-warning,
 html[data-theme="dark"] .gen-card-badge,
 html[data-theme="dark"] .badge-accent,
 html[data-theme="dark"] .badge.bg-warning,
 html[data-theme="dark"] .badge.bg-accent {
   background-color: var(--pr-accent) !important;
+  border-color: var(--pr-accent) !important;
   color: #101C2C !important;
 }
 
 html[data-theme="dark"] .bg-warning *,
 html[data-theme="dark"] .bg-accent *,
 html[data-theme="dark"] .btn-pr-primary *,
+html[data-theme="dark"] .btn-primary-cta *,
 html[data-theme="dark"] .btn-warning *,
 html[data-theme="dark"] .gen-card-badge *,
 html[data-theme="dark"] .badge-accent *,
@@ -149,7 +152,46 @@ html[data-theme="dark"] .badge.bg-accent * {
   color: #101C2C !important;
 }
 
-/* Outline & Secondary Buttons */
+/* Secondary CTA Buttons in Dark Mode */
+html[data-theme="dark"] .btn-pr-secondary,
+html[data-theme="dark"] .btn-secondary-cta {
+  background-color: var(--pr-card-bg) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .btn-pr-secondary:hover,
+html[data-theme="dark"] .btn-pr-secondary:focus,
+html[data-theme="dark"] .btn-pr-secondary:focus-visible,
+html[data-theme="dark"] .btn-pr-secondary:active,
+html[data-theme="dark"] .btn-pr-secondary.active,
+html[data-theme="dark"] .btn-secondary-cta:hover,
+html[data-theme="dark"] .btn-secondary-cta:focus,
+html[data-theme="dark"] .btn-secondary-cta:focus-visible,
+html[data-theme="dark"] .btn-secondary-cta:active,
+html[data-theme="dark"] .btn-secondary-cta.active {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  color: #101C2C !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+}
+
+html[data-theme="dark"] .btn-pr-secondary:hover *,
+html[data-theme="dark"] .btn-pr-secondary:focus *,
+html[data-theme="dark"] .btn-pr-secondary:focus-visible *,
+html[data-theme="dark"] .btn-pr-secondary:active *,
+html[data-theme="dark"] .btn-pr-secondary.active *,
+html[data-theme="dark"] .btn-secondary-cta:hover *,
+html[data-theme="dark"] .btn-secondary-cta:focus *,
+html[data-theme="dark"] .btn-secondary-cta:focus-visible *,
+html[data-theme="dark"] .btn-secondary-cta:active *,
+html[data-theme="dark"] .btn-secondary-cta.active * {
+  color: #101C2C !important;
+}
+
+/* Outline Buttons */
 html[data-theme="dark"] .btn-pr-outline {
   --bs-btn-color: #ffffff;
   --bs-btn-bg: transparent;
@@ -191,39 +233,6 @@ html[data-theme="dark"] .btn-pr-outline.text-white:focus-visible *,
 html[data-theme="dark"] .btn-pr-outline.text-white:active *,
 html[data-theme="dark"] .btn-pr-outline.text-white.active * {
   color: #101820 !important;
-}
-
-html[data-theme="dark"] .btn-pr-secondary,
-html[data-theme="dark"] .btn-light {
-  background-color: var(--pr-section-bg);
-  border-color: var(--pr-border);
-  color: #FFFFFF !important;
-}
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline {
-  border-color: #CBD5E1;
-  color: #FFFFFF;
-}
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:hover,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus-visible,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:active,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline.active {
-  background-color: var(--pr-accent) !important;
-  border-color: var(--pr-accent) !important;
-  color: #101C2C !important;
-}
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:hover *,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus *,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:focus-visible *,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline:active *,
-html[data-theme="dark"] .home2-contact-cta .btn-pr-outline.active * {
-  color: #101C2C !important;
-}
-html[data-theme="dark"] .btn-pr-secondary:hover,
-html[data-theme="dark"] .btn-light:hover {
-  background-color: var(--pr-card-bg);
-  border-color: var(--pr-accent);
-  color: var(--pr-accent) !important;
 }
 
 html[data-theme="dark"] .btn-outline-secondary,
@@ -306,6 +315,87 @@ html[data-theme="dark"] .why-stat-box {
   background-color: var(--pr-card-bg) !important;
   border-color: var(--pr-border) !important;
   color: var(--pr-text);
+}
+
+html[data-theme="dark"] .service-title-icon {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .service-card-desc {
+  color: #94A3B8 !important;
+}
+
+html[data-theme="dark"] .process-step-title {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .process-step-desc {
+  color: #94A3B8 !important;
+}
+
+html[data-theme="dark"] .process-step-col:not(:last-child)::after {
+  background-color: var(--pr-card-bg) !important;
+  border-color: #F59E0B !important;
+}
+
+html[data-theme="dark"] .process-cta-banner {
+  background-color: var(--pr-card-bg) !important;
+  border-color: var(--pr-border) !important;
+}
+
+html[data-theme="dark"] .process-cta-banner h5 {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .process-cta-banner p {
+  color: #94A3B8 !important;
+}
+
+html[data-theme="dark"] .capacity-tier-card {
+  background-color: var(--pr-card-bg) !important;
+  border-color: var(--pr-border) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] .capacity-tier-title {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .capacity-tier-desc,
+html[data-theme="dark"] .capacity-label {
+  color: #94A3B8 !important;
+}
+
+html[data-theme="dark"] .capacity-tier-features li {
+  color: #CBD5E1 !important;
+}
+
+html[data-theme="dark"] .btn-tier-browse {
+  background-color: transparent !important;
+  border-color: var(--pr-border) !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .btn-tier-browse:hover {
+  background-color: var(--pr-accent) !important;
+  border-color: var(--pr-accent) !important;
+  color: #101C2C !important;
+}
+
+html[data-theme="dark"] .industry-card {
+  background-color: var(--pr-card-bg) !important;
+  border-color: var(--pr-border) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] .industry-card:hover {
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(245, 158, 11, 0.4) !important;
+}
+
+html[data-theme="dark"] .industry-card h6,
+html[data-theme="dark"] .industry-card .industry-title {
+  color: #FFFFFF !important;
 }
 
 html[data-theme="dark"] .gen-card-specs {
@@ -727,3 +817,147 @@ html[data-theme="dark"] .table-scroll-hint {
   border-color: rgba(255, 255, 255, 0.12) !important;
   background-color: var(--pr-navy-surface, #142236) !important;
 }
+
+/* ===================================================================
+   13. CONTACT INFORMATION STRIP IN DARK MODE
+   =================================================================== */
+html[data-theme="dark"] .contact-strip-section {
+  background-color: #0E1724 !important;
+}
+
+html[data-theme="dark"] .contact-strip-card {
+  background: var(--pr-navy-surface, #142236) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] .contact-strip-card:hover {
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.16) !important;
+}
+
+html[data-theme="dark"] .contact-strip-title {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .contact-strip-link,
+html[data-theme="dark"] .contact-strip-text,
+html[data-theme="dark"] .contact-strip-detail {
+  color: #E2E8F0 !important;
+}
+
+html[data-theme="dark"] .contact-strip-link:hover,
+html[data-theme="dark"] .contact-strip-link:focus {
+  color: var(--pr-accent, #F59E0B) !important;
+}
+
+html[data-theme="dark"] .contact-strip-divider {
+  color: #64748B !important;
+}
+
+/* ===================================================================
+   SPECIALIZED POWER SOLUTIONS IN DARK MODE
+   =================================================================== */
+html[data-theme="dark"] .specialized-solution-card {
+  background-color: var(--pr-navy-surface, #142236) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] .specialized-solution-card:hover {
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.16) !important;
+}
+
+html[data-theme="dark"] .specialized-solution-card h5,
+html[data-theme="dark"] .specialized-solution-card .text-navy {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .specialized-solution-card .bg-light {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+html[data-theme="dark"] .specialized-img-box {
+  background-color: #1E293B !important;
+}
+
+/* ===================================================================
+   COMPLETE TURNKEY POWER SERVICES IN DARK MODE
+   =================================================================== */
+html[data-theme="dark"] .turnkey-service-card {
+  background-color: var(--pr-navy-surface, #142236) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] .turnkey-service-card:hover {
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.16) !important;
+}
+
+html[data-theme="dark"] .turnkey-service-card h5,
+html[data-theme="dark"] .turnkey-service-card .text-navy {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .turnkey-card-img-wrap {
+  background-color: #1E293B !important;
+}
+
+/* ===================================================================
+   HOME-2 WHY CHOOSE POWERRENT IN DARK MODE
+   =================================================================== */
+html[data-theme="dark"] .home2-why-choose-section {
+  background-color: #0E1724 !important;
+}
+
+html[data-theme="dark"] .home2-why-choose-image {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] .home2-feature-card {
+  background-color: var(--pr-navy-surface, #142236) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html[data-theme="dark"] .home2-feature-card:hover {
+  border-color: var(--pr-accent, #F59E0B) !important;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.12) !important;
+}
+
+html[data-theme="dark"] .home2-feature-card h6 {
+  color: #FFFFFF !important;
+}
+
+/* ===================================================================
+   TEAM LEADERSHIP CARDS IN DARK MODE
+   =================================================================== */
+html[data-theme="dark"] .team-leader-card {
+  background-color: var(--pr-card-bg, #152238) !important;
+  border-color: var(--pr-border, #24354D) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] .team-leader-card:hover {
+  border-color: rgba(245, 158, 11, 0.4) !important;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45) !important;
+}
+
+html[data-theme="dark"] .team-leader-img-wrap {
+  background-color: #1A273D !important;
+}
+
+html[data-theme="dark"] .team-leader-name {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .team-leader-role {
+  color: #94A3B8 !important;
+}
+
+html[data-theme="dark"] .team-leader-desc {
+  color: #94A3B8 !important;
+}
+

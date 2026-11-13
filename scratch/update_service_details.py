@@ -175,7 +175,7 @@ new_script = """  <!-- Service Details Populator Script -->
         tagline: "Professional electrical engineering, rigging, crane placement, and ATS commissioning.",
         image: "../assets/images/services/service-installation.jpg",
         icon: "bi-tools",
-        description: `A generator is only as reliable as its installation. PowerRent's licensed electrical engineering crews oversee every facet of deployment: heavy transport, crane rigging, concrete pad placement, grounding rod testing, sub-panel breaker tie-ins, and automated transfer switch calibration.`,
+        description: `A generator is as reliable as its installation. PowerRent's licensed electrical engineering crews oversee every facet of deployment: heavy transport, crane rigging, concrete pad placement, grounding rod testing, sub-panel breaker tie-ins, and automated transfer switch calibration.`,
         benefits: [
           { title: "Licensed Master Electricians", desc: "Complete code compliance with NFPA 70 (NEC) and NFPA 110 regulations.", icon: "bi-person-badge-fill" },
           { title: "Heavy Rigging & Crane Service", desc: "Safe, precision crane lifts over parapet walls, rooftops, and restricted courtyards.", icon: "bi-truck" },

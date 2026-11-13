@@ -210,7 +210,7 @@ function renderAuthBanner(isAuthenticated) {
         </div>
         <div class="d-flex align-items-center gap-2">
           <a href="../auth/login.html" class="btn btn-sm btn-pr-primary"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In</a>
-          <a href="../auth/register.html" class="btn btn-sm btn-pr-dark"><i class="bi bi-person-plus me-1"></i>Create Account</a>
+          <a href="../auth/register.html" class="btn btn-sm btn-pr-secondary"><i class="bi bi-person-plus me-1"></i>Create Account</a>
         </div>
       `;
       contentArea.insertBefore(authBanner, contentArea.firstChild);

@@ -28,10 +28,11 @@
 
       <div class="collapse navbar-collapse" id="powerrentNavContent">
         <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
-              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+              <li><a class="dropdown-item" href="../index.html">Industrial</a></li>
+              <li><a class="dropdown-item" href="../home-2.html">Commercial</a></li>
             </ul>
           </li>
           <!-- Single Direct Link (No Dropdown) -->
@@ -50,7 +51,7 @@
 
         <div class="nav-controls">
           <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><span class="dir-label">RTL</span></button>
           <div id="nav-auth-item">
             <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
           </div>
@@ -82,7 +83,7 @@
       </p>
       <div class="about-banner-actions">
         <a href="services.html" class="btn btn-pr-primary btn-lg"><i class="bi bi-grid-fill me-2"></i>Explore Services</a>
-        <a href="contact.html" class="btn btn-pr-outline btn-lg text-white"><i class="bi bi-telephone-fill me-2"></i>Contact Engineers</a>
+        <a href="contact.html" class="btn btn-pr-secondary btn-lg"><i class="bi bi-telephone-fill me-2"></i>Contact Engineers</a>
       </div>
     </div>
   </header>
@@ -641,49 +642,57 @@
 
       <div class="row g-4">
         <!-- Marcus Vance -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border rounded-4 overflow-hidden shadow-sm bg-white text-center">
-            <img src="../assets/images/team/team-1.jpg" alt="Marcus Vance" class="w-100" style="height: 260px; object-fit: cover;">
-            <div class="p-4">
-              <h5 class="fw-bold text-navy mb-1">Marcus Vance</h5>
-              <span class="badge bg-warning text-dark mb-3">Chief Technical Officer</span>
-              <p class="small text-muted mb-0">Former Caterpillar chief engineer specializing in multi-megawatt paralleling arrays.</p>
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-1.jpg" alt="Marcus Vance" class="team-leader-img">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">Marcus Vance</h5>
+              <div class="team-leader-role mb-2">Chief Technical Officer</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Former Caterpillar chief engineer specializing in multi-megawatt paralleling arrays.</p>
             </div>
           </div>
         </div>
 
         <!-- Elena Rostova -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border rounded-4 overflow-hidden shadow-sm bg-white text-center">
-            <img src="../assets/images/team/team-2.jpg" alt="Elena Rostova" class="w-100" style="height: 260px; object-fit: cover;">
-            <div class="p-4">
-              <h5 class="fw-bold text-navy mb-1">Elena Rostova, PE</h5>
-              <span class="badge bg-primary text-white mb-3">Head of Grid Synchronization</span>
-              <p class="small text-muted mb-0">Licensed PE directing automatic transfer switchgear and utility tie-in compliance.</p>
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-2.jpg" alt="Elena Rostova, PE" class="team-leader-img">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">Elena Rostova, PE</h5>
+              <div class="team-leader-role mb-2">Head of Grid Synchronization</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Licensed PE directing automatic transfer switchgear and utility tie-in compliance.</p>
             </div>
           </div>
         </div>
 
         <!-- David Chen -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border rounded-4 overflow-hidden shadow-sm bg-white text-center">
-            <img src="../assets/images/team/team-3.jpg" alt="David Chen" class="w-100" style="height: 260px; object-fit: cover;">
-            <div class="p-4">
-              <h5 class="fw-bold text-navy mb-1">David Chen</h5>
-              <span class="badge bg-success text-white mb-3">Director of Logistics</span>
-              <p class="small text-muted mb-0">Coordinates 24/7 heavy crane flatbeds and telemetry-linked fuel dispatch tankers.</p>
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-3.jpg" alt="David Chen" class="team-leader-img">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">David Chen</h5>
+              <div class="team-leader-role mb-2">Director of Logistics</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Coordinates 24/7 heavy crane flatbeds and telemetry-linked fuel dispatch tankers.</p>
             </div>
           </div>
         </div>
 
         <!-- Sarah Jenkins -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 border rounded-4 overflow-hidden shadow-sm bg-white text-center">
-            <img src="../assets/images/team/team-4.jpg" alt="Sarah Jenkins" class="w-100" style="height: 260px; object-fit: cover;">
-            <div class="p-4">
-              <h5 class="fw-bold text-navy mb-1">Sarah Jenkins</h5>
-              <span class="badge bg-info text-dark mb-3">Lead Fleet Diagnostics</span>
-              <p class="small text-muted mb-0">Directs 100% resistive load-bank testing protocols and IoT telemetry predictive alerts.</p>
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-4.jpg" alt="Sarah Jenkins" class="team-leader-img">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">Sarah Jenkins</h5>
+              <div class="team-leader-role mb-2">Lead Fleet Diagnostics</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Directs 100% resistive load-bank testing protocols and IoT telemetry predictive alerts.</p>
             </div>
           </div>
         </div>
@@ -706,11 +715,11 @@
             Speak with our electrical power sizing specialists today or browse our fleet of 5 kVA to 1,250 kVA generators. We deliver, install, and support you every hour of your project.
           </p>
           <div class="cta-btn-group d-flex flex-wrap justify-content-center gap-3">
-            <a href="fleet.html" class="btn btn-pr-primary btn-lg shadow">
-              <i class="bi bi-grid-fill me-2"></i>Explore Generator Fleet
-            </a>
-            <a href="booking.html" class="btn btn-pr-dark btn-lg shadow">
+            <a href="booking.html" class="btn btn-pr-primary btn-lg">
               <i class="bi bi-calendar-check me-2"></i>Book a Generator Online
+            </a>
+            <a href="fleet.html" class="btn btn-pr-secondary btn-lg">
+              <i class="bi bi-grid-fill me-2"></i>Explore Generator Fleet
             </a>
           </div>
         </div>

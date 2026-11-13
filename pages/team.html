@@ -28,10 +28,11 @@
 
       <div class="collapse navbar-collapse" id="powerrentNavContent">
         <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../index.html"><i class="bi bi-house-door me-2"></i>Home 1 – Industrial Main</a></li>
-              <li><a class="dropdown-item" href="../home-2.html"><i class="bi bi-building me-2"></i>Home 2 – Commercial & Events</a></li>
+              <li><a class="dropdown-item" href="../index.html">Industrial</a></li>
+              <li><a class="dropdown-item" href="../home-2.html">Commercial</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
@@ -47,7 +48,7 @@
 
         <div class="nav-controls">
           <button class="control-btn theme-toggle-btn" type="button" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><i class="bi bi-arrow-left-right me-1"></i><span class="dir-label">RTL</span></button>
+          <button class="control-btn dir-toggle-btn control-btn-badge" type="button" title="Toggle Direction"><span class="dir-label">RTL</span></button>
           <div id="nav-auth-item">
             <a href="../auth/login.html" class="btn btn-sm btn-pr-outline"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
           </div>
@@ -85,77 +86,57 @@
 
       <div class="row g-4">
         <!-- Marcus Vance -->
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card h-100">
-            <div class="team-img-wrap">
-              <img src="../assets/images/team/team-1.jpg" alt="Marcus Vance" class="team-img">
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-1.jpg" alt="Marcus Vance" class="team-leader-img">
             </div>
-            <div class="team-body">
-              <h4 class="team-name">Marcus Vance</h4>
-              <div class="team-role">Chief Executive Officer</div>
-              <p class="small text-muted mb-3">Former industrial plant director with 25+ years in heavy machinery operations and critical fleet reliability.</p>
-              <div class="team-socials">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-              </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">Marcus Vance</h5>
+              <div class="team-leader-role mb-2">Chief Technical Officer</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Former Caterpillar chief engineer specializing in multi-megawatt paralleling arrays.</p>
             </div>
           </div>
         </div>
 
         <!-- Elena Rostova -->
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card h-100">
-            <div class="team-img-wrap">
-              <img src="../assets/images/team/team-2.jpg" alt="Elena Rostova" class="team-img">
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-2.jpg" alt="Elena Rostova, PE" class="team-leader-img">
             </div>
-            <div class="team-body">
-              <h4 class="team-name">Elena Rostova, PE</h4>
-              <div class="team-role">VP of Engineering & Grid Operations</div>
-              <p class="small text-muted mb-3">Professional Electrical Engineer specializing in multi-megawatt synchronizing switchgear and emergency substation bypass.</p>
-              <div class="team-socials">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-              </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">Elena Rostova, PE</h5>
+              <div class="team-leader-role mb-2">Head of Grid Synchronization</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Licensed PE directing automatic transfer switchgear and utility tie-in compliance.</p>
             </div>
           </div>
         </div>
 
         <!-- David Chen -->
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card h-100">
-            <div class="team-img-wrap">
-              <img src="../assets/images/team/team-3.jpg" alt="David Chen" class="team-img">
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-3.jpg" alt="David Chen" class="team-leader-img">
             </div>
-            <div class="team-body">
-              <h4 class="team-name">David Chen</h4>
-              <div class="team-role">Master Fleet Technician</div>
-              <p class="small text-muted mb-3">Factory-certified master technician for Cummins, Caterpillar, and MTU diesel engines. Oversees 100% pre-hire load banking.</p>
-              <div class="team-socials">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-              </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">David Chen</h5>
+              <div class="team-leader-role mb-2">Director of Logistics</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Coordinates 24/7 heavy crane flatbeds and telemetry-linked fuel dispatch tankers.</p>
             </div>
           </div>
         </div>
 
         <!-- Sarah Jenkins -->
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card h-100">
-            <div class="team-img-wrap">
-              <img src="../assets/images/team/team-4.jpg" alt="Sarah Jenkins" class="team-img">
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <div class="team-leader-card w-100 bg-white border rounded-4 overflow-hidden shadow-sm d-flex flex-column text-center">
+            <div class="team-leader-img-wrap">
+              <img src="../assets/images/team/team-4.jpg" alt="Sarah Jenkins" class="team-leader-img">
             </div>
-            <div class="team-body">
-              <h4 class="team-name">Sarah Jenkins</h4>
-              <div class="team-role">Director of 24/7 Logistics & Dispatch</div>
-              <p class="small text-muted mb-3">Coordinates 60-minute rapid mobilization protocols, flatbed transports, crane staging, and on-site fuel replenishment.</p>
-              <div class="team-socials">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-              </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-navy mb-1 team-leader-name">Sarah Jenkins</h5>
+              <div class="team-leader-role mb-2">Lead Fleet Diagnostics</div>
+              <p class="small text-muted mb-0 flex-grow-1 team-leader-desc">Directs 100% resistive load-bank testing protocols and IoT telemetry predictive alerts.</p>
             </div>
           </div>
         </div>
